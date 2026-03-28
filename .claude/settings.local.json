@@ -1,0 +1,16 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npm create:*)",
+      "Bash(npx --yes create-vite@latest temp-project --template react)",
+      "Bash(cp -r temp-project/* temp-project/.* .)",
+      "Bash(rm -rf temp-project)",
+      "Bash(npm install:*)",
+      "mcp__Claude_Preview__preview_start",
+      "Bash(grep -E \"\\\\.\\(json|js|ts|tsx\\)$\")",
+      "WebSearch",
+      "WebFetch(domain:commons.wikimedia.org)",
+      "WebFetch(domain:en.wikipedia.org)"
+    ]
+  }
+}
