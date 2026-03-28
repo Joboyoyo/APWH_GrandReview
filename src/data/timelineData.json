@@ -1,0 +1,1313 @@
+{
+  "eras": [
+    {
+      "id": "era-1200-1450",
+      "title": "The Global Tapestry & Networks of Exchange",
+      "startYear": 1200,
+      "endYear": 1450,
+      "color": "#4A90D9",
+      "summary": "An era defined by the expansion of trade networks, the rise and fall of powerful empires, and increased cross-cultural interactions across Afro-Eurasia. The Mongol Empire created the largest contiguous land empire in history, facilitating unprecedented exchange along the Silk Roads.",
+      "spiceT": {
+        "social": "Feudal hierarchies, caste systems, and social mobility through trade. The Black Death reshaped labor relations across Eurasia.",
+        "political": "Rise of centralized states and empires: Mongol Empire, Mali Empire, Delhi Sultanate, Song Dynasty. Decentralized feudalism in Europe and Japan.",
+        "interactions": "Expansion of Silk Roads, Indian Ocean trade, and Trans-Saharan routes. The Mongol Pax facilitated massive cultural and biological exchange.",
+        "cultural": "Spread of Islam into Sub-Saharan Africa and Southeast Asia. Neo-Confucianism in East Asia. Gothic architecture in Europe. Syncretism in contact zones.",
+        "economic": "Growth of merchant classes. Use of paper money in China. Banking innovations (bills of exchange). Increased demand for luxury goods drove long-distance trade.",
+        "technology": "Gunpowder weaponry, magnetic compass, printing press (movable type in Korea/China), lateen sails, astrolabe improvements. Agricultural innovations like champa rice."
+      },
+      "keyTerms": ["Pax Mongolica", "Silk Roads", "Indian Ocean Trade", "Trans-Saharan Trade", "Dar al-Islam", "Song Dynasty", "Mali Empire", "Black Death", "Feudalism", "Neo-Confucianism"],
+      "events": [
+        {
+          "id": "evt-mongol-empire",
+          "title": "The Mongol Empire",
+          "startYear": 1206,
+          "endYear": 1368,
+          "color": "#E74C3C",
+          "summary": "Founded by Genghis Khan in 1206, the Mongol Empire became the largest contiguous land empire in history, stretching from Korea to Eastern Europe. The Mongols facilitated trade, adopted local administrative practices, and spread technologies like gunpowder across Eurasia.",
+          "spiceT": {
+            "social": "Mongol rule created new social hierarchies. Conquered peoples were organized by usefulness. Religious tolerance was practiced across the empire.",
+            "political": "Centralized under the Great Khan, later split into four khanates: Yuan (China), Chagatai (Central Asia), Ilkhanate (Persia), Golden Horde (Russia).",
+            "interactions": "The Pax Mongolica secured trade routes, enabling travelers like Marco Polo and Ibn Battuta. Also facilitated spread of the Black Death.",
+            "cultural": "Promoted exchange between civilizations. Adopted religions and customs of conquered peoples. Spread of artistic and literary traditions.",
+            "economic": "Standardized weights, measures, and trade policies. Protected merchants. Issued paper currency in China under Kublai Khan.",
+            "technology": "Spread gunpowder from China westward. Advanced siege warfare technology. Adopted and disseminated innovations from conquered civilizations."
+          },
+          "keyTerms": ["Genghis Khan", "Kublai Khan", "Pax Mongolica", "Four Khanates", "Yuan Dynasty", "Yam system", "Siege warfare"],
+          "quiz": [
+            {
+              "id": "q-mongol-1",
+              "type": "mcq",
+              "question": "Which of the following best describes a significant effect of the Mongol Empire on Afro-Eurasian trade networks?",
+              "choices": [
+                "The Mongols destroyed all existing trade routes and replaced them with new ones",
+                "The Pax Mongolica secured overland trade routes, facilitating increased exchange across Eurasia",
+                "The Mongols prohibited all forms of long-distance trade to maintain political control",
+                "Mongol expansion had no significant impact on trade because they were primarily pastoral nomads"
+              ],
+              "correct": 1,
+              "explanation": "The Pax Mongolica (Mongol Peace) is the key concept here. By unifying much of Eurasia under a single political authority, the Mongols created safe passage along the Silk Roads. They actively protected merchants, standardized trade practices, and established relay stations (yam system). This dramatically increased the volume and safety of overland trade.",
+              "theme": "economic"
+            },
+            {
+              "id": "q-mongol-2",
+              "type": "mcq",
+              "question": "A historian studying the Mongol Empire's administrative practices would most likely emphasize which of the following?",
+              "choices": [
+                "The Mongols imposed a uniform legal and cultural system across all conquered territories",
+                "The Mongols adapted their governance by incorporating local administrative traditions and personnel",
+                "The Mongols refused to engage with the cultures of conquered peoples",
+                "The Mongols exclusively used military force to maintain control with no bureaucratic systems"
+              ],
+              "correct": 1,
+              "explanation": "This reflects the AP concept of how empires maintain power. The Mongols were pragmatic rulers who frequently kept local bureaucrats in place and adopted existing administrative structures. In Persia, they used Persian bureaucrats; in China, Kublai Khan adopted many Chinese governmental practices while establishing the Yuan Dynasty. This adaptability was key to governing such a vast and diverse empire.",
+              "theme": "political"
+            },
+            {
+              "id": "q-mongol-3",
+              "type": "mcq",
+              "question": "Which of the following was an unintended consequence of the increased connectivity facilitated by the Mongol Empire?",
+              "choices": [
+                "The rapid spread of Neo-Confucianism to Western Europe",
+                "The spread of the Black Death (bubonic plague) along trade routes from Asia to Europe",
+                "The immediate industrialization of Central Asian economies",
+                "The complete collapse of Islam as a major world religion"
+              ],
+              "correct": 1,
+              "explanation": "The same trade networks that carried silk, spices, and ideas also carried disease. The Black Death (Yersinia pestis) traveled along Mongol-secured trade routes from Central Asia to the Middle East and Europe in the 1340s, killing an estimated one-third of Europe's population. This is a classic AP example of how increased interaction can have devastating unintended consequences.",
+              "theme": "interactions"
+            }
+          ]
+        },
+        {
+          "id": "evt-mali-empire",
+          "title": "The Mali Empire",
+          "startYear": 1235,
+          "endYear": 1460,
+          "color": "#F39C12",
+          "summary": "A West African empire that grew wealthy from control of Trans-Saharan gold and salt trade. Under Mansa Musa, Mali became one of the wealthiest and most powerful states in the world, with Timbuktu as a major center of Islamic learning.",
+          "spiceT": {
+            "social": "Hierarchical society with nobles, freemen, and enslaved people. Griots (oral historians) preserved cultural traditions. Islam spread among elites while traditional practices persisted among common people.",
+            "political": "Centralized monarchy with the Mansa as supreme ruler. Provincial governors administered distant regions. Sundiata Keita founded the empire; Mansa Musa expanded it to its greatest extent.",
+            "interactions": "Key node in Trans-Saharan trade connecting West Africa to North Africa and the Mediterranean. Mansa Musa's 1324 hajj to Mecca displayed Mali's wealth to the wider Islamic world.",
+            "cultural": "Blending of Islam with traditional West African beliefs (syncretism). Timbuktu became a center of Islamic scholarship with universities and libraries. Oral traditions remained central to cultural identity.",
+            "economic": "Controlled gold mines of Wangara and salt trade from the Sahara. Taxed trade passing through the empire. Gold-salt trade was the economic backbone.",
+            "technology": "Advanced agricultural techniques for the Niger River floodplain. Architectural innovations in mud-brick construction (Great Mosque of Djenne). Sophisticated metalworking."
+          },
+          "keyTerms": ["Mansa Musa", "Sundiata Keita", "Timbuktu", "Trans-Saharan Trade", "Gold-Salt Trade", "Griots", "Hajj of 1324"],
+          "quiz": [
+            {
+              "id": "q-mali-1",
+              "type": "mcq",
+              "question": "Mansa Musa's famous 1324 pilgrimage to Mecca is most significant to historians because it:",
+              "choices": [
+                "Proved that West Africans were unfamiliar with Islam before the 14th century",
+                "Demonstrated the immense wealth of the Mali Empire and connected it to the broader Islamic world",
+                "Led to the immediate collapse of gold prices permanently across the Mediterranean",
+                "Was the first time any African ruler had traveled outside the continent"
+              ],
+              "correct": 1,
+              "explanation": "Mansa Musa's hajj is one of the most iconic events in AP World History for this period. He traveled with an enormous entourage and distributed so much gold in Cairo that he temporarily depressed gold prices — but the lasting significance is how it put Mali on European and Islamic maps (literally — Mali appears on the 1375 Catalan Atlas) and demonstrated West Africa's integration into dar al-Islam's trade and cultural networks.",
+              "theme": "interactions"
+            },
+            {
+              "id": "q-mali-2",
+              "type": "mcq",
+              "question": "The role of griots in Mali society best illustrates which historical theme?",
+              "choices": [
+                "The dominance of written records over oral traditions in all advanced civilizations",
+                "The importance of oral traditions in preserving and transmitting cultural knowledge",
+                "The rejection of Islamic influence on West African culture",
+                "The decline of cultural practices under centralized empires"
+              ],
+              "correct": 1,
+              "explanation": "Griots were professional oral historians, storytellers, and musicians who memorized and transmitted the histories, genealogies, and cultural values of their people across generations. This demonstrates that sophisticated historical preservation did not require written records — a key AP concept that challenges Eurocentric assumptions about 'civilization' requiring literacy.",
+              "theme": "cultural"
+            }
+          ]
+        },
+        {
+          "id": "evt-song-dynasty",
+          "title": "The Song Dynasty",
+          "startYear": 960,
+          "endYear": 1279,
+          "color": "#27AE60",
+          "summary": "A Chinese dynasty known for remarkable economic and technological innovation. Despite military weakness that led to the loss of northern China (Southern Song period), the Song presided over an economic revolution with innovations in agriculture, industry, and commerce.",
+          "spiceT": {
+            "social": "Civil service examination system expanded, creating a merit-based bureaucracy. Foot-binding spread among elite women, restricting their mobility. Urban population grew significantly.",
+            "political": "Bureaucratic government staffed through the civil service exam. Scholar-officials held high status. Military was subordinate to civilian authority, contributing to vulnerability against northern invaders.",
+            "interactions": "Dominated Indian Ocean and South China Sea maritime trade. Established tributary relationships with neighboring states. Lost northern territories to Jurchen Jin dynasty, relocating capital south.",
+            "cultural": "Neo-Confucianism became the dominant philosophy, synthesizing Confucian, Buddhist, and Daoist ideas. Landscape painting flourished. Poetry and literature reached new heights.",
+            "economic": "First economy to use paper money extensively. Champa rice enabled population boom. Iron and steel production surged. Thriving maritime trade with Southeast Asia, India, and the Islamic world.",
+            "technology": "Gunpowder weapons (fire arrows, bombs), magnetic compass for navigation, movable type printing, advanced shipbuilding (junks with watertight compartments), mechanical clock."
+          },
+          "keyTerms": ["Neo-Confucianism", "Civil Service Exam", "Champa Rice", "Paper Money", "Foot-binding", "Magnetic Compass", "Gunpowder", "Movable Type"],
+          "quiz": [
+            {
+              "id": "q-song-1",
+              "type": "mcq",
+              "question": "Which of the following best explains the significance of champa rice during the Song Dynasty?",
+              "choices": [
+                "It was a luxury trade good that increased Song Dynasty profits on the Silk Roads",
+                "It was a fast-ripening rice variety that enabled multiple harvests per year, supporting population growth",
+                "It was used exclusively by the imperial court as a symbol of political authority",
+                "It replaced wheat as the primary crop in northern China"
+              ],
+              "correct": 1,
+              "explanation": "Champa rice, originally from Vietnam, was a drought-resistant, fast-maturing variety that allowed two or even three harvests per year in southern China. This agricultural innovation supported a massive population boom (China's population exceeded 100 million for the first time) and freed labor for commercial and industrial activities. This is a key AP example of how technological diffusion drives demographic and economic change.",
+              "theme": "technology"
+            },
+            {
+              "id": "q-song-2",
+              "type": "mcq",
+              "question": "The Song Dynasty's civil service examination system is best understood as:",
+              "choices": [
+                "A tool to ensure only the wealthiest families maintained political power",
+                "A merit-based system that theoretically allowed talented men from various backgrounds to enter government service",
+                "A military recruitment system designed to strengthen the army",
+                "A religious institution that promoted Buddhism throughout China"
+              ],
+              "correct": 1,
+              "explanation": "The civil service exam, based on Confucian classics, was a groundbreaking meritocratic institution. While wealthy families had advantages in education, the exam system theoretically opened government service to men of talent regardless of birth. This created a scholar-official class (literati) and is a key AP example of how states use bureaucratic systems to consolidate power and promote social mobility.",
+              "theme": "political"
+            }
+          ]
+        },
+        {
+          "id": "evt-black-death",
+          "title": "The Black Death",
+          "startYear": 1347,
+          "endYear": 1353,
+          "color": "#8E44AD",
+          "summary": "A devastating pandemic of bubonic plague that killed an estimated 30-60% of Europe's population and caused massive mortality across Asia and the Middle East. It traveled along trade routes facilitated by the Mongol Empire, demonstrating the dangers of increased global connectivity.",
+          "spiceT": {
+            "social": "Massive labor shortages empowered surviving peasants and workers. Serfdom declined in Western Europe. Persecution of minorities (Jewish communities) as scapegoats.",
+            "political": "Weakened feudal structures as labor shortages shifted power dynamics. Peasant revolts increased (English Peasants' Revolt, 1381). Strained government institutions.",
+            "interactions": "Spread along Silk Road and maritime trade routes from Central Asia. Demonstrated how interconnected trade networks could transmit disease across continents.",
+            "cultural": "Profound psychological and cultural impact. Rise of death-themed art (danse macabre). Questioning of religious authority as prayers failed to stop the plague. Flagellant movements.",
+            "economic": "Labor shortages led to higher wages for surviving workers. Trade disrupted temporarily. Long-term economic restructuring as feudal economy weakened.",
+            "technology": "Quarantine practices developed (40-day isolation in Venice). Limited medical understanding — miasma theory prevailed. No effective treatments available."
+          },
+          "keyTerms": ["Bubonic Plague", "Yersinia pestis", "Silk Road transmission", "Labor shortage", "Peasant revolts", "Flagellants", "Quarantine"],
+          "quiz": [
+            {
+              "id": "q-plague-1",
+              "type": "mcq",
+              "question": "The spread of the Black Death along Eurasian trade routes in the 14th century best supports which of the following historical arguments?",
+              "choices": [
+                "Trade networks were primarily beneficial and had few negative consequences",
+                "Increased connectivity between societies could facilitate the spread of disease as well as goods and ideas",
+                "The Mongol Empire deliberately used biological warfare to destroy European civilization",
+                "Maritime trade routes were safer than overland routes during the medieval period"
+              ],
+              "correct": 1,
+              "explanation": "This question targets the AP concept of 'unintended consequences of connectivity.' The same Silk Road and maritime networks that enabled the exchange of goods, technologies, and ideas also served as vectors for pandemic disease. The Black Death originated in Central Asia and spread westward through Mongol-connected trade routes, reaching the Mediterranean via merchant ships. This demonstrates that increased global integration carries risks alongside benefits — a theme that recurs throughout AP World History.",
+              "theme": "interactions"
+            },
+            {
+              "id": "q-plague-2",
+              "type": "mcq",
+              "question": "Which of the following was a long-term economic consequence of the Black Death in Western Europe?",
+              "choices": [
+                "Serfdom was strengthened as lords gained more control over surviving peasants",
+                "Labor shortages gave surviving workers increased bargaining power, leading to higher wages and the decline of serfdom",
+                "European economies collapsed permanently and never recovered",
+                "Trade was permanently abandoned in favor of subsistence agriculture"
+              ],
+              "correct": 1,
+              "explanation": "With roughly one-third to one-half of the population dead, labor became scarce and valuable. Surviving peasants could demand higher wages, move to find better conditions, or negotiate the end of feudal obligations. In Western Europe, this accelerated the decline of serfdom and the manorial system. In Eastern Europe, however, lords responded by tightening serfdom — a divergence the AP exam frequently tests.",
+              "theme": "economic"
+            }
+          ]
+        },
+        {
+          "id": "evt-delhi-sultanate",
+          "title": "The Delhi Sultanate",
+          "startYear": 1206,
+          "endYear": 1526,
+          "color": "#1ABC9C",
+          "summary": "A series of five Muslim dynasties that ruled over large parts of the Indian subcontinent. The Sultanate introduced Islam to South Asia on a large scale, creating a complex society where Islamic and Hindu traditions coexisted and sometimes blended.",
+          "spiceT": {
+            "social": "Complex social hierarchy blending Islamic and Hindu caste structures. Some conversion to Islam, especially among lower-caste Hindus seeking social mobility. Sufi missionaries played a key role in spreading Islam.",
+            "political": "Military sultanate with Turkish, Afghan, and Central Asian rulers. Five successive dynasties. Faced challenges of governing a predominantly Hindu population as Muslim rulers.",
+            "interactions": "Connected India more deeply to the Islamic world. Trade with the Middle East and Central Asia flourished. Faced Mongol invasions but successfully defended against them.",
+            "cultural": "Syncretism between Islamic and Hindu traditions. Development of Urdu language. Indo-Islamic architecture (Qutb Minar). Bhakti and Sufi devotional movements promoted religious tolerance.",
+            "economic": "India remained a major textile producer and trade hub. Revenues from agricultural taxation. Trade connections to the Indian Ocean network.",
+            "technology": "Introduction of new architectural techniques (true arch, dome). Persian-style irrigation systems. Adoption of Central Asian military technologies."
+          },
+          "keyTerms": ["Sultan", "Qutb Minar", "Sufi missionaries", "Bhakti movement", "Indo-Islamic culture", "Urdu language", "Hindu-Muslim coexistence"],
+          "quiz": [
+            {
+              "id": "q-delhi-1",
+              "type": "mcq",
+              "question": "The development of syncretic cultural traditions in South Asia under the Delhi Sultanate, such as the Bhakti movement, best illustrates which AP World History concept?",
+              "choices": [
+                "Conquered peoples always fully adopt the religion and culture of their rulers",
+                "Cultural blending and syncretism often result from sustained interaction between different religious and cultural traditions",
+                "Islam completely replaced Hinduism as the dominant religion in South Asia",
+                "Political conquest prevents any form of cultural exchange between societies"
+              ],
+              "correct": 1,
+              "explanation": "The Delhi Sultanate period is a prime AP example of cultural syncretism — the blending of different cultural traditions into something new. The Bhakti movement emphasized personal devotion and rejected rigid rituals from both Hindu and Islamic traditions. Sufi Islam, with its mystical emphasis, found common ground with Hindu devotional practices. This cultural blending produced new art forms, architectural styles (Indo-Islamic architecture), and even a new language (Urdu). The AP exam frequently tests the concept that sustained cross-cultural contact produces syncretism rather than complete replacement of one culture by another.",
+              "theme": "cultural"
+            },
+            {
+              "id": "q-delhi-2",
+              "type": "mcq",
+              "question": "Which of the following best explains why some lower-caste Hindus converted to Islam during the Delhi Sultanate period?",
+              "choices": [
+                "The Delhi Sultans forced all Hindus to convert to Islam through military conquest",
+                "Islam's emphasis on spiritual equality offered an escape from the rigid social hierarchy of the caste system",
+                "Lower-caste Hindus had no religious traditions of their own before Islam arrived",
+                "Conversion to Islam was required to participate in any form of economic activity"
+              ],
+              "correct": 1,
+              "explanation": "Islam's theological emphasis on the equality of all believers before God was appealing to those trapped at the bottom of the Hindu caste system. Sufi missionaries, in particular, attracted converts through their accessible, devotional approach to faith. However, conversion was rarely total or complete — many converts blended Islamic practices with existing Hindu traditions, creating syncretic forms of worship.",
+              "theme": "social"
+            }
+          ]
+        },
+        {
+          "id": "evt-crusades",
+          "title": "The Crusades",
+          "startYear": 1095,
+          "endYear": 1291,
+          "color": "#C0392B",
+          "summary": "A series of religious wars sanctioned by the Latin Church, primarily aimed at recovering the Holy Land from Islamic rule. While militarily unsuccessful in the long run, the Crusades intensified cross-cultural exchange between Christian Europe and the Islamic world, stimulating European interest in Asian luxury goods and spurring trade.",
+          "spiceT": {
+            "social": "Increased social mobility for some knights and merchants. Crusader states created mixed Christian-Muslim societies. Persecution of Jewish communities in Europe increased during Crusade fervor.",
+            "political": "Popes gained political influence by organizing Crusades. Feudal lords and kings competed for glory. Crusader states established in the Levant (Kingdom of Jerusalem) but ultimately fell to Muslim reconquest under Saladin and later the Mamluks.",
+            "interactions": "Major catalyst for cross-cultural exchange between Europe and the Islamic world. Exposed Europeans to new goods, technologies, and ideas. Increased demand for Asian luxury goods in Europe.",
+            "cultural": "Europeans encountered advanced Islamic science, medicine, and philosophy. Translations of Greek works preserved in Arabic became available to European scholars. Chivalric culture and knightly orders emerged.",
+            "economic": "Italian city-states (Venice, Genoa) profited enormously from supplying and transporting Crusaders. Opened new trade routes and commercial contacts. European demand for Eastern spices, silks, and sugar grew.",
+            "technology": "Europeans adopted Islamic military technologies (siege techniques, fortifications). Exposure to Arabic mathematics, astronomy, and medicine. Transfer of agricultural crops (sugar, citrus) to Europe."
+          },
+          "keyTerms": ["Pope Urban II", "Saladin", "Kingdom of Jerusalem", "Knights Templar", "Reconquista", "Italian city-states", "Holy Land"],
+          "quiz": [
+            {
+              "id": "q-crusades-1",
+              "type": "mcq",
+              "question": "Which of the following was the most significant long-term consequence of the Crusades for European civilization?",
+              "choices": [
+                "Permanent Christian control over Jerusalem and the Holy Land",
+                "Increased European exposure to Islamic learning and Eastern luxury goods, which stimulated trade and intellectual exchange",
+                "The complete destruction of Islamic civilization in the Middle East",
+                "The unification of all European kingdoms under papal authority"
+              ],
+              "correct": 1,
+              "explanation": "While the Crusades ultimately failed to maintain Christian control of the Holy Land, their lasting impact was cultural and economic. Europeans were exposed to advanced Islamic science, mathematics (including Arabic numerals), and medicine. They developed a taste for Eastern luxury goods — spices, silk, sugar — which stimulated long-distance trade and enriched Italian city-states like Venice and Genoa. This commercial growth helped set the stage for the Renaissance and later European maritime exploration.",
+              "theme": "interactions"
+            },
+            {
+              "id": "q-crusades-2",
+              "type": "mcq",
+              "question": "How did the Crusades economically benefit Italian city-states such as Venice and Genoa?",
+              "choices": [
+                "They received vast agricultural lands in the Holy Land as payment",
+                "They profited from transporting Crusaders and establishing trade networks with the Eastern Mediterranean",
+                "They conquered and colonized the entire Middle East",
+                "They discovered new sea routes to India bypassing the Middle East"
+              ],
+              "correct": 1,
+              "explanation": "Venice and Genoa became wealthy by providing ships, supplies, and financing for Crusading expeditions. In return, they established trading posts and commercial privileges in Crusader states and throughout the Eastern Mediterranean. This gave them direct access to the lucrative trade in Asian spices, silks, and other luxury goods, making them Europe's dominant commercial powers by the late medieval period.",
+              "theme": "economic"
+            }
+          ]
+        },
+        {
+          "id": "evt-indian-ocean-trade",
+          "title": "Indian Ocean Trade Network",
+          "startYear": 1200,
+          "endYear": 1450,
+          "color": "#2980B9",
+          "summary": "The world's largest maritime trade network during this period, connecting East Africa, the Arabian Peninsula, India, Southeast Asia, and China. Driven by monsoon winds, this trade system facilitated the exchange of goods, religions, languages, and technologies across thousands of miles without any single empire controlling it.",
+          "spiceT": {
+            "social": "Cosmopolitan port cities with diverse populations. Swahili city-states blended African and Arab cultures. Merchant diasporas (Indian, Arab, Chinese) settled across the network. Social status often tied to commercial success.",
+            "political": "No single empire controlled the trade network — it operated through mutual benefit and local port authorities. Swahili city-states, Sultanate of Gujarat, Majapahit, and Zheng He's Ming voyages all participated.",
+            "interactions": "Monsoon wind patterns determined trade seasons and routes. Connected East Africa to China. Spread of Islam to East Africa and Southeast Asia through merchant contact. Zheng He's voyages (1405-1433) demonstrated Ming China's naval power.",
+            "cultural": "Spread of Islam through trade contact (not conquest). Swahili language emerged as a trade lingua franca blending Bantu and Arabic. Buddhist and Hindu influences spread to Southeast Asia. Cosmopolitan port cultures.",
+            "economic": "Trade in luxury goods: spices (pepper, cinnamon, cloves), textiles (Indian cotton, Chinese silk), porcelain, gold, ivory, and enslaved people. Indian textiles were the most widely traded commodity. Credit instruments (bills of exchange) facilitated long-distance transactions.",
+            "technology": "Dhow sailing vessels with lateen sails. Navigational knowledge of monsoon patterns. Chinese junk ships. Astrolabe and compass navigation. Shipbuilding techniques shared across the network."
+          },
+          "keyTerms": ["Monsoon winds", "Dhow", "Swahili city-states", "Zheng He", "Diasporic communities", "Lateen sail", "Spice trade", "Kilwa", "Calicut", "Malacca"],
+          "quiz": [
+            {
+              "id": "q-iot-1",
+              "type": "mcq",
+              "question": "Which of the following best distinguishes the Indian Ocean trade network from other major trade networks of the 1200-1450 period?",
+              "choices": [
+                "It was entirely controlled by a single empire, unlike the decentralized Silk Roads",
+                "It relied on knowledge of monsoon wind patterns and operated without any single state controlling the entire network",
+                "It only traded in luxury goods and had no impact on ordinary people's lives",
+                "It was exclusively a Muslim trade network that prohibited non-Muslims from participating"
+              ],
+              "correct": 1,
+              "explanation": "The Indian Ocean trade network was distinctly decentralized — no single empire or state controlled it. Instead, it functioned through a web of port cities, merchant communities, and mutual commercial interest. Sailors relied on seasonal monsoon winds (blowing northeast in winter, southwest in summer) to navigate predictable routes. This stands in contrast to the Silk Roads, which were more dependent on large empires (like the Mongols) for security.",
+              "theme": "interactions"
+            },
+            {
+              "id": "q-iot-2",
+              "type": "mcq",
+              "question": "The Swahili city-states of East Africa are best understood as an example of:",
+              "choices": [
+                "Isolated African societies with no contact with the outside world",
+                "Cosmopolitan trading centers where African, Arab, and Indian cultures blended through commercial exchange",
+                "European colonial outposts established during the Crusades",
+                "Mongol vassal states that paid tribute to the Great Khan"
+              ],
+              "correct": 1,
+              "explanation": "Swahili city-states like Kilwa, Mombasa, and Zanzibar were vibrant commercial hubs on the East African coast. They developed a unique culture that blended Bantu African traditions with Arab, Persian, and Indian influences brought by Indian Ocean merchants. The Swahili language itself is a Bantu language with significant Arabic vocabulary. These cities exported gold, ivory, and enslaved people while importing textiles, porcelain, and other manufactured goods.",
+              "theme": "cultural"
+            }
+          ]
+        },
+        {
+          "id": "evt-aztec-empire",
+          "title": "The Aztec Empire",
+          "startYear": 1325,
+          "endYear": 1521,
+          "color": "#D35400",
+          "summary": "The Aztec (Mexica) built a powerful tribute empire centered on their island capital of Tenochtitlan in the Valley of Mexico. Through military conquest and a sophisticated tribute system, they dominated central Mexico. Their complex society featured monumental architecture, advanced agriculture (chinampas), and ritual human sacrifice.",
+          "spiceT": {
+            "social": "Highly stratified society: nobility, warriors, merchants (pochteca), commoners, and enslaved people. Human sacrifice was central to religious practice. Women had some economic rights but were subordinate in political life.",
+            "political": "Tribute empire that demanded payments from conquered peoples rather than directly governing them. Triple Alliance between Tenochtitlan, Texcoco, and Tlacopan. Tlatoani (emperor) held supreme authority.",
+            "interactions": "Extensive trade networks throughout Mesoamerica. Pochteca (merchant class) traded luxury goods over long distances. Tribute system extracted wealth from conquered peoples, breeding resentment that later aided Spanish conquest.",
+            "cultural": "Complex polytheistic religion centered on sun worship and the need for human sacrifice to sustain the cosmos. Monumental temples and pyramids. Sophisticated calendar systems. Rich literary and poetic traditions in Nahuatl language.",
+            "economic": "Agricultural surplus through chinampas (floating gardens). Cacao beans used as currency. Massive marketplace at Tlatelolco. Tribute system was the empire's economic foundation.",
+            "technology": "Chinampas (floating garden agriculture) allowed intensive farming on lake surfaces. Monumental stone architecture without metal tools. Advanced astronomical observations. Sophisticated hydraulic engineering for aqueducts and flood control."
+          },
+          "keyTerms": ["Tenochtitlan", "Chinampas", "Tribute system", "Pochteca", "Tlatoani", "Human sacrifice", "Triple Alliance", "Quetzalcoatl"],
+          "quiz": [
+            {
+              "id": "q-aztec-1",
+              "type": "mcq",
+              "question": "The Aztec chinampas system is most significant because it demonstrates:",
+              "choices": [
+                "The Aztecs' reliance on European agricultural techniques",
+                "An innovative adaptation to the environment that allowed intensive agriculture on a lake, supporting a large urban population",
+                "That the Aztecs had no need for trade because they were fully self-sufficient",
+                "The decline of agriculture in Mesoamerica before European contact"
+              ],
+              "correct": 1,
+              "explanation": "Chinampas — artificial islands built on Lake Texcoco for farming — are a key AP example of environmental adaptation. By creating these 'floating gardens,' the Aztecs could produce multiple harvests per year, supporting Tenochtitlan's population of over 200,000. This demonstrates a core AP theme: how societies innovate to adapt to and modify their environments to support growing populations.",
+              "theme": "technology"
+            },
+            {
+              "id": "q-aztec-2",
+              "type": "mcq",
+              "question": "Which of the following best explains how the Aztec tribute system contributed to the empire's eventual vulnerability?",
+              "choices": [
+                "Conquered peoples were fully integrated and loyal to the Aztec state",
+                "The tribute system bred resentment among conquered peoples, who later allied with Spanish conquistadors against the Aztecs",
+                "The tribute system made the Aztecs so wealthy they lost interest in military defense",
+                "Conquered peoples voluntarily paid tribute in exchange for religious enlightenment"
+              ],
+              "correct": 1,
+              "explanation": "The Aztec empire extracted heavy tribute from conquered peoples but did not fully integrate them politically or culturally. This created deep resentment, particularly over demands for tribute payments and sacrificial victims. When Hernán Cortés arrived in 1519, thousands of indigenous allies (especially the Tlaxcalans) joined him against the Aztecs. This is a key AP concept: empires that rely on coercion rather than integration are vulnerable to internal revolt.",
+              "theme": "political"
+            }
+          ]
+        },
+        {
+          "id": "evt-inca-empire",
+          "title": "The Inca Empire",
+          "startYear": 1438,
+          "endYear": 1533,
+          "color": "#F1C40F",
+          "summary": "The largest empire in pre-Columbian America, stretching along the Andes Mountains from modern Ecuador to Chile. The Inca built an empire without writing, money, or wheeled transport, instead using a sophisticated system of roads, bridges, quipu record-keeping, and labor taxation (mit'a) to govern millions of people across diverse environments.",
+          "spiceT": {
+            "social": "Hierarchical society with the Sapa Inca (emperor) as divine ruler. Ayllu (kinship group) was the basic social unit. Mit'a labor system required subjects to contribute labor to the state. Women produced textiles, a major form of wealth.",
+            "political": "Highly centralized empire administered from Cusco. Split into four suyus (quarters). Used a combination of military conquest and diplomatic marriage alliances. Conquered elites' children educated in Cusco to ensure loyalty.",
+            "interactions": "Integrated diverse peoples across extreme environments (coast, mountains, jungle). Road system (Qhapaq Ñan) facilitated communication and military movement. Limited contact outside the Americas.",
+            "cultural": "Sun worship with the Sapa Inca as the son of Inti (sun god). Quechua language spread as a unifying force. Ancestor veneration. Elaborate textile traditions served as markers of identity and status.",
+            "economic": "No markets or currency — the economy was centrally planned through redistribution. Mit'a labor tax funded public works. Surplus stored in state warehouses for redistribution during famines. Vertical archipelago system exploited multiple ecological zones.",
+            "technology": "Quipu (knotted string records) for record-keeping. Terrace farming on steep mountain slopes. Suspension bridges. Sophisticated stone construction without mortar (Machu Picchu). Freeze-drying food preservation (chuño)."
+          },
+          "keyTerms": ["Sapa Inca", "Mit'a", "Quipu", "Cusco", "Qhapaq Ñan", "Ayllu", "Terrace farming", "Vertical archipelago"],
+          "quiz": [
+            {
+              "id": "q-inca-1",
+              "type": "mcq",
+              "question": "The Inca mit'a system is best compared to which of the following labor systems?",
+              "choices": [
+                "Chattel slavery in the Atlantic world, where people were permanently owned as property",
+                "Corvée labor systems in other civilizations, where subjects owed labor service to the state",
+                "Wage labor in industrial factories, where workers were paid for their time",
+                "Indentured servitude, where workers served for a fixed period to pay off debts"
+              ],
+              "correct": 1,
+              "explanation": "The mit'a was a labor tax requiring Inca subjects to contribute a set period of labor to state projects — road building, military service, agricultural work, or mining. This is most comparable to corvée labor systems found in other civilizations (such as in feudal Europe or ancient Egypt). Unlike slavery, mit'a laborers retained their personal freedom and community ties. The AP exam frequently asks students to compare labor systems across civilizations.",
+              "theme": "economic"
+            },
+            {
+              "id": "q-inca-2",
+              "type": "mcq",
+              "question": "The Inca quipu system challenges which common historical assumption?",
+              "choices": [
+                "That all advanced civilizations used metal tools for construction",
+                "That complex record-keeping and administration require a written script",
+                "That all empires were connected to global trade networks",
+                "That religious belief was universal in pre-modern societies"
+              ],
+              "correct": 1,
+              "explanation": "The Inca governed millions of people across thousands of miles without a writing system — instead using quipus (knotted strings) to record numerical data, census information, and possibly narrative histories. This demonstrates that complex state administration does not require alphabetic or logographic writing, challenging assumptions rooted in studying literate civilizations. The AP exam uses the Inca as a key example of alternative paths to complexity.",
+              "theme": "technology"
+            }
+          ]
+        },
+        {
+          "id": "evt-european-feudalism",
+          "title": "European Feudalism & the Medieval Church",
+          "startYear": 1000,
+          "endYear": 1450,
+          "color": "#7F8C8D",
+          "summary": "Medieval Europe was characterized by a decentralized political system (feudalism) where lords granted land (fiefs) to vassals in exchange for military service. The Roman Catholic Church was the most powerful institution, providing spiritual authority, education, and cultural unity across a politically fragmented continent.",
+          "spiceT": {
+            "social": "Rigid three-estate system: those who pray (clergy), those who fight (nobility), those who work (peasants/serfs). Serfs were bound to the land. Women's roles defined by Church teachings. Guilds organized urban artisans.",
+            "political": "Decentralized feudal system with weak kings and powerful local lords. Feudal contracts bound lords and vassals. The Church wielded enormous political influence — popes could excommunicate kings. Magna Carta (1215) limited royal authority in England.",
+            "interactions": "Crusades connected Europe to the Islamic world. Viking trade routes linked Scandinavia to Byzantium and the Islamic world. Hanseatic League dominated Northern European trade.",
+            "cultural": "The Catholic Church was the center of cultural life — monasteries preserved knowledge, built schools, and produced art. Gothic cathedrals as expressions of faith and civic pride. Scholasticism attempted to reconcile faith and reason. Universities founded (Bologna, Oxford, Paris).",
+            "economic": "Manorial economy based on subsistence agriculture. Serfdom tied peasants to the land. Growth of towns and trade fairs. Banking emerged in Italian city-states. Guilds regulated craft production.",
+            "technology": "Heavy plow and horse collar improved agriculture. Three-field crop rotation increased yields. Water mills and windmills. Gothic architectural innovations (flying buttresses, pointed arches)."
+          },
+          "keyTerms": ["Feudalism", "Manorialism", "Serfdom", "Catholic Church", "Magna Carta", "Guilds", "Three-estate system", "Gothic architecture", "Scholasticism"],
+          "quiz": [
+            {
+              "id": "q-feudal-1",
+              "type": "mcq",
+              "question": "Which of the following best describes the relationship between political and religious authority in medieval Europe?",
+              "choices": [
+                "The Church had no influence on political matters and focused only on spiritual affairs",
+                "The Catholic Church wielded significant political power, with popes able to challenge kings and influence governance across Europe",
+                "European kings held absolute power with no checks on their authority",
+                "Political and religious authority were completely unified under a single ruler"
+              ],
+              "correct": 1,
+              "explanation": "In medieval Europe, the Catholic Church was not just a religious institution but a major political actor. Popes could excommunicate rulers, place kingdoms under interdict, and call Crusades. Conflicts between popes and monarchs (such as the Investiture Controversy) demonstrated the tension between secular and religious authority. The AP exam frequently tests this relationship as an example of how religious institutions can serve as checks on political power.",
+              "theme": "political"
+            }
+          ]
+        },
+        {
+          "id": "evt-byzantine-empire",
+          "title": "The Byzantine Empire",
+          "startYear": 330,
+          "endYear": 1453,
+          "color": "#6C3483",
+          "summary": "The eastern continuation of the Roman Empire, centered on Constantinople. The Byzantine Empire preserved Greco-Roman learning, developed Eastern Orthodox Christianity, and served as a crucial cultural bridge between the classical world and medieval Europe. It finally fell to the Ottoman Turks in 1453.",
+          "spiceT": {
+            "social": "Highly urban society centered on Constantinople, one of the world's largest cities. Greek-speaking elite. Complex bureaucracy with social mobility through military or civil service. Women could own property and run businesses.",
+            "political": "Centralized autocracy under the emperor (basileus), who held both political and religious authority (caesaropapism). Justinian's Code preserved and organized Roman law. Sophisticated diplomatic traditions.",
+            "interactions": "Major node in east-west trade connecting Europe to Asia. Cultural influence spread to Eastern Europe and Russia through Orthodox Christianity and the Cyrillic alphabet. Frequent wars with Islamic caliphates and later the Seljuk and Ottoman Turks.",
+            "cultural": "Preserved classical Greek and Roman texts that later fueled the Renaissance. Developed distinctive Orthodox Christian theology and art (icons, mosaics). Cyrillic alphabet created by Byzantine missionaries for Slavic peoples.",
+            "economic": "Constantinople was a major commercial hub controlling trade between Europe and Asia. Silk production was a state monopoly. Strong gold currency (bezant) was trusted across the Mediterranean.",
+            "technology": "Greek fire (incendiary weapon) for naval warfare. Advanced architectural engineering (Hagia Sophia's dome). Sophisticated irrigation and water management. Preserved and built upon Roman engineering."
+          },
+          "keyTerms": ["Constantinople", "Justinian's Code", "Eastern Orthodox", "Hagia Sophia", "Greek fire", "Caesaropapism", "Cyrillic alphabet", "Icons"],
+          "quiz": [
+            {
+              "id": "q-byzantine-1",
+              "type": "mcq",
+              "question": "The Byzantine Empire's most significant cultural legacy was:",
+              "choices": [
+                "The invention of gunpowder and its spread to Western Europe",
+                "The preservation and transmission of Greco-Roman knowledge, which later contributed to the European Renaissance",
+                "The establishment of democracy as the standard form of government",
+                "The complete Christianization of all of Asia"
+              ],
+              "correct": 1,
+              "explanation": "Byzantine scholars preserved classical Greek texts — philosophy, science, literature — that had been largely lost in Western Europe after the fall of Rome. When Constantinople fell in 1453, many scholars fled to Italy carrying these manuscripts, directly contributing to the Italian Renaissance. Additionally, Byzantine missionaries spread Orthodox Christianity and literacy (Cyrillic alphabet) to Eastern Europe, shaping Russian and Slavic civilizations.",
+              "theme": "cultural"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "era-1450-1750",
+      "title": "Maritime Empires & Global Connections",
+      "startYear": 1450,
+      "endYear": 1750,
+      "color": "#E67E22",
+      "summary": "The age of European maritime exploration, the Columbian Exchange, and the rise of global trade networks. This era saw the emergence of powerful land-based empires (Ottoman, Safavid, Mughal, Qing) alongside European colonial expansion into the Americas, Africa, and Asia.",
+      "spiceT": {
+        "social": "Development of racial hierarchies and caste systems in the Americas. Atlantic slave trade transformed societies on three continents. Coerced labor systems (encomienda, mita, chattel slavery).",
+        "political": "Rise of absolutist monarchies in Europe. Gunpowder empires in Asia (Ottoman, Safavid, Mughal). European colonial administrations in the Americas. Joint-stock companies as political actors.",
+        "interactions": "Columbian Exchange connected the Eastern and Western hemispheres. Atlantic slave trade. Maritime trade routes overtook overland Silk Roads in importance.",
+        "cultural": "Renaissance, Reformation, and Enlightenment in Europe. Spread of Christianity to the Americas. Syncretic religions emerged in contact zones. Print culture expanded.",
+        "economic": "Mercantilism dominated European economic thought. Silver trade linked the Americas, Europe, and China. Plantation economies. Rise of capitalism and banking.",
+        "technology": "Improved ship designs (caravel, carrack). Navigation tools. Gunpowder weapons became decisive. Printing press revolutionized information spread."
+      },
+      "keyTerms": ["Columbian Exchange", "Atlantic Slave Trade", "Mercantilism", "Gunpowder Empires", "Joint-Stock Companies", "Encomienda", "Protestant Reformation", "Silver Trade"],
+      "events": [
+        {
+          "id": "evt-columbian-exchange",
+          "title": "The Columbian Exchange",
+          "startYear": 1492,
+          "endYear": 1750,
+          "color": "#E74C3C",
+          "summary": "The massive transfer of plants, animals, diseases, people, and ideas between the Eastern and Western Hemispheres following Columbus's 1492 voyage. This biological and cultural exchange fundamentally transformed ecosystems, diets, populations, and economies worldwide.",
+          "spiceT": {
+            "social": "Indigenous populations devastated by Old World diseases (smallpox, measles). African enslaved labor replaced decimated indigenous workforces. New social hierarchies based on race (casta system).",
+            "political": "European colonial powers established control over vast territories. Indigenous political structures were destroyed or subordinated. Competition among European powers for colonial dominance.",
+            "interactions": "First sustained contact between Eastern and Western Hemispheres. Biological exchange transformed both hemispheres permanently. Created truly global networks of exchange.",
+            "cultural": "Forced conversion of indigenous peoples to Christianity. Syncretic religious practices emerged. Cultural destruction alongside cultural blending in contact zones.",
+            "economic": "New World crops (potatoes, maize, tomatoes) revolutionized Old World agriculture and diets. Sugar plantations drove demand for enslaved labor. Silver from the Americas fueled global trade.",
+            "technology": "European military technology (guns, steel, horses) gave decisive advantages. Indigenous agricultural knowledge adopted by colonizers. Maritime navigation technology enabled trans-oceanic voyages."
+          },
+          "keyTerms": ["Smallpox", "Potatoes", "Maize", "Sugar plantations", "Casta system", "Biological exchange", "Demographic collapse"],
+          "quiz": [
+            {
+              "id": "q-columbian-1",
+              "type": "mcq",
+              "question": "Which of the following had the most devastating demographic impact on indigenous populations in the Americas after 1492?",
+              "choices": [
+                "European military conquest using superior weapons",
+                "The introduction of Old World diseases like smallpox, to which indigenous peoples had no immunity",
+                "Forced migration of indigenous peoples to Europe",
+                "The introduction of New World crops that disrupted traditional agriculture"
+              ],
+              "correct": 1,
+              "explanation": "While European military conquest certainly contributed to indigenous population decline, diseases like smallpox, measles, and influenza were by far the most devastating factor, killing an estimated 90% of indigenous populations in some regions. Indigenous peoples had no prior exposure to these pathogens and therefore lacked immunological defenses. This is a cornerstone AP concept — the unintended biological consequences of the Columbian Exchange were far more destructive than intentional military action.",
+              "theme": "interactions"
+            },
+            {
+              "id": "q-columbian-2",
+              "type": "mcq",
+              "question": "Which of the following best illustrates the global economic impact of the Columbian Exchange?",
+              "choices": [
+                "European nations stopped trading with Asia entirely after 1492",
+                "New World crops like potatoes and maize fueled population growth in Europe, Africa, and Asia",
+                "Indigenous American economies prospered under European trade partnerships",
+                "The Columbian Exchange had minimal economic impact outside the Americas"
+              ],
+              "correct": 1,
+              "explanation": "New World crops revolutionized agriculture worldwide. Potatoes became a staple in Northern Europe, supporting population growth. Maize spread to Africa and China. Sweet potatoes enabled population increases in China. Meanwhile, Old World crops (wheat, sugar, coffee) transformed American landscapes. This global redistribution of agricultural resources is one of the most significant economic consequences of 1492.",
+              "theme": "economic"
+            }
+          ]
+        },
+        {
+          "id": "evt-atlantic-slave-trade",
+          "title": "The Atlantic Slave Trade",
+          "startYear": 1500,
+          "endYear": 1800,
+          "color": "#2C3E50",
+          "summary": "The forced transportation of an estimated 12.5 million enslaved Africans across the Atlantic to the Americas over four centuries. The slave trade was a central component of the triangular trade system linking Europe, Africa, and the Americas, and it fundamentally transformed societies on all three continents.",
+          "spiceT": {
+            "social": "Racial hierarchies hardened as slavery became associated with African descent. Enslaved people maintained cultural traditions and created new ones (music, religion, language). Family structures torn apart. Resistance was constant — from daily acts of defiance to major revolts.",
+            "political": "European nations competed for control of the slave trade. African kingdoms (Dahomey, Asante) expanded through involvement in the trade. Plantation colonies became politically powerful. Abolitionist movements eventually emerged.",
+            "interactions": "Triangular trade connected Europe, Africa, and the Americas. Middle Passage was notoriously brutal — mortality rates of 15-20%. African diaspora spread cultural influences throughout the Americas.",
+            "cultural": "Syncretic religions emerged (Vodou, Candomblé, Santería) blending African traditions with Christianity. African musical traditions influenced American music. Creole languages developed in contact zones.",
+            "economic": "Plantation economies (sugar, tobacco, cotton) depended entirely on enslaved labor. Slave trade was enormously profitable for European merchants. African economies distorted — some kingdoms grew wealthy, but overall population and economic development suffered.",
+            "technology": "European shipbuilding enabled the Middle Passage. Sugar processing technology drove demand for labor. African metallurgical and agricultural knowledge transferred to the Americas."
+          },
+          "keyTerms": ["Middle Passage", "Triangular trade", "Plantation system", "Chattel slavery", "Maroons", "Asante", "Abolitionism", "Creole cultures"],
+          "quiz": [
+            {
+              "id": "q-slave-1",
+              "type": "mcq",
+              "question": "Which of the following best describes the impact of the Atlantic slave trade on African societies?",
+              "choices": [
+                "African societies were completely unaffected because the trade was voluntary",
+                "Some African kingdoms expanded by participating in the trade, but overall the trade devastated populations, distorted economies, and increased internal warfare",
+                "All African kingdoms universally opposed the slave trade from its beginning",
+                "The slave trade brought economic modernization and industrialization to Africa"
+              ],
+              "correct": 1,
+              "explanation": "The impact on Africa was complex and devastating. Some coastal kingdoms (Dahomey, Asante, Kongo at times) expanded their power by capturing and selling enslaved people from rival groups. However, the overall impact was catastrophic — millions of young, productive people were removed from the continent, economies became distorted toward slave-raiding rather than productive development, and warfare intensified. The AP exam emphasizes this complexity rather than a simple narrative.",
+              "theme": "interactions"
+            },
+            {
+              "id": "q-slave-2",
+              "type": "mcq",
+              "question": "The development of syncretic religions like Vodou and Candomblé in the Americas is best explained by:",
+              "choices": [
+                "European missionaries successfully converting all enslaved Africans to Christianity",
+                "Enslaved Africans blending their traditional spiritual practices with Christianity as a form of cultural survival and resistance",
+                "The complete disappearance of all African cultural traditions in the Americas",
+                "Indigenous American religions being adopted by enslaved Africans"
+              ],
+              "correct": 1,
+              "explanation": "Despite the brutality of slavery, enslaved Africans maintained and adapted their cultural and spiritual traditions. When forced to adopt Christianity, many blended Christian saints and practices with African deities and rituals, creating syncretic religions like Vodou (Haiti), Candomblé (Brazil), and Santería (Cuba). This cultural resilience is a key AP theme — how subordinated peoples preserve identity through adaptation rather than simple acceptance or rejection of dominant cultures.",
+              "theme": "cultural"
+            }
+          ]
+        },
+        {
+          "id": "evt-ottoman-empire",
+          "title": "The Ottoman Empire",
+          "startYear": 1299,
+          "endYear": 1750,
+          "color": "#C0392B",
+          "summary": "One of the most powerful and long-lasting empires in world history, the Ottoman Empire at its peak controlled Southeast Europe, Western Asia, and North Africa. A quintessential 'gunpowder empire,' it combined military innovation with sophisticated bureaucracy, religious tolerance (for its time), and cultural patronage.",
+          "spiceT": {
+            "social": "Millet system granted religious autonomy to non-Muslim communities (Christians, Jews). Devshirme system recruited Christian boys for elite military (Janissaries) and government. Complex harem politics influenced succession.",
+            "political": "Sultan held absolute authority. Grand Vizier led the government. Devshirme system created a loyal slave-based elite. Suleiman the Magnificent (r. 1520-1566) presided over the empire's golden age and codified laws.",
+            "interactions": "Conquered Constantinople (1453), ending the Byzantine Empire. Controlled key trade routes between Europe and Asia. Major rival to Safavid Persia and Habsburg Austria. Participated in Indian Ocean trade.",
+            "cultural": "Blended Islamic, Byzantine, and Persian cultural traditions. Magnificent mosque architecture (Sinan's Süleymaniye Mosque). Calligraphy, miniature painting, and poetry flourished. Spread Islam into Southeast Europe.",
+            "economic": "Controlled lucrative trade routes between Europe and Asia. Taxed commerce through strategic choke points (Bosporus, Red Sea). Diverse agricultural base. State regulation of guilds and markets.",
+            "technology": "Early adoption and mastery of gunpowder weapons (cannons breached Constantinople's walls). Advanced siege technology. Sophisticated architectural engineering. Naval power in the Mediterranean."
+          },
+          "keyTerms": ["Sultan", "Suleiman the Magnificent", "Janissaries", "Devshirme", "Millet system", "Constantinople 1453", "Gunpowder empire", "Grand Vizier"],
+          "quiz": [
+            {
+              "id": "q-ottoman-1",
+              "type": "mcq",
+              "question": "The Ottoman millet system is best understood as an example of:",
+              "choices": [
+                "Forced conversion of all non-Muslim subjects to Islam",
+                "A system of religious tolerance that allowed non-Muslim communities to govern their own internal affairs under Ottoman authority",
+                "Complete political equality between Muslims and non-Muslims in the empire",
+                "The segregation and persecution of all religious minorities"
+              ],
+              "correct": 1,
+              "explanation": "The millet system allowed non-Muslim communities (Greek Orthodox Christians, Armenian Christians, Jews) to maintain their own religious leaders, courts, and schools as long as they paid a special tax (jizya) and accepted Ottoman political authority. While not equality in the modern sense, it was relatively tolerant for its era and helps explain how the Ottomans governed such a religiously diverse empire for centuries. The AP exam uses this as an example of how empires manage diversity.",
+              "theme": "social"
+            },
+            {
+              "id": "q-ottoman-2",
+              "type": "mcq",
+              "question": "The devshirme system served the Ottoman state primarily by:",
+              "choices": [
+                "Providing enslaved laborers for agricultural plantations",
+                "Creating a loyal military and administrative elite (Janissaries) recruited from Christian subjects, whose loyalty was to the sultan rather than to noble families",
+                "Converting all Christians in the empire to Islam through forced education",
+                "Establishing a democratic voting system for Ottoman citizens"
+              ],
+              "correct": 1,
+              "explanation": "The devshirme ('collection') took young Christian boys, converted them to Islam, and trained them for elite military service (Janissaries) or government administration. Because these men were separated from their families and owed their status entirely to the sultan, they formed a loyal power base independent of the traditional Turkish aristocracy. This ingenious system helped the sultan maintain centralized control — a key AP theme about how rulers consolidate power.",
+              "theme": "political"
+            }
+          ]
+        },
+        {
+          "id": "evt-mughal-empire",
+          "title": "The Mughal Empire",
+          "startYear": 1526,
+          "endYear": 1750,
+          "color": "#F39C12",
+          "summary": "A Muslim dynasty of Central Asian origin that ruled most of the Indian subcontinent. The Mughals created one of the world's wealthiest empires, known for religious tolerance under Akbar, architectural masterpieces like the Taj Mahal, and a sophisticated synthesis of Hindu and Islamic cultures.",
+          "spiceT": {
+            "social": "Hindu majority ruled by Muslim minority. Akbar promoted tolerance and abolished the jizya tax on non-Muslims. Aurangzeb reversed these policies, reimposing the jizya and destroying Hindu temples, leading to unrest.",
+            "political": "Centralized administration with the emperor at the top. Mansabdar system assigned military and administrative ranks. Akbar's policy of religious inclusion stabilized the empire; Aurangzeb's intolerance weakened it.",
+            "interactions": "Major participant in Indian Ocean trade. European trading companies (Portuguese, Dutch, British, French) established coastal trading posts. Overland trade connections to Central Asia and Persia.",
+            "cultural": "Remarkable cultural synthesis of Hindu and Islamic traditions. Mughal miniature painting combined Persian and Indian styles. Architecture blended Islamic, Persian, and Indian elements (Taj Mahal). Urdu language developed as a fusion.",
+            "economic": "India was one of the world's largest economies. Major exporter of textiles (cotton, silk), spices, and indigo. Silver from the Americas flowed into India to pay for goods. Sophisticated banking and credit systems.",
+            "technology": "Advanced textile production techniques (cotton weaving, dyeing). Mughal architecture pioneered innovative engineering. Sophisticated water management and garden design. Military use of gunpowder weapons."
+          },
+          "keyTerms": ["Akbar", "Aurangzeb", "Taj Mahal", "Mansabdar system", "Jizya", "Din-i-Ilahi", "Mughal miniatures", "Religious syncretism"],
+          "quiz": [
+            {
+              "id": "q-mughal-1",
+              "type": "mcq",
+              "question": "The contrasting religious policies of Akbar and Aurangzeb best illustrate which AP World History concept?",
+              "choices": [
+                "All Muslim rulers in India pursued identical religious policies",
+                "The effectiveness of imperial rule often depended on how rulers managed religious and ethnic diversity within their empires",
+                "Religious tolerance always leads to political stability in all circumstances",
+                "The Mughal Empire had no significant religious diversity to manage"
+              ],
+              "correct": 1,
+              "explanation": "Akbar's inclusive policies — abolishing the jizya, employing Hindu Rajput warriors, and even creating a syncretic faith (Din-i-Ilahi) — helped stabilize and expand the empire by winning the loyalty of his Hindu majority. Aurangzeb's reversal — reimposing the jizya and destroying Hindu temples — provoked rebellions (Maratha, Sikh, Rajput) that fatally weakened the empire. The AP exam uses this comparison to illustrate how managing diversity is a critical challenge for multi-ethnic empires.",
+              "theme": "political"
+            }
+          ]
+        },
+        {
+          "id": "evt-protestant-reformation",
+          "title": "The Protestant Reformation",
+          "startYear": 1517,
+          "endYear": 1648,
+          "color": "#8E44AD",
+          "summary": "A religious revolution that shattered the unity of Western Christianity. Beginning with Martin Luther's 95 Theses in 1517, the Reformation challenged papal authority and Catholic doctrine, leading to the creation of Protestant churches, devastating religious wars, and the Catholic Counter-Reformation.",
+          "spiceT": {
+            "social": "Challenged the authority of the clergy and promoted individual Bible reading. Literacy increased as Bibles were translated into vernacular languages. Religious violence and persecution (witch trials, Inquisition). Women's roles debated but largely unchanged.",
+            "political": "German princes used Protestantism to assert independence from the Holy Roman Emperor and the Pope. Wars of Religion devastated Europe (French Wars of Religion, Thirty Years' War). Peace of Westphalia (1648) established principles of state sovereignty.",
+            "interactions": "Religious competition fueled European colonization as Catholic and Protestant nations sought to spread their faiths. Jesuits became leading missionaries worldwide. Religious refugees emigrated to the Americas.",
+            "cultural": "Emphasis on individual faith and Bible reading. Printing press enabled rapid spread of Protestant ideas. Catholic Counter-Reformation produced Baroque art and architecture. Vernacular languages gained status over Latin.",
+            "economic": "Seizure of Church properties enriched Protestant states. 'Protestant work ethic' has been debated as a factor in capitalism's development. Disruption of traditional Church economic activities (indulgences, tithes).",
+            "technology": "The printing press was essential — Luther's ideas spread with unprecedented speed through printed pamphlets. Vernacular Bibles required new printing techniques. The Reformation would have been impossible without Gutenberg's invention."
+          },
+          "keyTerms": ["Martin Luther", "95 Theses", "John Calvin", "Henry VIII", "Counter-Reformation", "Jesuits", "Peace of Westphalia", "Printing press", "Predestination"],
+          "quiz": [
+            {
+              "id": "q-reformation-1",
+              "type": "mcq",
+              "question": "The printing press's role in the Protestant Reformation best demonstrates which historical concept?",
+              "choices": [
+                "Technology has no significant impact on the spread of ideas",
+                "New communication technologies can accelerate the spread of ideas and challenge established authorities",
+                "The Catholic Church successfully prevented the spread of Protestant ideas through censorship",
+                "The Reformation would have occurred at the same pace without the printing press"
+              ],
+              "correct": 1,
+              "explanation": "The printing press, invented by Gutenberg around 1440, was the critical technology that made the Reformation possible. Luther's 95 Theses and subsequent writings were printed in thousands of copies and distributed across Europe within weeks — something impossible in the age of hand-copied manuscripts. This is a key AP example of how technological innovation can disrupt existing power structures and accelerate social change.",
+              "theme": "technology"
+            }
+          ]
+        },
+        {
+          "id": "evt-silver-trade",
+          "title": "The Global Silver Trade",
+          "startYear": 1545,
+          "endYear": 1750,
+          "color": "#BDC3C7",
+          "summary": "Silver mined in Spanish America (Potosí, Zacatecas) and Japan flowed into global trade networks, creating the first truly worldwide economy. Most silver ultimately ended up in China, which demanded it for its tax system and monetary economy, linking the Americas, Europe, Africa, and Asia in a single commercial system.",
+          "spiceT": {
+            "social": "Devastating conditions for indigenous and enslaved workers in silver mines (Potosí used mit'a forced labor). Manila galleon trade created diverse communities in port cities. Spanish colonial society stratified by race (casta system).",
+            "political": "Spanish Empire became Europe's wealthiest power but suffered from inflation. Ming Dynasty required silver for tax payments, creating massive global demand. Manila became a crucial trading hub connecting the Americas and Asia.",
+            "interactions": "First truly global trade network — silver from the Americas flowed to Europe and then to Asia. Manila galleon trade linked Acapulco to Manila directly. Spanish, Portuguese, Dutch, and Chinese merchants all participated.",
+            "cultural": "Cross-cultural exchange in port cities like Manila and Macau. Chinese goods (silk, porcelain) reached the Americas. European and American goods reached Asia. Mercantile cultures blended in trade hubs.",
+            "economic": "Silver was the lubricant of global trade. Price revolution in Europe (inflation from silver influx). China's silver-based economy made it the ultimate destination for global silver flows. Spain's wealth paradoxically led to economic decline (Dutch Disease).",
+            "technology": "Mercury amalgamation process improved silver extraction efficiency. Advances in mining technology at Potosí. Manila galleon navigation required sophisticated Pacific Ocean sailing knowledge."
+          },
+          "keyTerms": ["Potosí", "Manila galleons", "Price revolution", "Ming silver demand", "Zacatecas", "Mercury amalgamation", "Casta system", "Global trade network"],
+          "quiz": [
+            {
+              "id": "q-silver-1",
+              "type": "mcq",
+              "question": "The flow of silver from the Americas to China via European and Asian trade networks best illustrates which AP World History concept?",
+              "choices": [
+                "Global trade was limited to regional networks with no intercontinental connections",
+                "The emergence of a truly global economy linking the Americas, Europe, Africa, and Asia through commodity flows",
+                "China had no interest in trade with the outside world during this period",
+                "Silver had no economic value outside of Europe"
+              ],
+              "correct": 1,
+              "explanation": "The silver trade is the AP exam's prime example of early globalization. Silver mined by forced indigenous labor in Potosí (Bolivia) and Zacatecas (Mexico) flowed to Spain, then to China — which demanded silver for its tax system. The Manila galleon trade created a direct Pacific link between the Americas and Asia. For the first time, all major world regions were connected in a single commercial network. This is the foundation of the modern global economy.",
+              "theme": "economic"
+            }
+          ]
+        },
+        {
+          "id": "evt-qing-dynasty",
+          "title": "The Qing Dynasty",
+          "startYear": 1644,
+          "endYear": 1800,
+          "color": "#1ABC9C",
+          "summary": "China's last imperial dynasty, established by the Manchu people who conquered the Ming Dynasty. The Qing expanded China to its greatest territorial extent, presided over a period of immense prosperity, and navigated the challenge of ruling as an ethnic minority over a vast Han Chinese majority.",
+          "spiceT": {
+            "social": "Manchu rulers maintained distinct ethnic identity (queue hairstyle required for Chinese men). Han Chinese dominated civilian government. Population nearly tripled due to New World crops (maize, sweet potatoes). Continued gender inequality and foot-binding.",
+            "political": "Manchu emperors (Kangxi, Qianlong) were effective rulers who expanded territory enormously (Tibet, Xinjiang, Mongolia, Taiwan). Maintained Ming bureaucratic structures and Confucian examination system. Bannermen system organized Manchu military-administrative units.",
+            "interactions": "Expanded territory through conquest of Central Asian peoples. Limited European trade to Canton (guangzhou) system. Rejected British diplomatic overtures (Macartney Mission, 1793). Tributary relationships with neighboring states.",
+            "cultural": "Patronized Chinese arts and literature while maintaining Manchu identity. Kangxi and Qianlong were notable patrons of scholarship. Large-scale literary projects (Complete Library of the Four Treasuries). Confucian orthodoxy reinforced.",
+            "economic": "One of the world's largest and most productive economies. Major importer of silver. Tea, silk, and porcelain exports to Europe. Population growth strained resources by the late 1700s. Canton system regulated foreign trade.",
+            "technology": "Continued agricultural innovations. Sophisticated porcelain production for export. Advanced textile manufacturing. Military technology gradually fell behind European developments."
+          },
+          "keyTerms": ["Kangxi", "Qianlong", "Manchu", "Queue order", "Canton system", "Bannermen", "Macartney Mission", "Tributary system"],
+          "quiz": [
+            {
+              "id": "q-qing-1",
+              "type": "mcq",
+              "question": "The Qing Dynasty's Canton system for managing European trade best reflects:",
+              "choices": [
+                "China's eagerness to adopt European commercial practices",
+                "An attempt to control and limit foreign influence while still profiting from trade",
+                "The complete absence of any European interest in Chinese goods",
+                "China's military weakness in the face of European naval power"
+              ],
+              "correct": 1,
+              "explanation": "The Canton system restricted all European trade to the single port of Canton (Guangzhou) and required European merchants to deal through licensed Chinese merchant guilds (Cohong). This allowed the Qing to profit from trade while limiting foreign influence and contact. It reflects a broader pattern of Chinese confidence in their civilization's superiority and desire to manage relations with outsiders on their own terms.",
+              "theme": "interactions"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "era-1750-1900",
+      "title": "Industrialization & Global Integration",
+      "startYear": 1750,
+      "endYear": 1900,
+      "color": "#9B59B6",
+      "summary": "An era of revolutionary change driven by industrialization, political revolutions, and imperialism. The Industrial Revolution transformed economies and societies, while Enlightenment ideals fueled revolutions in America, France, Haiti, and Latin America. European imperialism expanded to dominate much of Africa and Asia.",
+      "spiceT": {
+        "social": "Rise of the middle class and industrial working class. Urbanization and its challenges. Abolition movements and women's suffrage. Social Darwinism used to justify imperialism.",
+        "political": "Age of Revolutions (American, French, Haitian, Latin American). Rise of nationalism. Constitutional governments and democracies. European imperialism and the 'Scramble for Africa.'",
+        "interactions": "New imperialism brought European control to Africa and Asia. Global migration patterns shifted. Resistance movements emerged against colonial rule.",
+        "cultural": "Enlightenment ideals of liberty, equality, and natural rights. Romanticism as a reaction to industrialization. Missionary activity accompanied imperialism. Reform movements.",
+        "economic": "Industrial capitalism and factory system. Free trade ideology vs. mercantilism. Global commodity chains. Economic imperialism and unequal trade relationships.",
+        "technology": "Steam engine, railroads, steamships, telegraph. Interchangeable parts and factory production. New military technologies (rifles, machine guns). Medical advances."
+      },
+      "keyTerms": ["Industrial Revolution", "Enlightenment", "Nationalism", "Imperialism", "Abolition", "Scramble for Africa", "Meiji Restoration", "Opium Wars"],
+      "events": [
+        {
+          "id": "evt-industrial-revolution",
+          "title": "The Industrial Revolution",
+          "startYear": 1760,
+          "endYear": 1840,
+          "color": "#34495E",
+          "summary": "Beginning in Britain, the Industrial Revolution transformed manufacturing from hand production to machine-based processes. Powered by coal and steam, it revolutionized textile production, iron manufacturing, and transportation, fundamentally reshaping economies, societies, and daily life worldwide.",
+          "spiceT": {
+            "social": "Emergence of industrial working class and new middle class. Child labor, dangerous working conditions. Urbanization created overcrowded cities. Labor unions formed.",
+            "political": "Reform movements pushed for workers' rights, suffrage expansion. Government regulation of industry emerged. Industrialized nations gained geopolitical power.",
+            "interactions": "Britain's industrial head start gave it global economic and military dominance. Industrialization spread to continental Europe, the US, and eventually Japan.",
+            "cultural": "Romantic movement reacted against industrialization's perceived dehumanization. New concepts of time (factory clock vs. agricultural seasons). Literature depicted industrial conditions (Dickens).",
+            "economic": "Factory system replaced cottage industry. Capitalism and wage labor. Mass production lowered costs. Global markets for manufactured goods. Wealth inequality grew.",
+            "technology": "Steam engine (Watt), spinning jenny, water frame, power loom, Bessemer steel process. Railways and steamships revolutionized transportation."
+          },
+          "keyTerms": ["Steam engine", "Factory system", "Urbanization", "Coal", "Textile industry", "Cottage industry", "Luddites", "Labor unions"],
+          "quiz": [
+            {
+              "id": "q-industrial-1",
+              "type": "mcq",
+              "question": "Which of the following best explains why the Industrial Revolution began in Britain rather than in other parts of the world?",
+              "choices": [
+                "Britain had a unique combination of coal and iron deposits, capital from colonial trade, available labor, and a culture of innovation supported by patent laws",
+                "Britain was the only country with access to steam power technology",
+                "Other countries had no interest in industrialization during the 18th century",
+                "Britain's large population provided cheap labor unavailable elsewhere"
+              ],
+              "correct": 0,
+              "explanation": "The AP exam emphasizes that Britain's industrialization was the result of multiple converging factors, not a single cause. Britain had abundant coal and iron (raw materials), accumulated capital from Atlantic trade and colonialism (investment), an Agricultural Revolution that freed up labor (workers), navigable rivers and harbors (transportation), a stable government that protected property rights and patents (institutions), and a culture that valued innovation and entrepreneurship. This multi-causal explanation is a key analytical skill tested on the AP exam.",
+              "theme": "economic"
+            },
+            {
+              "id": "q-industrial-2",
+              "type": "mcq",
+              "question": "The transition from the cottage industry system to the factory system most significantly changed:",
+              "choices": [
+                "The types of goods produced, as factories only made luxury items",
+                "Where and how people worked — moving production from homes to centralized factories with strict schedules and division of labor",
+                "Nothing, as working conditions remained identical",
+                "Political systems, as all industrialized nations became democracies"
+              ],
+              "correct": 1,
+              "explanation": "Before industrialization, most manufacturing occurred in homes (putting-out/cottage industry system) where families controlled their own work pace. Factories centralized production, imposed strict hours governed by the clock rather than the sun, and divided labor into repetitive specialized tasks. This transformation reshaped daily life, family structures, and class relationships. Workers lost autonomy but gained access to wage employment.",
+              "theme": "social"
+            }
+          ]
+        },
+        {
+          "id": "evt-french-revolution",
+          "title": "The French Revolution & Napoleonic Wars",
+          "startYear": 1789,
+          "endYear": 1815,
+          "color": "#E74C3C",
+          "summary": "The French Revolution overthrew the monarchy, established the principle that sovereignty belonged to the people, and unleashed radical social and political change. Napoleon's subsequent rise spread revolutionary ideals across Europe through conquest, permanently reshaping the political landscape of the Western world.",
+          "spiceT": {
+            "social": "Abolished feudal privileges and the estate system. Declaration of the Rights of Man asserted universal (male) equality. Reign of Terror executed thousands. Women participated actively but gained few rights. Haitian Revolution inspired by French revolutionary ideals.",
+            "political": "Overthrew absolute monarchy. Experimented with constitutional monarchy, republic, and dictatorship. Napoleon's empire spread revolutionary legal codes across Europe. Congress of Vienna (1815) attempted to restore old order but could not undo all changes.",
+            "interactions": "Inspired revolutions in Haiti, Latin America, and eventually across Europe (1848). Napoleon's invasions disrupted European power structures. Spread nationalism as both a liberating and destabilizing force.",
+            "cultural": "Enlightenment ideals (liberty, equality, fraternity) became political demands. Metric system introduced. Secularism advanced — Church properties seized. Romantic nationalism emerged as a cultural force.",
+            "economic": "Abolished feudal economic privileges. Napoleon's Continental System attempted to blockade Britain economically. Disrupted European trade patterns. Napoleonic Code standardized commercial law.",
+            "technology": "Mass conscription (levée en masse) created unprecedented army sizes. Military innovations in artillery and tactics. Industrial production began supporting military needs."
+          },
+          "keyTerms": ["Enlightenment", "Declaration of the Rights of Man", "Reign of Terror", "Napoleon", "Napoleonic Code", "Congress of Vienna", "Levée en masse", "Estates-General"],
+          "quiz": [
+            {
+              "id": "q-french-1",
+              "type": "mcq",
+              "question": "The French Revolution's most lasting global impact was:",
+              "choices": [
+                "The permanent establishment of democracy in France",
+                "Demonstrating that popular sovereignty and Enlightenment ideals could overthrow established monarchies, inspiring revolutionary movements worldwide",
+                "The complete elimination of monarchy as a form of government in Europe",
+                "France's permanent territorial expansion across Europe"
+              ],
+              "correct": 1,
+              "explanation": "While France cycled between republic, empire, and monarchy for decades after 1789, the Revolution's lasting impact was ideological. It proved that 'the people' could claim sovereignty, abolish feudal privilege, and demand rights. The Declaration of the Rights of Man became a template for revolutionary movements globally — from Haiti to Latin America to the revolutions of 1848. The AP exam emphasizes this as the dawn of modern political ideology.",
+              "theme": "political"
+            }
+          ]
+        },
+        {
+          "id": "evt-haitian-revolution",
+          "title": "The Haitian Revolution",
+          "startYear": 1791,
+          "endYear": 1804,
+          "color": "#27AE60",
+          "summary": "The only successful large-scale slave revolt in history, the Haitian Revolution resulted in the creation of the first independent Black republic and the second independent nation in the Western Hemisphere. Led by Toussaint L'Ouverture and Jean-Jacques Dessalines, it challenged the foundations of racial slavery and colonialism.",
+          "spiceT": {
+            "social": "Enslaved people overthrew the planter class and established a free Black republic. Challenged the entire system of racial hierarchy that underpinned Atlantic slavery. Inspired fear among slaveholders throughout the Americas.",
+            "political": "Influenced by French revolutionary ideals of liberty and equality, but went further by applying them to enslaved Africans. Defeated French, Spanish, and British military forces. Constitution of 1805 declared all citizens 'Black' regardless of skin color.",
+            "interactions": "Inspired enslaved people and abolitionists throughout the Americas. Terrified slaveholding societies (US, Brazil, Cuba). Influenced Latin American independence movements. Napoleon's failure in Haiti led him to sell Louisiana to the United States.",
+            "cultural": "Vodou played a role in organizing resistance (Bois Caïman ceremony). Created a new national identity blending African, French, and indigenous Taino elements. Symbol of Black liberation worldwide.",
+            "economic": "Destroyed the most profitable sugar colony in the world (Saint-Domingue produced 40% of Europe's sugar). Post-independence Haiti faced economic isolation as European powers and the US refused to recognize it. France demanded massive reparations.",
+            "technology": "Guerrilla warfare tactics proved effective against European professional armies. Use of environmental knowledge (tropical diseases, terrain) as strategic advantages."
+          },
+          "keyTerms": ["Toussaint L'Ouverture", "Jean-Jacques Dessalines", "Saint-Domingue", "Bois Caïman", "Vodou", "Louisiana Purchase", "Reparations"],
+          "quiz": [
+            {
+              "id": "q-haiti-1",
+              "type": "mcq",
+              "question": "The Haitian Revolution is historically significant because it:",
+              "choices": [
+                "Was a minor local conflict with no broader implications",
+                "Was the only successful large-scale slave revolt that created an independent nation, challenging racial slavery throughout the Atlantic world",
+                "Was led by French colonists seeking independence from the monarchy",
+                "Had no connection to Enlightenment ideas or the French Revolution"
+              ],
+              "correct": 1,
+              "explanation": "The Haitian Revolution is unique in world history as the only slave revolt that led to the creation of an independent nation. Enslaved Africans took the French Revolution's ideals of liberty and equality and applied them to their own condition — something French revolutionaries had not intended. Haiti's success sent shockwaves through the slaveholding Americas, inspiring hope among enslaved people and terror among planters. The AP exam highlights Haiti as the most radical expression of the Age of Revolutions.",
+              "theme": "social"
+            }
+          ]
+        },
+        {
+          "id": "evt-latin-american-independence",
+          "title": "Latin American Independence Movements",
+          "startYear": 1810,
+          "endYear": 1830,
+          "color": "#F39C12",
+          "summary": "Inspired by Enlightenment ideals, the American and French Revolutions, and the Haitian Revolution, Creole elites across Latin America led independence movements against Spanish and Portuguese colonial rule. Simón Bolívar, José de San Martín, and other leaders liberated most of South and Central America by 1830.",
+          "spiceT": {
+            "social": "Led primarily by Creoles (American-born Europeans) who resented peninsulares' privileges. Indigenous and mixed-race populations participated but gained few benefits. Racial and class hierarchies persisted after independence. Slavery continued in most new nations.",
+            "political": "Inspired by Enlightenment, American, French, and Haitian Revolutions. Napoleon's invasion of Spain (1808) created the immediate trigger. New republics often descended into caudillo (strongman) rule. Bolívar's dream of unified South America failed.",
+            "interactions": "Monroe Doctrine (1823) warned European powers against recolonization. British economic influence replaced Spanish political control (economic imperialism). New nations entered global trade on unequal terms.",
+            "cultural": "Creole nationalism blended European Enlightenment ideals with American identity. Catholic Church's role debated — some clergy supported independence. Indigenous and African cultural influences often marginalized in new national identities.",
+            "economic": "New nations remained economically dependent on exporting raw materials (monoculture economies). British merchants and investors quickly dominated trade. Land distribution remained highly unequal. Hacienda system persisted.",
+            "technology": "Limited industrial development compared to Europe and North America. Infrastructure (roads, ports) remained oriented toward export of raw materials. Military technology largely imported from Europe."
+          },
+          "keyTerms": ["Simón Bolívar", "José de San Martín", "Creoles", "Peninsulares", "Caudillos", "Monroe Doctrine", "Hacienda", "Napoleon's invasion of Spain"],
+          "quiz": [
+            {
+              "id": "q-latam-1",
+              "type": "mcq",
+              "question": "A key difference between the Latin American independence movements and the Haitian Revolution was that:",
+              "choices": [
+                "Latin American movements were led by enslaved people fighting for racial equality",
+                "Latin American independence was primarily led by Creole elites who maintained existing racial and economic hierarchies after independence",
+                "Latin American revolutions completely eliminated social inequality",
+                "Latin American independence occurred without any influence from Enlightenment ideas"
+              ],
+              "correct": 1,
+              "explanation": "While Haiti's revolution was driven by enslaved people seeking freedom and racial equality, Latin American independence movements were largely led by Creoles — American-born people of European descent who resented their subordination to peninsulares (Spanish-born officials). After independence, Creole elites largely maintained the existing social hierarchies, including slavery in many cases. The AP exam emphasizes this distinction to show that 'revolution' doesn't always mean social transformation.",
+              "theme": "social"
+            }
+          ]
+        },
+        {
+          "id": "evt-meiji-restoration",
+          "title": "The Meiji Restoration",
+          "startYear": 1868,
+          "endYear": 1912,
+          "color": "#E74C3C",
+          "summary": "A revolution from above that transformed Japan from a feudal society into a modern industrial power in less than 50 years. After Commodore Perry's forced opening of Japan (1853), reformers overthrew the Tokugawa shogunate and launched a comprehensive modernization program that made Japan the first non-Western nation to industrialize.",
+          "spiceT": {
+            "social": "Abolished the feudal class system (samurai, peasants, artisans, merchants). Universal education established. Conscription army replaced samurai warriors. Western dress and customs adopted by elites. Women's status showed limited improvement.",
+            "political": "Restored the emperor as the symbolic head of state. Oligarchy of reformers held real power. Meiji Constitution (1889) created a parliament (Diet) but with limited democracy. Centralized government replaced feudal domains.",
+            "interactions": "Japan sought to avoid colonization by rapidly modernizing. Studied and selectively adopted Western institutions, technology, and military methods. Became an imperial power itself — defeating China (1895) and Russia (1905). Gained Taiwan and Korea as colonies.",
+            "cultural": "Slogan: 'Rich country, strong military.' Selective Westernization while maintaining Japanese cultural identity. State Shinto promoted as national ideology. Bushido code repackaged as national spirit.",
+            "economic": "Government-led industrialization (zaibatsu — large industrial conglomerates). Built railroads, telegraph lines, and modern banking. Textile industry (silk, cotton) led early industrialization. Shifted from agricultural to industrial economy.",
+            "technology": "Rapidly adopted Western industrial technology (steam engines, railroads, telegraph). Built modern navy and army. Sent students abroad to learn Western science and engineering. Established technical universities."
+          },
+          "keyTerms": ["Emperor Meiji", "Tokugawa shogunate", "Commodore Perry", "Zaibatsu", "Meiji Constitution", "Russo-Japanese War", "Sino-Japanese War", "Selective borrowing"],
+          "quiz": [
+            {
+              "id": "q-meiji-1",
+              "type": "mcq",
+              "question": "Japan's Meiji Restoration is most significant in AP World History because it demonstrates that:",
+              "choices": [
+                "Western civilization was inherently superior to all Asian civilizations",
+                "A non-Western nation could selectively adopt Western technology and institutions to modernize rapidly and avoid colonization",
+                "All non-Western nations successfully industrialized in the 19th century",
+                "Japan completely abandoned its own cultural traditions in favor of Western culture"
+              ],
+              "correct": 1,
+              "explanation": "The Meiji Restoration is the AP exam's primary example of successful defensive modernization. Japan's leaders recognized that Western industrial and military power threatened their independence, so they deliberately studied Western institutions, technology, and military organization — but adapted them to Japanese conditions rather than wholesale copying. Japan's victory over Russia in 1905 was a watershed moment, proving that a non-Western nation could match European military power through selective modernization.",
+              "theme": "interactions"
+            }
+          ]
+        },
+        {
+          "id": "evt-scramble-for-africa",
+          "title": "The Scramble for Africa",
+          "startYear": 1884,
+          "endYear": 1914,
+          "color": "#2C3E50",
+          "summary": "The rapid colonization of Africa by European powers in the late 19th century. At the Berlin Conference (1884-1885), European nations divided Africa among themselves with no African representation. By 1914, only Ethiopia and Liberia remained independent. European imperialism was driven by economic interests, nationalism, racism, and technological advantages.",
+          "spiceT": {
+            "social": "Racial ideologies (Social Darwinism, 'White Man's Burden') justified colonization. Colonial education systems aimed to create Westernized elites. Forced labor and exploitation. Traditional social structures disrupted.",
+            "political": "Berlin Conference divided Africa without African input. Direct rule vs. indirect rule as colonial strategies. African resistance was widespread but ultimately overwhelmed by European military technology. Ethiopia successfully resisted Italian invasion at the Battle of Adwa (1896).",
+            "interactions": "European missionaries, explorers, and merchants preceded formal colonization. Resistance movements included the Zulu Kingdom, Ashanti, and Ethiopians. Colonial borders ignored existing ethnic and linguistic boundaries.",
+            "cultural": "Missionary activity sought to convert Africans to Christianity. Colonial education promoted European languages and values. African cultural traditions persisted through adaptation and resistance.",
+            "economic": "Driven by desire for raw materials (rubber, diamonds, gold, copper), markets for manufactured goods, and strategic advantage. Cash-crop agriculture replaced subsistence farming. Infrastructure built to extract resources, not develop economies.",
+            "technology": "Maxim gun (machine gun) gave Europeans decisive military advantage. Quinine (anti-malaria drug) enabled European survival in tropical Africa. Steamships and railroads facilitated penetration of interior. Telegraph enabled communication with home governments."
+          },
+          "keyTerms": ["Berlin Conference", "Social Darwinism", "White Man's Burden", "Battle of Adwa", "Direct rule", "Indirect rule", "King Leopold", "Congo Free State"],
+          "quiz": [
+            {
+              "id": "q-scramble-1",
+              "type": "mcq",
+              "question": "Which of the following best explains why European powers were able to rapidly colonize most of Africa in the late 19th century?",
+              "choices": [
+                "African societies voluntarily invited European colonization",
+                "Technological advantages (machine guns, quinine, steamships) combined with African political divisions and European economic and nationalist motivations",
+                "Africa had no organized political systems before European arrival",
+                "The Berlin Conference was a fair diplomatic process that included African leaders"
+              ],
+              "correct": 1,
+              "explanation": "The Scramble for Africa was enabled by a convergence of factors. Technologically, the Maxim gun, quinine, and steamships overcame previous barriers to European penetration. Politically, existing rivalries between African states prevented unified resistance. Economically, the Industrial Revolution created demand for raw materials and new markets. Ideologically, Social Darwinism and nationalism drove competition among European powers. The AP exam emphasizes this multi-causal explanation rather than any single factor.",
+              "theme": "interactions"
+            }
+          ]
+        },
+        {
+          "id": "evt-opium-wars",
+          "title": "The Opium Wars & Unequal Treaties",
+          "startYear": 1839,
+          "endYear": 1860,
+          "color": "#8E44AD",
+          "summary": "Two wars between Britain and China that resulted in China's humiliating defeat and forced opening to Western trade. The wars exposed the Qing Dynasty's military weakness, led to unequal treaties that granted Western powers special privileges, and marked the beginning of China's 'Century of Humiliation.'",
+          "spiceT": {
+            "social": "National humiliation fueled reform movements and eventually revolution. Treaty ports created cosmopolitan but unequal societies. Taiping Rebellion (1850-1864) — partly inspired by Christianity — killed millions.",
+            "political": "Qing Dynasty fatally weakened. Unequal treaties imposed extraterritoriality and treaty ports. China forced to cede Hong Kong to Britain. Loss of sovereignty became a driving force for Chinese nationalism.",
+            "interactions": "Britain fought to force China to accept opium imports to balance trade deficit. Western powers and Japan imposed 'spheres of influence.' China went from the world's largest economy to a semi-colonized state.",
+            "cultural": "Self-Strengthening Movement attempted to adopt Western technology while maintaining Chinese culture. Debates between reformers and conservatives intensified. Christian missionaries gained access to interior China.",
+            "economic": "British opium trade drained Chinese silver, reversing centuries of trade surplus. Treaty ports opened to unrestricted foreign trade. Tariff autonomy lost. China's economy increasingly penetrated by foreign interests.",
+            "technology": "British steam-powered warships easily defeated Chinese junks. Gap in military technology became starkly apparent. Self-Strengthening Movement attempted to modernize military and industry."
+          },
+          "keyTerms": ["Treaty of Nanjing", "Extraterritoriality", "Treaty ports", "Hong Kong", "Century of Humiliation", "Taiping Rebellion", "Self-Strengthening Movement", "Opium trade"],
+          "quiz": [
+            {
+              "id": "q-opium-1",
+              "type": "mcq",
+              "question": "The Opium Wars and resulting unequal treaties are most significant in AP World History because they:",
+              "choices": [
+                "Demonstrated China's continued military superiority over European powers",
+                "Marked the forced integration of China into a Western-dominated global order and began China's 'Century of Humiliation'",
+                "Led to the immediate modernization and industrialization of China",
+                "Had no lasting impact on Chinese politics or society"
+              ],
+              "correct": 1,
+              "explanation": "The Opium Wars represent a turning point in Chinese and world history. China, which had long considered itself the center of civilization, was militarily humiliated and forced to accept unequal treaties that surrendered sovereignty (extraterritoriality, tariff control, territorial concessions). This 'Century of Humiliation' (1839-1949) profoundly shaped Chinese nationalism and remains a powerful force in Chinese politics today. The AP exam uses this as a key example of how industrialized powers used military force to reshape global trade in their favor.",
+              "theme": "interactions"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "era-1900-present",
+      "title": "Accelerating Global Change & Realignments",
+      "startYear": 1900,
+      "endYear": 2001,
+      "color": "#E74C3C",
+      "summary": "The most transformative century in human history, marked by two World Wars, decolonization, the Cold War, and unprecedented technological change. Global power shifted from European colonial empires to two superpowers (US and USSR), then toward a more multipolar world. Globalization intensified connections while creating new tensions.",
+      "spiceT": {
+        "social": "Civil rights and liberation movements worldwide. Changing gender roles. Mass migration and refugee crises. Growing middle class in some regions, persistent poverty in others.",
+        "political": "World Wars reshaped global order. Decolonization created new nations. Cold War ideological struggle. Rise of international organizations (UN, NATO, EU).",
+        "interactions": "Globalization intensified economic and cultural connections. Environmental challenges became global. Digital communication created unprecedented connectivity.",
+        "cultural": "Mass media and popular culture spread globally. Cultural globalization vs. preservation of local traditions. Human rights as a universal concept. Consumer culture.",
+        "economic": "Shift from industrial to information economies. International financial institutions (IMF, World Bank). Free trade vs. protectionism. Economic inequality between Global North and South.",
+        "technology": "Nuclear weapons, space exploration, computers, internet, green revolution in agriculture. Medical advances (antibiotics, vaccines). Transportation revolution (aviation)."
+      },
+      "keyTerms": ["World Wars", "Decolonization", "Cold War", "Globalization", "Green Revolution", "Nonalignment", "Genocide", "United Nations"],
+      "events": [
+        {
+          "id": "evt-world-war-1",
+          "title": "World War I",
+          "startYear": 1914,
+          "endYear": 1918,
+          "color": "#C0392B",
+          "summary": "The first truly global industrial war, which destroyed four empires (Ottoman, Austro-Hungarian, Russian, German), killed approximately 20 million people, and reshaped the political map of Europe and the Middle East. The war's aftermath — including the Treaty of Versailles and the mandate system — set the stage for World War II and modern Middle Eastern conflicts.",
+          "spiceT": {
+            "social": "Unprecedented casualties through industrial warfare. Women entered the workforce in large numbers, advancing suffrage movements. Colonial subjects served in European armies, raising expectations for independence. Spanish Flu (1918) killed more than the war itself.",
+            "political": "Collapse of the Ottoman, Austro-Hungarian, Russian, and German Empires. Russian Revolution (1917) established the world's first communist state. Treaty of Versailles imposed harsh terms on Germany. League of Nations created but ultimately ineffective.",
+            "interactions": "Truly global conflict involving colonial troops from Africa, Asia, and the Americas. Mandate system in the Middle East (British and French control of former Ottoman territories). Sykes-Picot Agreement drew modern Middle Eastern borders.",
+            "cultural": "Disillusionment with progress and Western civilization. 'Lost Generation' literature. Propaganda became a tool of modern warfare. Armenian Genocide during Ottoman collapse.",
+            "economic": "European economies devastated. United States emerged as a creditor nation. War debts and reparations created economic instability. Total war mobilized entire economies for military production.",
+            "technology": "Machine guns, poison gas, tanks, airplanes, and submarines transformed warfare. Trench warfare on the Western Front. Industrial production applied to killing on an unprecedented scale."
+          },
+          "keyTerms": ["Trench warfare", "Treaty of Versailles", "League of Nations", "Russian Revolution", "Mandate system", "Total war", "Armenian Genocide", "Fourteen Points"],
+          "quiz": [
+            {
+              "id": "q-ww1-1",
+              "type": "mcq",
+              "question": "Which of the following best describes the global significance of World War I?",
+              "choices": [
+                "It was a minor European conflict with no impact outside the continent",
+                "It destroyed major empires, reshaped the global political order, and planted the seeds for World War II and modern conflicts in the Middle East",
+                "It resulted in permanent world peace through the League of Nations",
+                "It had no connection to colonialism or imperial rivalries"
+              ],
+              "correct": 1,
+              "explanation": "World War I was a transformative global event. It destroyed four empires, created the conditions for the Russian Revolution and communist ideology's spread, established the mandate system that drew modern Middle Eastern borders, and imposed a punitive peace on Germany that fueled revanchism. Colonial soldiers who fought for European powers returned home with new expectations for equality and self-governance, planting seeds for decolonization.",
+              "theme": "political"
+            }
+          ]
+        },
+        {
+          "id": "evt-world-war-2",
+          "title": "World War II & the Holocaust",
+          "startYear": 1939,
+          "endYear": 1945,
+          "color": "#2C3E50",
+          "summary": "The deadliest conflict in human history, killing an estimated 70-85 million people. Nazi Germany's aggression in Europe and Japan's expansion in Asia led to a global war that ended with atomic weapons and the complete restructuring of world power. The Holocaust — the systematic murder of six million Jews — remains a defining horror of the 20th century.",
+          "spiceT": {
+            "social": "Holocaust and other genocides. Civilian populations targeted on an unprecedented scale. Women entered workforce in combatant nations. Internment of Japanese Americans. Massive displacement and refugee crises.",
+            "political": "Rise of fascism in Europe (Nazi Germany, Italy, Japan). Allied victory established US and USSR as superpowers. United Nations founded. Nuremberg Trials established precedent for international justice. Partition of Germany.",
+            "interactions": "Truly global war fought on every continent except Antarctica. Atomic bombings of Hiroshima and Nagasaki ushered in the nuclear age. War weakened European colonial powers, accelerating decolonization.",
+            "cultural": "Propaganda and total ideological mobilization. Holocaust raised fundamental questions about human nature and modernity. Human rights discourse strengthened (Universal Declaration of Human Rights, 1948).",
+            "economic": "Total war economies — government control of production. Marshall Plan rebuilt Western Europe. Bretton Woods system created new international economic order (IMF, World Bank). US emerged as the world's dominant economic power.",
+            "technology": "Nuclear weapons, radar, jet engines, rockets (V-2), computers (codebreaking), penicillin mass production. Technology of industrial killing (gas chambers). Total air warfare (strategic bombing)."
+          },
+          "keyTerms": ["Holocaust", "Atomic bomb", "D-Day", "United Nations", "Nuremberg Trials", "Marshall Plan", "Fascism", "Total war"],
+          "quiz": [
+            {
+              "id": "q-ww2-1",
+              "type": "mcq",
+              "question": "The atomic bombings of Hiroshima and Nagasaki in 1945 are most significant in the context of AP World History because they:",
+              "choices": [
+                "Had no lasting impact on international relations",
+                "Ushered in the nuclear age, fundamentally altering the nature of warfare and shaping Cold War geopolitics through the threat of mutual destruction",
+                "Were the only factor that ended World War II",
+                "Demonstrated that nuclear weapons had no military significance"
+              ],
+              "correct": 1,
+              "explanation": "The atomic bombings marked a watershed in human history — for the first time, humanity possessed the ability to destroy itself entirely. This fundamentally changed international relations: the Cold War was shaped by the doctrine of Mutual Assured Destruction (MAD), nuclear proliferation became a central concern, and the threat of nuclear war hung over global politics for decades. The AP exam treats this as a defining moment in 20th-century history.",
+              "theme": "technology"
+            }
+          ]
+        },
+        {
+          "id": "evt-cold-war",
+          "title": "The Cold War",
+          "startYear": 1947,
+          "endYear": 1991,
+          "color": "#3498DB",
+          "summary": "A decades-long geopolitical struggle between the United States (capitalism/democracy) and the Soviet Union (communism/authoritarianism) that shaped global politics without direct military confrontation between the superpowers. Instead, the Cold War was fought through proxy wars, nuclear arms races, space competition, and ideological campaigns across the developing world.",
+          "spiceT": {
+            "social": "Red Scares and political repression in both blocs. Youth counterculture and protest movements (1960s). Space race inspired scientific education. Nuclear anxiety shaped popular culture. Dissidents challenged authoritarian rule.",
+            "political": "Division of the world into Western (NATO) and Eastern (Warsaw Pact) blocs. Proxy wars in Korea, Vietnam, Afghanistan, Angola, and elsewhere. Non-Aligned Movement offered a third path. Soviet collapse (1991) ended the bipolar world.",
+            "interactions": "Global competition for influence in the developing world. Both superpowers supported authoritarian allies. Nuclear arms race threatened global annihilation. Space race as ideological competition.",
+            "cultural": "Ideological warfare: capitalism vs. communism as competing visions of modernity. Cultural diplomacy (jazz, sports, film). Propaganda on both sides. Samizdat (underground publishing) in the USSR.",
+            "economic": "Marshall Plan vs. Comecon as competing economic systems. Arms race consumed enormous resources. Developing nations caught between competing models. Planned economies vs. free market capitalism.",
+            "technology": "Nuclear weapons proliferation. Space race (Sputnik, Apollo 11). ICBM development. Satellite surveillance. Computer development accelerated by military needs. Internet originated as a military communication network."
+          },
+          "keyTerms": ["NATO", "Warsaw Pact", "Proxy wars", "Nuclear arms race", "Containment", "Non-Aligned Movement", "Berlin Wall", "Cuban Missile Crisis", "Détente", "Glasnost"],
+          "quiz": [
+            {
+              "id": "q-cold-1",
+              "type": "mcq",
+              "question": "The Cold War's impact on developing nations is best characterized as:",
+              "choices": [
+                "Developing nations were completely unaffected by superpower rivalry",
+                "Both superpowers competed for influence in the developing world, often supporting authoritarian regimes and fighting proxy wars that caused enormous suffering",
+                "All developing nations willingly chose one side or the other",
+                "The Cold War brought democracy and prosperity to all developing nations"
+              ],
+              "correct": 1,
+              "explanation": "The developing world became the Cold War's primary battlefield. The US and USSR competed for influence by providing military aid, economic assistance, and political support — often to authoritarian rulers who aligned with their ideology. Proxy wars in Korea, Vietnam, Angola, Afghanistan, and elsewhere killed millions. The AP exam emphasizes that Cold War competition frequently undermined self-determination and democracy in the developing world, contradicting both superpowers' stated ideals.",
+              "theme": "interactions"
+            }
+          ]
+        },
+        {
+          "id": "evt-decolonization",
+          "title": "Decolonization",
+          "startYear": 1945,
+          "endYear": 1975,
+          "color": "#27AE60",
+          "summary": "The process by which colonies in Asia, Africa, and the Caribbean gained independence from European colonial powers after World War II. Decolonization took many forms — from negotiated independence to armed struggle — and created dozens of new nations that had to navigate Cold War pressures while building new national identities.",
+          "spiceT": {
+            "social": "New national identities formed. Ethnic and tribal tensions often inherited from arbitrary colonial borders. Brain drain as educated elites emigrated. Women participated in independence movements.",
+            "political": "Independence movements used varied strategies: nonviolent resistance (India), armed revolution (Algeria, Vietnam), negotiated transfer (Ghana). Post-independence challenges: one-party states, military coups, Cold War proxy conflicts.",
+            "interactions": "Non-Aligned Movement attempted to navigate Cold War pressures. Former colonies joined the United Nations. Neocolonial economic relationships persisted.",
+            "cultural": "Negritude movement celebrated African cultural identity. Post-colonial literature explored identity and displacement. Debates over language (colonial vs. indigenous languages in education and government).",
+            "economic": "Newly independent nations struggled with economic dependency on former colonizers. Cash crop economies remained. Development challenges. Some pursued socialist economic models.",
+            "technology": "Infrastructure inherited from colonial era was often designed for resource extraction, not development. Green Revolution technologies adopted in some regions. Uneven access to modern technology."
+          },
+          "keyTerms": ["Gandhi", "Nonviolent resistance", "Negritude", "Non-Aligned Movement", "Kwame Nkrumah", "Partition of India", "Algerian War", "Bandung Conference"],
+          "quiz": [
+            {
+              "id": "q-decolonization-1",
+              "type": "mcq",
+              "question": "Which of the following best explains why many newly independent nations in Africa faced political instability after decolonization?",
+              "choices": [
+                "African societies had no prior experience with governance before colonialism",
+                "Colonial borders often grouped together diverse ethnic and linguistic groups who had little shared identity, while Cold War superpowers intervened in post-colonial politics",
+                "All African independence leaders chose to adopt communist systems of government",
+                "European nations provided extensive support to ensure stable democratic transitions"
+              ],
+              "correct": 1,
+              "explanation": "The AP exam emphasizes the lasting structural impacts of colonialism. European colonial powers drew borders based on their own territorial claims, not on existing ethnic, linguistic, or cultural boundaries. After independence, these arbitrary borders forced diverse groups into single nations without shared national identity. Additionally, Cold War superpowers (US and USSR) frequently intervened in African politics, supporting authoritarian leaders who aligned with their ideological interests. This combination of colonial legacy and Cold War interference created significant challenges for post-colonial governance.",
+              "theme": "political"
+            },
+            {
+              "id": "q-decolonization-2",
+              "type": "mcq",
+              "question": "Gandhi's strategy of nonviolent resistance (satyagraha) in India was significant because it:",
+              "choices": [
+                "Was the only strategy used by any independence movement anywhere in the world",
+                "Demonstrated that mass mobilization through nonviolent civil disobedience could challenge imperial power and inspired movements worldwide",
+                "Immediately resulted in Indian independence without any conflict or negotiation",
+                "Was rejected by all other anti-colonial leaders as ineffective"
+              ],
+              "correct": 1,
+              "explanation": "Gandhi's methods — boycotts, marches, civil disobedience, and fasting — demonstrated that unarmed civilians could challenge the legitimacy and functioning of colonial rule. His strategies inspired later movements including the American civil rights movement (Martin Luther King Jr.) and anti-apartheid struggle (Nelson Mandela). However, the AP exam also notes that nonviolent resistance was not the only path to independence — armed struggle succeeded in Algeria, Vietnam, and elsewhere.",
+              "theme": "political"
+            }
+          ]
+        },
+        {
+          "id": "evt-chinese-revolution",
+          "title": "The Chinese Revolution",
+          "startYear": 1949,
+          "endYear": 1976,
+          "color": "#E74C3C",
+          "summary": "Mao Zedong's Communist Party won the Chinese Civil War in 1949, establishing the People's Republic of China. Mao's programs — the Great Leap Forward and Cultural Revolution — caused enormous suffering but also transformed China from a semi-colonial state into a major world power. After Mao's death (1976), Deng Xiaoping's reforms would make China an economic superpower.",
+          "spiceT": {
+            "social": "Land reform redistributed property from landlords to peasants. Women's status improved through marriage reform laws. Great Leap Forward caused massive famine (estimated 15-55 million deaths). Cultural Revolution targeted intellectuals and traditional culture.",
+            "political": "One-party communist state under Mao Zedong. Personality cult around Mao. Great Leap Forward attempted rapid industrialization through collectivization. Cultural Revolution (1966-1976) purged perceived enemies and mobilized youth (Red Guards).",
+            "interactions": "Alliance with USSR initially, then Sino-Soviet split (1960s). Korean War (1950-53). Nixon's visit to China (1972) reshaped Cold War dynamics. Supported revolutionary movements in developing world.",
+            "cultural": "Attacked traditional Confucian values and practices. Cultural Revolution destroyed cultural heritage. Little Red Book became mandatory reading. Attempt to create a 'new socialist person.'",
+            "economic": "Collectivization of agriculture. Attempted rapid industrialization (Great Leap Forward backyard steel furnaces). After Mao: Deng Xiaoping's 'Reform and Opening Up' (1978) introduced market economics while maintaining Communist Party control.",
+            "technology": "Nuclear weapons development (1964). Space program. Industrial development prioritized heavy industry. Green Revolution techniques eventually adopted in agriculture."
+          },
+          "keyTerms": ["Mao Zedong", "Great Leap Forward", "Cultural Revolution", "Red Guards", "Deng Xiaoping", "Collectivization", "Little Red Book", "Tiananmen Square"],
+          "quiz": [
+            {
+              "id": "q-china-1",
+              "type": "mcq",
+              "question": "The Great Leap Forward (1958-1962) is historically significant because it demonstrates:",
+              "choices": [
+                "The success of rapid collectivization in modernizing agricultural economies",
+                "How state-directed economic policies can lead to catastrophic unintended consequences, including one of history's worst famines",
+                "That China successfully industrialized faster than any other nation",
+                "The benefits of abandoning all agricultural production for industrial output"
+              ],
+              "correct": 1,
+              "explanation": "The Great Leap Forward attempted to rapidly transform China from an agricultural society into an industrial one through forced collectivization and unrealistic production targets. The result was catastrophic — agricultural production collapsed, and an estimated 15-55 million people died in the resulting famine. This is a key AP example of how authoritarian state planning can produce devastating unintended consequences. It also illustrates the danger of ideologically driven policy that ignores economic reality.",
+              "theme": "economic"
+            }
+          ]
+        },
+        {
+          "id": "evt-globalization",
+          "title": "Globalization & the Digital Age",
+          "startYear": 1980,
+          "endYear": 2001,
+          "color": "#1ABC9C",
+          "summary": "The acceleration of global economic, cultural, and technological integration in the late 20th century. The fall of communism, the rise of the internet, free trade agreements, and the spread of multinational corporations created an increasingly interconnected world — but also generated resistance from those who felt left behind or threatened by rapid change.",
+          "spiceT": {
+            "social": "Global migration increased dramatically. Growing inequality both within and between nations. Spread of consumer culture. Environmental movements emerged. HIV/AIDS pandemic. Cultural homogenization concerns.",
+            "political": "Fall of the Berlin Wall (1989) and collapse of the USSR (1991). Spread of democracy (but also authoritarian resilience). Rise of international institutions and agreements (WTO, EU expansion). Terrorism emerged as a global threat (9/11).",
+            "interactions": "Unprecedented global connectivity through internet and telecommunications. Free trade agreements (NAFTA, WTO). Outsourcing and global supply chains. Cultural globalization (music, film, food). Anti-globalization movements.",
+            "cultural": "Global spread of Western (especially American) popular culture. English as global lingua franca. Cultural preservation movements. Fundamentalist reactions against Western cultural influence. Social media beginning to transform communication.",
+            "economic": "Neoliberal economic policies (deregulation, privatization, free trade). Rise of multinational corporations. Asian economic miracles (China, India, 'Tiger' economies). Recurring financial crises. Outsourcing and deindustrialization in developed nations.",
+            "technology": "Personal computers, internet, mobile phones, GPS. Biotechnology and genetic engineering. Green revolution continued transforming agriculture. Renewable energy development began. Space exploration continued."
+          },
+          "keyTerms": ["Neoliberalism", "WTO", "NAFTA", "Internet", "Fall of the Berlin Wall", "European Union", "Outsourcing", "9/11", "Climate change"],
+          "quiz": [
+            {
+              "id": "q-global-1",
+              "type": "mcq",
+              "question": "Late 20th-century globalization is best understood as:",
+              "choices": [
+                "An entirely new phenomenon with no historical precedents",
+                "An acceleration of long-standing trends toward global interconnection, intensified by new technologies, free trade policies, and the end of the Cold War",
+                "A process that benefited all nations and peoples equally",
+                "A Western conspiracy to exploit developing nations with no benefits"
+              ],
+              "correct": 1,
+              "explanation": "The AP exam situates late 20th-century globalization within the longer history of increasing global connectivity — from the Silk Roads and Indian Ocean trade to the Columbian Exchange and industrial imperialism. What made this era distinctive was the speed and intensity of integration, enabled by digital technology, jet travel, and container shipping, combined with the political opening created by communism's collapse. The AP exam also emphasizes that globalization's effects were uneven — creating winners and losers both within and between nations.",
+              "theme": "interactions"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

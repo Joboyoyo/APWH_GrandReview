@@ -1,0 +1,70 @@
+:root {
+  /* SPICE-T Theme Colors */
+  --color-social: #E74C3C;
+  --color-political: #3498DB;
+  --color-interactions: #2ECC71;
+  --color-cultural: #9B59B6;
+  --color-economic: #F39C12;
+  --color-technology: #1ABC9C;
+
+  /* UI Colors */
+  --bg-primary: #0a0e17;
+  --bg-secondary: #111827;
+  --bg-card: #1a2234;
+  --bg-card-hover: #1f2a40;
+  --text-primary: #f0f4f8;
+  --text-secondary: #94a3b8;
+  --text-muted: #64748b;
+  --border: #2a3548;
+  --border-light: #374357;
+  --accent: #4A90D9;
+  --accent-glow: rgba(74, 144, 217, 0.15);
+  --success: #2ECC71;
+  --error: #E74C3C;
+  --warning: #F39C12;
+
+  font-family: 'Inter', 'Segoe UI', system-ui, -apple-system, sans-serif;
+  line-height: 1.6;
+  color: var(--text-primary);
+  background-color: var(--bg-primary);
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+#root {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--bg-secondary);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--border-light);
+  border-radius: 3px;
+}
+
+::selection {
+  background: var(--accent);
+  color: white;
+}
