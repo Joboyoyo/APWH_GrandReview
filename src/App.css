@@ -33,6 +33,66 @@
   text-transform: uppercase;
 }
 
+/* Header controls */
+.header-controls {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+/* Theme toggle */
+.theme-toggle {
+  width: 36px;
+  height: 36px;
+  border-radius: 8px;
+  border: 1px solid var(--border);
+  background: var(--bg-card);
+  color: var(--text-secondary);
+  font-size: 1.1rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s;
+}
+
+.theme-toggle:hover {
+  background: var(--bg-card-hover);
+  border-color: var(--border-light);
+  color: var(--text-primary);
+}
+
+/* Navigation */
+.app-nav {
+  display: flex;
+  gap: 4px;
+  background: var(--bg-card);
+  border-radius: 8px;
+  padding: 3px;
+  border: 1px solid var(--border);
+}
+
+.nav-link {
+  padding: 8px 20px;
+  border-radius: 6px;
+  font-size: 0.82rem;
+  font-weight: 500;
+  color: var(--text-muted);
+  text-decoration: none;
+  transition: all 0.2s;
+}
+
+.nav-link:hover {
+  color: var(--text-primary);
+  background: var(--bg-card-hover);
+}
+
+.nav-link.active {
+  color: var(--text-primary);
+  background: var(--accent);
+  font-weight: 600;
+}
+
 .app-body {
   display: flex;
   flex: 1;
@@ -63,3 +123,51 @@
 .spicet-badge.cultural { background: rgba(155, 89, 182, 0.15); color: var(--color-cultural); }
 .spicet-badge.economic { background: rgba(243, 156, 18, 0.15); color: var(--color-economic); }
 .spicet-badge.technology { background: rgba(26, 188, 156, 0.15); color: var(--color-technology); }
+
+/* ===== MOBILE RESPONSIVE ===== */
+@media (max-width: 768px) {
+  .app-header {
+    padding: 10px 16px;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+
+  .app-header h1 {
+    font-size: 1rem;
+  }
+
+  .header-subtitle {
+    font-size: 0.65rem;
+    display: none;
+  }
+
+  .header-controls {
+    gap: 8px;
+  }
+
+  .nav-link {
+    padding: 6px 14px;
+    font-size: 0.75rem;
+  }
+
+  .theme-toggle {
+    width: 32px;
+    height: 32px;
+    font-size: 0.95rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .app-header {
+    padding: 8px 12px;
+  }
+
+  .app-header h1 {
+    font-size: 0.9rem;
+  }
+
+  .nav-link {
+    padding: 5px 10px;
+    font-size: 0.7rem;
+  }
+}

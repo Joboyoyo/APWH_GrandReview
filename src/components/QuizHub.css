@@ -1,0 +1,407 @@
+.quizhub {
+  flex: 1;
+  overflow-y: auto;
+  padding: 40px 60px;
+  background: var(--bg-primary);
+  max-width: 960px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+/* Stats cards */
+.quizhub-stats {
+  display: flex;
+  gap: 16px;
+  margin-bottom: 28px;
+}
+
+.stat-card {
+  flex: 1;
+  background: var(--bg-secondary);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 20px;
+  text-align: center;
+}
+
+.stat-number {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: var(--accent);
+  line-height: 1;
+  margin-bottom: 6px;
+}
+
+.stat-label {
+  font-size: 0.72rem;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+/* Theme filter chips */
+.quizhub-filters {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 28px;
+  flex-wrap: wrap;
+}
+
+.filter-chip {
+  padding: 7px 16px;
+  border-radius: 20px;
+  border: 1px solid var(--border);
+  background: var(--bg-secondary);
+  color: var(--text-muted);
+  font-size: 0.82rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.filter-chip:hover {
+  border-color: var(--border-light);
+  color: var(--text-primary);
+}
+
+.filter-chip.active {
+  border-color: var(--accent);
+  color: var(--accent);
+  background: var(--accent-glow);
+}
+
+/* Era sections */
+.quizhub-eras {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.era-section {
+  background: var(--bg-secondary);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.era-section-header {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 18px 20px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.era-section-header:hover {
+  background: var(--bg-card-hover);
+}
+
+.era-section-color {
+  width: 4px;
+  height: 36px;
+  border-radius: 2px;
+  flex-shrink: 0;
+}
+
+.era-section-info {
+  flex: 1;
+  min-width: 0;
+}
+
+.era-section-title {
+  font-size: 1.05rem;
+  font-weight: 600;
+  color: var(--text-primary);
+  margin: 0;
+}
+
+.era-section-dates {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+}
+
+.era-section-meta {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-shrink: 0;
+}
+
+.era-q-count {
+  font-size: 0.82rem;
+  color: var(--text-muted);
+}
+
+.era-review-btn {
+  padding: 7px 16px;
+  border-radius: 6px;
+  border: 1px solid var(--accent);
+  background: transparent;
+  color: var(--accent);
+  font-size: 0.8rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.era-review-btn:hover {
+  background: var(--accent);
+  color: white;
+}
+
+.era-chevron {
+  color: var(--text-muted);
+  font-size: 0.8rem;
+  transition: transform 0.25s;
+}
+
+.era-chevron.open {
+  transform: rotate(180deg);
+}
+
+/* Event quiz cards */
+.era-events-list {
+  overflow: hidden;
+  border-top: 1px solid var(--border);
+}
+
+.event-quiz-card {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 14px 20px 14px 28px;
+  cursor: pointer;
+  transition: background 0.15s;
+  border-bottom: 1px solid var(--border);
+}
+
+.event-quiz-card:last-child {
+  border-bottom: none;
+}
+
+.event-quiz-card:hover {
+  background: var(--bg-card-hover);
+}
+
+.eqc-color {
+  width: 3px;
+  height: 32px;
+  border-radius: 2px;
+  flex-shrink: 0;
+}
+
+.eqc-image {
+  width: 40px;
+  height: 40px;
+  border-radius: 8px;
+  overflow: hidden;
+  flex-shrink: 0;
+  background: var(--bg-card);
+}
+
+.eqc-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.eqc-info {
+  flex: 1;
+  min-width: 0;
+}
+
+.eqc-title {
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: var(--text-primary);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.eqc-meta {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 3px;
+}
+
+.eqc-dates {
+  font-size: 0.78rem;
+  color: var(--text-muted);
+}
+
+.eqc-qcount {
+  font-size: 0.78rem;
+  color: var(--text-muted);
+}
+
+.eqc-score-area {
+  flex-shrink: 0;
+  width: 60px;
+  text-align: center;
+}
+
+/* Score ring */
+.eqc-score-ring {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: conic-gradient(
+    var(--ring-color) var(--pct),
+    var(--bg-card) var(--pct)
+  );
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  position: relative;
+}
+
+.eqc-score-ring::before {
+  content: '';
+  position: absolute;
+  inset: 3px;
+  border-radius: 50%;
+  background: var(--bg-secondary);
+}
+
+.eqc-score-ring span {
+  position: relative;
+  font-size: 0.65rem;
+  font-weight: 700;
+  color: var(--text-primary);
+}
+
+.eqc-attempts {
+  font-size: 0.58rem;
+  color: var(--text-muted);
+  margin-top: 2px;
+}
+
+.eqc-start {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--accent);
+  padding: 6px 12px;
+  border: 1px solid var(--accent);
+  border-radius: 6px;
+  transition: all 0.2s;
+}
+
+.event-quiz-card:hover .eqc-start {
+  background: var(--accent);
+  color: white;
+}
+
+/* ===== MOBILE RESPONSIVE ===== */
+@media (max-width: 768px) {
+  .quizhub {
+    padding: 20px 16px;
+  }
+
+  .quizhub-stats {
+    gap: 8px;
+    margin-bottom: 20px;
+  }
+
+  .stat-card {
+    padding: 12px 8px;
+  }
+
+  .stat-number {
+    font-size: 1.3rem;
+  }
+
+  .stat-label {
+    font-size: 0.6rem;
+  }
+
+  .quizhub-filters {
+    gap: 6px;
+    margin-bottom: 20px;
+  }
+
+  .filter-chip {
+    padding: 5px 10px;
+    font-size: 0.7rem;
+  }
+
+  .era-section-header {
+    padding: 12px 14px;
+    gap: 10px;
+  }
+
+  .era-section-title {
+    font-size: 0.88rem;
+  }
+
+  .era-section-dates {
+    font-size: 0.7rem;
+  }
+
+  .era-section-meta {
+    gap: 8px;
+  }
+
+  .era-q-count {
+    display: none;
+  }
+
+  .era-review-btn {
+    padding: 5px 10px;
+    font-size: 0.68rem;
+  }
+
+  .event-quiz-card {
+    padding: 10px 14px;
+    gap: 8px;
+  }
+
+  .eqc-image {
+    width: 32px;
+    height: 32px;
+    border-radius: 6px;
+  }
+
+  .eqc-title {
+    font-size: 0.82rem;
+  }
+
+  .eqc-meta .spicet-badge {
+    display: none;
+  }
+
+  .eqc-dates, .eqc-qcount {
+    font-size: 0.68rem;
+  }
+
+  .eqc-score-area {
+    width: 50px;
+  }
+
+  .eqc-score-ring {
+    width: 36px;
+    height: 36px;
+  }
+
+  .eqc-start {
+    font-size: 0.72rem;
+    padding: 4px 8px;
+  }
+}
+
+@media (max-width: 480px) {
+  .quizhub-stats {
+    flex-wrap: wrap;
+  }
+
+  .stat-card {
+    flex: 1 1 40%;
+  }
+
+  .eqc-color {
+    display: none;
+  }
+}

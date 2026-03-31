@@ -79,18 +79,30 @@ function assignLanes(allEvents, yearToX) {
 
 export default function Timeline({ data, onStartQuiz }) {
   const containerRef = useRef(null);
-  const [zoom, setZoom] = useState(1);
+  const [zoom, setZoom] = useState(MIN_ZOOM);
   const [panX, setPanX] = useState(0);
   const [isPanning, setIsPanning] = useState(false);
   const [panStart, setPanStart] = useState({ x: 0, panX: 0 });
   const [mouseX, setMouseX] = useState(null);
   const [hoveredEvent, setHoveredEvent] = useState(null); // track which event node the mouse is on
+  const [hoverPos, setHoverPos] = useState({ x: 0, y: 0 }); // mouse position for image tooltip
+  const [connectionMode, setConnectionMode] = useState('cause'); // 'off' | 'cause' | 'all'
 
   const totalWidth = (YEAR_END - YEAR_START) * PX_PER_YEAR * zoom;
 
   // Clamp panX so user can't scroll past the era boundaries (1200–2001)
   const ERA_LEFT_YEAR = 1200;
   const ERA_RIGHT_YEAR = 2001;
+
+  // Dynamic minimum zoom: era range must fill the viewport width
+  const getMinZoom = () => {
+    const el = containerRef.current;
+    if (!el) return MIN_ZOOM;
+    const cw = el.clientWidth;
+    const eraWidthPerUnit = (ERA_RIGHT_YEAR - ERA_LEFT_YEAR) * PX_PER_YEAR;
+    return Math.max(MIN_ZOOM, cw / eraWidthPerUnit);
+  };
+
   const clampPanX = (px, z) => {
     const el = containerRef.current;
     if (!el) return px;
@@ -202,7 +214,8 @@ export default function Timeline({ data, onStartQuiz }) {
       setMouseX(cursorX);
       const worldX = (cursorX - panX) / zoom;
       const delta = -e.deltaY * ZOOM_SPEED;
-      const newZoom = Math.min(MAX_ZOOM, Math.max(MIN_ZOOM, zoom + delta * zoom));
+      const minZ = getMinZoom();
+      const newZoom = Math.min(MAX_ZOOM, Math.max(minZ, zoom + delta * zoom));
       setPanX(clampPanX(cursorX - worldX * newZoom, newZoom));
       setZoom(newZoom);
     };
@@ -249,14 +262,91 @@ export default function Timeline({ data, onStartQuiz }) {
     }
   }, [isPanning]);
 
+  // Touch support: single finger = pan, two fingers = pinch zoom, double-tap = enter
+  const touchRef = useRef({ lastTap: 0, startDist: 0, startZoom: 1, startPanX: 0, startX: 0, panning: false });
+  useEffect(() => {
+    const el = containerRef.current;
+    if (!el) return;
+
+    const getTouchDist = (t) => Math.hypot(t[1].clientX - t[0].clientX, t[1].clientY - t[0].clientY);
+    const getTouchMidX = (t) => (t[0].clientX + t[1].clientX) / 2;
+
+    const onTouchStart = (e) => {
+      const tr = touchRef.current;
+      if (e.touches.length === 1) {
+        const now = Date.now();
+        const touch = e.touches[0];
+        // Double-tap detection
+        if (now - tr.lastTap < 300) {
+          e.preventDefault();
+          // Find what's under the tap
+          const target = document.elementFromPoint(touch.clientX, touch.clientY);
+          if (target) target.dispatchEvent(new MouseEvent('dblclick', { bubbles: true, clientX: touch.clientX, clientY: touch.clientY }));
+          tr.lastTap = 0;
+          return;
+        }
+        tr.lastTap = now;
+        // Single finger pan
+        if (!inFocusMode) {
+          tr.startX = touch.clientX;
+          tr.startPanX = panX;
+          tr.panning = true;
+        }
+      } else if (e.touches.length === 2) {
+        e.preventDefault();
+        tr.panning = false;
+        tr.startDist = getTouchDist(e.touches);
+        tr.startZoom = zoom;
+        tr.startPanX = panX;
+        tr.midX = getTouchMidX(e.touches);
+      }
+    };
+
+    const onTouchMove = (e) => {
+      const tr = touchRef.current;
+      if (e.touches.length === 1 && tr.panning && !inFocusMode) {
+        e.preventDefault();
+        const dx = e.touches[0].clientX - tr.startX;
+        setPanX(clampPanX(tr.startPanX + dx));
+        if (Math.abs(dx) > 5) setIsPanning(true);
+      } else if (e.touches.length === 2) {
+        e.preventDefault();
+        const dist = getTouchDist(e.touches);
+        const scale = dist / tr.startDist;
+        const rect = el.getBoundingClientRect();
+        const midX = getTouchMidX(e.touches) - rect.left;
+        const worldX = (midX - tr.startPanX) / tr.startZoom;
+        const minZ = getMinZoom();
+        const newZoom = Math.min(MAX_ZOOM, Math.max(minZ, tr.startZoom * scale));
+        setPanX(clampPanX(midX - worldX * newZoom, newZoom));
+        setZoom(newZoom);
+      }
+    };
+
+    const onTouchEnd = (e) => {
+      touchRef.current.panning = false;
+      setIsPanning(false);
+    };
+
+    el.addEventListener('touchstart', onTouchStart, { passive: false });
+    el.addEventListener('touchmove', onTouchMove, { passive: false });
+    el.addEventListener('touchend', onTouchEnd);
+    return () => {
+      el.removeEventListener('touchstart', onTouchStart);
+      el.removeEventListener('touchmove', onTouchMove);
+      el.removeEventListener('touchend', onTouchEnd);
+    };
+  }, [zoom, panX, inFocusMode]);
+
   useEffect(() => {
     const el = containerRef.current;
     if (!el) return;
     const timer = requestAnimationFrame(() => {
       const cw = el.clientWidth;
       const totalRange = (YEAR_END - YEAR_START) * PX_PER_YEAR;
-      const fitZoom = Math.min(1.5, Math.max(MIN_ZOOM, (cw - 80) / totalRange));
-      const midX = ((YEAR_START + YEAR_END) / 2 - YEAR_START) * PX_PER_YEAR * fitZoom;
+      const minZ = getMinZoom();
+      const fitZoom = Math.max(minZ, Math.min(1.5, (cw - 80) / totalRange));
+      const midX = ((ERA_LEFT_YEAR + ERA_RIGHT_YEAR) / 2 - YEAR_START) * PX_PER_YEAR * fitZoom;
       setZoom(fitZoom); setPanX(clampPanX(cw / 2 - midX, fitZoom));
     });
     return () => cancelAnimationFrame(timer);
@@ -267,7 +357,7 @@ export default function Timeline({ data, onStartQuiz }) {
     if (!el) return;
     const cx = el.clientWidth / 2;
     const worldX = (cx - panX) / zoom;
-    const nz = Math.min(MAX_ZOOM, Math.max(MIN_ZOOM, zoom * factor));
+    const nz = Math.min(MAX_ZOOM, Math.max(getMinZoom(), zoom * factor));
     setPanX(clampPanX(cx - worldX * nz, nz)); setZoom(nz);
   }, [zoom, panX]);
 
@@ -309,13 +399,26 @@ export default function Timeline({ data, onStartQuiz }) {
           <button className="zoom-btn" onClick={() => zoomAtCenter(0.7)}>−</button>
           <span className="zoom-display">{Math.round(zoom * 100)}%</span>
           <button className="zoom-btn" onClick={() => zoomAtCenter(1.4)}>+</button>
+          <div className="conn-toggle">
+            {['off', 'cause', 'all'].map(mode => (
+              <button
+                key={mode}
+                className={`conn-btn ${connectionMode === mode ? 'active' : ''}`}
+                onClick={() => setConnectionMode(mode)}
+                title={mode === 'off' ? 'Hide connections' : mode === 'cause' ? 'Cause & effect' : 'All connections'}
+              >
+                {mode === 'off' ? '—' : mode === 'cause' ? '→' : '⇄'}
+              </button>
+            ))}
+          </div>
           <button className="zoom-btn reset" onClick={() => {
             const el = containerRef.current;
             if (!el) return;
             const cw = el.clientWidth;
             const totalRange = (YEAR_END - YEAR_START) * PX_PER_YEAR;
-            const fitZoom = Math.min(1.5, Math.max(MIN_ZOOM, (cw - 80) / totalRange));
-            const midX = ((YEAR_START + YEAR_END) / 2 - YEAR_START) * PX_PER_YEAR * fitZoom;
+            const minZ = getMinZoom();
+            const fitZoom = Math.max(minZ, Math.min(1.5, (cw - 80) / totalRange));
+            const midX = ((ERA_LEFT_YEAR + ERA_RIGHT_YEAR) / 2 - YEAR_START) * PX_PER_YEAR * fitZoom;
             setZoom(fitZoom); setPanX(clampPanX(cw / 2 - midX, fitZoom));
           }}>Reset</button>
         </div>
@@ -401,7 +504,8 @@ export default function Timeline({ data, onStartQuiz }) {
                           opacity: isFocused ? Math.max(0, 1 - focusBlend) : Math.min(1, eventBlend * 1.5),
                           cursor: 'pointer',
                         }}
-                        onMouseEnter={() => setHoveredEvent(event)}
+                        onMouseEnter={(e) => { setHoveredEvent(event); setHoverPos({ x: e.clientX, y: e.clientY }); }}
+                        onMouseMove={(e) => { if (hoveredEvent?.id === event.id) setHoverPos({ x: e.clientX, y: e.clientY }); }}
                         onMouseLeave={() => setHoveredEvent(null)}
                         onDoubleClick={(e) => { e.stopPropagation(); setLockedEvent(event); zoomToRange(event.startYear, event.endYear, 4.5); }}
                         initial={{ scale: 0.95 }} animate={{ scale: 1 }} exit={{ scale: 0.95 }}
@@ -425,6 +529,113 @@ export default function Timeline({ data, onStartQuiz }) {
               </div>
             );
           })}
+
+          {/* === CONNECTION LINES SVG === */}
+          {connectionMode !== 'off' && eventBlend > 0.2 && !inFocusMode && data.connections && (() => {
+            const containerH = containerRef.current?.clientHeight || 600;
+            const midY = containerH / 2;
+            const themeColors = {
+              social: '#E74C3C', political: '#3498DB', interactions: '#2ECC71',
+              cultural: '#9B59B6', economic: '#F39C12', technology: '#1ABC9C',
+            };
+
+            const filteredConns = data.connections.filter(conn =>
+              connectionMode === 'all' || conn.type === 'cause-effect'
+            );
+
+            return (
+              <svg className="connections-svg" style={{ opacity: Math.min(1, eventBlend * 1.5) }}>
+                <defs>
+                  <marker id="arrowhead" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto">
+                    <polygon points="0 0, 8 3, 0 6" fill="var(--text-muted)" opacity="0.7" />
+                  </marker>
+                </defs>
+                {filteredConns.map((conn, i) => {
+                  const fromEvent = allEvents.find(e => e.id === conn.from);
+                  const toEvent = allEvents.find(e => e.id === conn.to);
+                  if (!fromEvent || !toEvent) return null;
+
+                  const fromAssign = laneAssignments[fromEvent.id] || { lane: 0, side: 'above' };
+                  const toAssign = laneAssignments[toEvent.id] || { lane: 0, side: 'above' };
+
+                  // X: center of each node
+                  const fromX = yearToX((fromEvent.startYear + fromEvent.endYear) / 2);
+                  const toX = yearToX((toEvent.startYear + toEvent.endYear) / 2);
+
+                  // Y: center of node
+                  const fromLaneOff = fromAssign.lane * (NODE_HEIGHT + NODE_GAP);
+                  const toLaneOff = toAssign.lane * (NODE_HEIGHT + NODE_GAP);
+                  const fromY = fromAssign.side === 'above'
+                    ? midY - 24 - fromLaneOff - NODE_HEIGHT / 2
+                    : midY + 24 + fromLaneOff + NODE_HEIGHT / 2;
+                  const toY = toAssign.side === 'above'
+                    ? midY - 24 - toLaneOff - NODE_HEIGHT / 2
+                    : midY + 24 + toLaneOff + NODE_HEIGHT / 2;
+
+                  // Is this connection highlighted (hovered node is source or target)?
+                  const isHighlighted = hoveredEvent && (hoveredEvent.id === conn.from || hoveredEvent.id === conn.to);
+
+                  // Bezier: arc away from nodes
+                  const ctrlMidX = (fromX + toX) / 2;
+                  const xDist = Math.abs(toX - fromX);
+                  const bothAbove = fromAssign.side === 'above' && toAssign.side === 'above';
+                  const bothBelow = fromAssign.side === 'below' && toAssign.side === 'below';
+                  const arcStrength = 50 + xDist * 0.05;
+                  let ctrlY;
+                  if (bothAbove) {
+                    ctrlY = Math.min(fromY, toY) - arcStrength;
+                  } else if (bothBelow) {
+                    ctrlY = Math.max(fromY, toY) + arcStrength;
+                  } else {
+                    ctrlY = Math.min(fromY, toY) - arcStrength;
+                  }
+
+                  const isCause = conn.type === 'cause-effect';
+                  const strokeColor = isCause
+                    ? (fromEvent.color || '#888')
+                    : (themeColors[conn.theme] || '#888');
+
+                  // Dim non-highlighted lines when hovering a node
+                  const hasHover = hoveredEvent !== null;
+                  const baseOpacity = isCause ? 0.35 : 0.2;
+                  const opacity = hasHover
+                    ? (isHighlighted ? 0.85 : 0.08)
+                    : baseOpacity;
+                  const strokeWidth = hasHover && isHighlighted
+                    ? (isCause ? 2.5 : 2)
+                    : (isCause ? 1.5 : 1);
+
+                  const labelY = bothBelow ? ctrlY + 14 : ctrlY - 8;
+
+                  return (
+                    <g key={`conn-${i}`} className={`connection-line ${isHighlighted ? 'highlighted' : ''}`}>
+                      <path
+                        d={`M ${fromX} ${fromY} Q ${ctrlMidX} ${ctrlY} ${toX} ${toY}`}
+                        fill="none"
+                        stroke={strokeColor}
+                        strokeWidth={strokeWidth}
+                        strokeDasharray={isCause ? 'none' : '6 4'}
+                        opacity={opacity}
+                        markerEnd={isCause ? 'url(#arrowhead)' : undefined}
+                      />
+                      {/* Label only when highlighted */}
+                      {conn.label && isHighlighted && (
+                        <text
+                          x={ctrlMidX}
+                          y={labelY}
+                          textAnchor="middle"
+                          className="connection-label"
+                          fill={strokeColor}
+                        >
+                          {conn.label}
+                        </text>
+                      )}
+                    </g>
+                  );
+                })}
+              </svg>
+            );
+          })()}
         </div>
 
         {/* === FOCUS PAGE with BLOBS === */}
@@ -441,11 +652,15 @@ export default function Timeline({ data, onStartQuiz }) {
               <div className="focus-header-bar" style={{ borderBottomColor: focusedEvent.color }}>
                 <div className="focus-era-tag" style={{ color: focusedEvent.eraColor }}>{focusedEvent.eraTitle}</div>
                 <div className="focus-title-row">
-                  {focusedEvent.image && (
+                  {focusedEvent.hoverImage ? (
+                    <div className="focus-hero-thumb" style={{ borderColor: focusedEvent.color }}>
+                      <img src={focusedEvent.hoverImage} alt={focusedEvent.title} onError={(e) => { e.target.parentElement.style.display = 'none'; }} />
+                    </div>
+                  ) : focusedEvent.image ? (
                     <div className="focus-icon" style={{ borderColor: focusedEvent.color }}>
                       <img src={focusedEvent.image} alt={focusedEvent.title} />
                     </div>
-                  )}
+                  ) : null}
                   <div>
                     <h2 className="focus-title">{focusedEvent.title}</h2>
                     <div className="focus-dates" style={{ color: focusedEvent.color }}>{focusedEvent.startYear} – {focusedEvent.endYear}</div>
@@ -501,8 +716,9 @@ export default function Timeline({ data, onStartQuiz }) {
                     if (!el) return;
                     const cw = el.clientWidth;
                     const totalRange = (YEAR_END - YEAR_START) * PX_PER_YEAR;
-                    const fitZoom = Math.min(1.5, Math.max(MIN_ZOOM, (cw - 80) / totalRange));
-                    const midX = ((YEAR_START + YEAR_END) / 2 - YEAR_START) * PX_PER_YEAR * fitZoom;
+                    const minZ = getMinZoom();
+                    const fitZoom = Math.max(minZ, Math.min(1.5, (cw - 80) / totalRange));
+                    const midX = ((ERA_LEFT_YEAR + ERA_RIGHT_YEAR) / 2 - YEAR_START) * PX_PER_YEAR * fitZoom;
                     setZoom(fitZoom); setPanX(clampPanX(cw / 2 - midX, fitZoom));
                   }}>Back to timeline</button>
                 </div>
@@ -592,6 +808,28 @@ export default function Timeline({ data, onStartQuiz }) {
           </>
         )}
       </div>
+
+      {/* Hover image tooltip */}
+      <AnimatePresence>
+        {hoveredEvent?.hoverImage && !inFocusMode && eventBlend > 0.5 && (
+          <motion.div
+            className="event-hover-tooltip"
+            initial={{ opacity: 0, scale: 0.9 }}
+            animate={{ opacity: 1, scale: 1 }}
+            exit={{ opacity: 0, scale: 0.9 }}
+            transition={{ duration: 0.15 }}
+            style={{
+              left: hoverPos.x + 16,
+              top: hoverPos.y - 120,
+            }}
+          >
+            <img src={hoveredEvent.hoverImage} alt={hoveredEvent.title} onError={(e) => { e.target.style.display = 'none'; }} />
+            <div className="event-hover-caption" style={{ borderTopColor: hoveredEvent.color }}>
+              {hoveredEvent.title}
+            </div>
+          </motion.div>
+        )}
+      </AnimatePresence>
 
       <div className="timeline-status">
         <div className="status-dot" />

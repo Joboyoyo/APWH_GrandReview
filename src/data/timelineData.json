@@ -1075,6 +1075,166 @@
               "theme": "interactions"
             }
           ]
+        },
+        {
+          "id": "evt-abolition-movements",
+          "title": "Abolition & Emancipation Movements",
+          "startYear": 1807,
+          "endYear": 1888,
+          "color": "#27AE60",
+          "summary": "A global wave of movements to end the slave trade and slavery. Beginning with Britain's abolition of the slave trade in 1807, the movement spread across the Americas, culminating in Brazil's abolition in 1888. Driven by Enlightenment ideals, religious convictions, slave resistance, and economic changes from industrialization.",
+          "spiceT": {
+            "social": "Former enslaved people faced ongoing discrimination and economic marginalization. Racial hierarchies persisted despite legal freedom. New forms of coerced labor (indentured servitude, sharecropping) often replaced slavery.",
+            "political": "British Navy enforced abolition at sea. US Civil War (1861-1865) ended American slavery through violence. Abolition reshaped colonial labor policies worldwide. Debate over gradual vs. immediate emancipation.",
+            "interactions": "Abolition was a transnational movement with networks connecting activists in Britain, the Americas, and Africa. British imperialism used anti-slavery as justification for intervention in Africa.",
+            "cultural": "Slave narratives and abolitionist literature shaped public opinion. Religious revival movements (Quakers, Evangelicals) drove moral arguments. Legacy of slavery continued to shape racial attitudes globally.",
+            "economic": "Industrial capitalism reduced the economic logic of slavery in some regions. Free labor ideology gained ground. Plantation economies sought new labor sources (indentured servants from India, China). Sugar and cotton production adapted to wage labor.",
+            "technology": "Printing press spread abolitionist pamphlets. Steamships enabled British anti-slavery naval patrols. Photography documented slavery's horrors for wider audiences."
+          },
+          "keyTerms": ["William Wilberforce", "Middle Passage", "Emancipation Proclamation", "Indentured servitude", "Sharecropping", "British Navy patrols", "Maroon communities", "Absentee landlords"],
+          "quiz": [
+            {
+              "id": "q-abolition-1",
+              "type": "mcq",
+              "question": "Which of the following best explains why new forms of coerced labor emerged after the abolition of slavery?",
+              "choices": [
+                "Former slave owners genuinely wanted to improve working conditions",
+                "The economic demand for cheap labor on plantations persisted, leading to systems like indentured servitude and sharecropping",
+                "Abolition immediately created equal economic opportunities for all",
+                "Technology had completely eliminated the need for manual labor"
+              ],
+              "correct": 1,
+              "explanation": "The AP exam emphasizes continuity and change: while legal slavery ended, the economic structures that depended on cheap labor persisted. Plantation owners turned to indentured servants (especially from India and China), sharecropping, and debt peonage to maintain their labor supply. This illustrates the AP concept that formal political changes don't always transform underlying economic and social realities.",
+              "theme": "economic"
+            },
+            {
+              "id": "q-abolition-2",
+              "type": "mcq",
+              "question": "Britain's use of its navy to enforce the abolition of the Atlantic slave trade best illustrates which historical pattern?",
+              "choices": [
+                "Imperial powers sometimes used humanitarian justifications to extend their global influence",
+                "Naval power was irrelevant to enforcing international agreements",
+                "All nations voluntarily agreed to end the slave trade simultaneously",
+                "Britain had no strategic interests in West Africa beyond abolition"
+              ],
+              "correct": 0,
+              "explanation": "Britain's anti-slavery naval patrols served both humanitarian and strategic purposes. While genuinely reducing the slave trade, they also extended British influence along the West African coast and provided justification for colonial expansion. The AP exam uses this as an example of how moral causes can intersect with imperial ambitions — a pattern repeated throughout the Age of Imperialism.",
+              "theme": "political"
+            }
+          ]
+        },
+        {
+          "id": "evt-nationalism-europe",
+          "title": "Nationalism & Unification Movements",
+          "startYear": 1815,
+          "endYear": 1871,
+          "color": "#D35400",
+          "summary": "The rise of nationalism as a political force transformed the map of Europe. The unification of Italy (1861) and Germany (1871), along with independence movements in Greece, Belgium, and throughout the Habsburg and Ottoman empires, redrew borders based on the principle that peoples sharing language, culture, and history should form their own states.",
+          "spiceT": {
+            "social": "National identities were constructed through shared language, history, and culture. Public education systems promoted national consciousness. Ethnic minorities within multi-ethnic empires faced pressure to assimilate or seek independence.",
+            "political": "Congress of Vienna (1815) attempted to restore pre-Napoleonic order but couldn't suppress nationalism. Revolutions of 1848 shook every major European capital. Realpolitik practitioners like Bismarck and Cavour used war and diplomacy to achieve unification.",
+            "interactions": "Nationalism spread across borders through print culture, exile communities, and shared revolutionary ideals. European nationalism inspired anti-colonial movements globally. Multi-ethnic empires (Ottoman, Habsburg, Russian) destabilized.",
+            "cultural": "National languages were standardized and promoted. Romantic nationalism celebrated folk traditions, national epics, and historical myths. National anthems, flags, and monuments created shared symbols. Johann Gottfried Herder's ideas about Volksgeist influenced the movement.",
+            "economic": "Economic integration preceded political unification (German Zollverein customs union). National markets replaced fragmented local economies. Industrialization strengthened nation-states economically and militarily.",
+            "technology": "Railroads physically connected national territories. Telegraph enabled rapid communication across nations. Mass-produced newspapers spread nationalist ideas. Improved weapons technology made wars of unification possible."
+          },
+          "keyTerms": ["Congress of Vienna", "Revolutions of 1848", "Otto von Bismarck", "Giuseppe Garibaldi", "Zollverein", "Realpolitik", "Volksgeist", "Blood and Iron"],
+          "quiz": [
+            {
+              "id": "q-nationalism-1",
+              "type": "mcq",
+              "question": "The German Zollverein (customs union) best demonstrates which relationship between economics and politics?",
+              "choices": [
+                "Political unification always precedes economic integration",
+                "Economic integration can create practical bonds that facilitate later political unification",
+                "Customs unions have no political significance",
+                "Free trade always prevents political conflict"
+              ],
+              "correct": 1,
+              "explanation": "The Zollverein (established 1834) eliminated tariff barriers between German states decades before political unification in 1871. By creating a common economic space, it made German unity a practical reality before Bismarck made it a political one. The AP exam uses this as a key example of how economic forces can drive political change.",
+              "theme": "economic"
+            },
+            {
+              "id": "q-nationalism-2",
+              "type": "mcq",
+              "question": "The Revolutions of 1848 are historically significant primarily because they:",
+              "choices": [
+                "Successfully established lasting democratic governments across Europe",
+                "Demonstrated the growing power of nationalist and liberal ideals even though most revolutions were ultimately suppressed",
+                "Had no lasting impact on European politics",
+                "Were confined to a single country"
+              ],
+              "correct": 1,
+              "explanation": "The 1848 revolutions erupted in France, the German states, the Habsburg Empire, and Italy simultaneously, driven by nationalism, liberalism, and economic grievances. Though most were suppressed, they demonstrated that the old order could no longer ignore demands for national self-determination and constitutional government. Within 25 years, both Italy and Germany achieved unification.",
+              "theme": "political"
+            }
+          ]
+        },
+        {
+          "id": "evt-tanzimat-reforms",
+          "title": "Ottoman Tanzimat Reforms",
+          "startYear": 1839,
+          "endYear": 1876,
+          "color": "#C0392B",
+          "summary": "A period of sweeping modernization reforms in the Ottoman Empire aimed at preventing its decline. The Tanzimat ('reorganization') introduced Western-style legal codes, secular education, equal citizenship regardless of religion, and military modernization. Despite these efforts, the reforms ultimately failed to prevent the empire's continued decline.",
+          "spiceT": {
+            "social": "Legal equality granted to non-Muslim minorities (dhimmis). Secular education expanded. Western dress adopted in urban areas. Traditional social hierarchies challenged but not eliminated.",
+            "political": "Centralized administrative reforms modeled on European states. First Ottoman constitution (1876). Resistance from conservative religious establishment and Janissaries. Young Ottomans advocated constitutionalism.",
+            "interactions": "Reforms were a direct response to European military and economic pressure. European powers used protection of Christian minorities as justification for intervention. The 'Eastern Question' dominated European diplomacy.",
+            "cultural": "Tension between Westernization and Islamic tradition. New secular schools coexisted with traditional madrasas. Ottoman intellectuals debated modernization vs. cultural authenticity — a debate echoed across the non-Western world.",
+            "economic": "Integration into European-dominated global economy as an exporter of raw materials. Foreign debt grew dramatically. Capitulations gave European merchants privileged trading status. Some industrial development attempted.",
+            "technology": "Telegraph networks built. Railroad construction (often funded by European capital). Military modernized with European weapons and training. Printing expanded."
+          },
+          "keyTerms": ["Tanzimat", "Hatt-i Sharif", "Young Ottomans", "Capitulations", "Sick Man of Europe", "Millet system", "Dhimmi", "Constitution of 1876"],
+          "quiz": [
+            {
+              "id": "q-tanzimat-1",
+              "type": "mcq",
+              "question": "The Ottoman Tanzimat reforms and the Japanese Meiji Restoration both represent:",
+              "choices": [
+                "Successful transitions to democratic governance",
+                "Non-Western states attempting defensive modernization in response to Western imperial pressure",
+                "Complete rejection of all Western influences",
+                "Movements led by the lower classes against their rulers"
+              ],
+              "correct": 1,
+              "explanation": "Both the Tanzimat and Meiji reforms are AP-emphasized examples of 'defensive modernization' — non-Western states selectively adopting Western technology, military practices, and legal systems to resist Western domination. The key comparison question is why Japan succeeded in industrializing while the Ottoman Empire did not. Factors include Japan's greater social cohesion, the Ottoman Empire's larger multi-ethnic territory, and different levels of European interference.",
+              "theme": "political"
+            }
+          ]
+        },
+        {
+          "id": "evt-sepoy-mutiny",
+          "title": "The Indian Rebellion of 1857",
+          "startYear": 1857,
+          "endYear": 1858,
+          "color": "#E67E22",
+          "summary": "A major uprising against British East India Company rule in India, triggered by Indian soldiers (sepoys) but quickly spreading to include peasants, landlords, and displaced rulers. Though ultimately suppressed, it marked the end of East India Company rule and the beginning of direct British Crown control (the British Raj).",
+          "spiceT": {
+            "social": "Caste and religious tensions exploited by British policies. Rumors about cartridges greased with cow and pig fat offended Hindu and Muslim soldiers. Peasant grievances over land revenue joined military rebellion.",
+            "political": "East India Company replaced by direct Crown rule. Queen Victoria became Empress of India. Indian princes given guarantees but lost remaining autonomy. Seeds of Indian nationalism planted.",
+            "interactions": "Demonstrated the limits of imperial control over subject populations. British responded with increased racism and segregation. Became a founding myth for later Indian independence movement.",
+            "cultural": "British abandoned earlier policies of cultural engagement and reform. Racial segregation intensified after the rebellion. Indian elites began organizing cultural and political associations that would later become nationalist organizations.",
+            "economic": "British economic exploitation of India intensified under Crown rule. Drain of wealth theory developed by Indian economists. Cash crop agriculture expanded at the expense of food production. Indian textile industry deliberately destroyed to benefit British manufacturers.",
+            "technology": "Telegraph enabled rapid British military response. Railroads moved troops quickly. Industrial weapons gave British decisive military advantage. But also: Indian soldiers had been trained in modern warfare techniques."
+          },
+          "keyTerms": ["Sepoy", "British East India Company", "British Raj", "Queen Victoria", "Doctrine of Lapse", "Enfield rifle", "Rani of Jhansi", "Bahadur Shah II"],
+          "quiz": [
+            {
+              "id": "q-sepoy-1",
+              "type": "mcq",
+              "question": "The transition from East India Company rule to direct British Crown rule after 1857 best illustrates which AP World History concept?",
+              "choices": [
+                "Colonial resistance always leads to immediate independence",
+                "Imperial powers adapted their methods of colonial control in response to resistance, often increasing rather than decreasing their authority",
+                "The British voluntarily granted India self-governance after 1857",
+                "The rebellion had no significant impact on British colonial policy"
+              ],
+              "correct": 1,
+              "explanation": "The rebellion's suppression led to more direct and authoritarian British control, not less. The Crown replaced the Company, the army was reorganized to prevent future mutinies, and racial segregation increased. This illustrates the AP concept that colonial resistance could paradoxically lead to tighter imperial control in the short term, even as it planted seeds for eventual independence movements.",
+              "theme": "political"
+            }
+          ]
         }
       ]
     },
@@ -1306,8 +1466,183 @@
               "theme": "interactions"
             }
           ]
+        },
+        {
+          "id": "evt-russian-revolution",
+          "title": "The Russian Revolution",
+          "startYear": 1917,
+          "endYear": 1922,
+          "color": "#C0392B",
+          "summary": "The overthrow of the Russian Empire and establishment of the world's first communist state. The February Revolution (1917) toppled the Tsar, and the October Revolution brought Lenin's Bolsheviks to power. The resulting Soviet Union became a model and sponsor of revolutionary movements worldwide, fundamentally shaping 20th-century geopolitics.",
+          "spiceT": {
+            "social": "Bolsheviks promised equality and redistribution. Women gained legal equality early. Massive social upheaval: land redistribution, literacy campaigns, attack on traditional religion. Millions died in civil war and subsequent famines.",
+            "political": "Tsar Nicholas II abdicated. Lenin established one-party Communist state. Civil War (1918-1922) between Reds and Whites. Stalin's rise led to totalitarian dictatorship. Inspired communist movements globally.",
+            "interactions": "Western powers intervened in the Civil War against the Bolsheviks. Soviet Union became a rival model to Western capitalism. Comintern (Communist International) sought to spread revolution worldwide.",
+            "cultural": "Marxist ideology became state doctrine. Revolutionary art movements (Constructivism, Socialist Realism). Attack on traditional religion and culture. Education and literacy expanded dramatically but under ideological control.",
+            "economic": "War Communism followed by New Economic Policy (NEP). Nationalization of industry and collectivization of agriculture. Planned economy replaced market economy. Rapid but brutal industrialization under Stalin's Five-Year Plans.",
+            "technology": "Rapid industrialization prioritized heavy industry and military technology. Soviet space program later achieved major firsts (Sputnik, Gagarin). Nuclear weapons developed by 1949."
+          },
+          "keyTerms": ["Vladimir Lenin", "Bolsheviks", "October Revolution", "Tsar Nicholas II", "Soviet Union", "War Communism", "NEP", "Comintern", "Red Army"],
+          "quiz": [
+            {
+              "id": "q-russian-rev-1",
+              "type": "mcq",
+              "question": "The Russian Revolution's global significance for AP World History lies primarily in:",
+              "choices": [
+                "It was an isolated event with no impact beyond Russia's borders",
+                "It created an alternative model to Western liberal capitalism that inspired revolutionary movements worldwide and shaped the 20th-century global order",
+                "It immediately brought prosperity and equality to all Russian citizens",
+                "It demonstrated that monarchy was the most stable form of government"
+              ],
+              "correct": 1,
+              "explanation": "The Russian Revolution created the Soviet Union — the first state founded on Marxist-Leninist ideology. This provided an alternative development model that appealed to anti-colonial movements, peasant revolutionaries, and industrializing nations worldwide. The ideological competition between communism and capitalism defined the Cold War and shaped decolonization, making the Russian Revolution one of the most consequential events of the 20th century for the AP exam.",
+              "theme": "political"
+            },
+            {
+              "id": "q-russian-rev-2",
+              "type": "mcq",
+              "question": "Stalin's Five-Year Plans and forced collectivization most closely parallel which other historical process?",
+              "choices": [
+                "Britain's gradual, market-driven Industrial Revolution",
+                "State-directed rapid industrialization that prioritized heavy industry at enormous human cost",
+                "Japan's Meiji Restoration, which preserved traditional agriculture",
+                "The American New Deal's emphasis on consumer protection"
+              ],
+              "correct": 1,
+              "explanation": "Stalin's industrialization (beginning 1928) represents the most extreme example of state-directed development. The Five-Year Plans achieved rapid industrial growth but at catastrophic human cost — forced collectivization caused millions of deaths from famine (especially in Ukraine). The AP exam compares this to other industrialization paths (Britain's market-driven, Japan's Meiji, China's Great Leap Forward) to illustrate different models and their trade-offs.",
+              "theme": "economic"
+            }
+          ]
+        },
+        {
+          "id": "evt-great-depression",
+          "title": "The Great Depression",
+          "startYear": 1929,
+          "endYear": 1939,
+          "color": "#7F8C8D",
+          "summary": "The worst global economic crisis of the 20th century, triggered by the 1929 US stock market crash. It devastated economies worldwide, caused mass unemployment, and destabilized democracies. The Depression's failures directly contributed to the rise of fascism in Germany and Italy and intensified Japanese militarism, ultimately helping cause World War II.",
+          "spiceT": {
+            "social": "Mass unemployment (25% in the US, higher elsewhere). Poverty, homelessness, and hunger affected millions. Migration patterns shifted. Social safety nets created in response (Social Security, welfare states).",
+            "political": "Democracies weakened as people lost faith in liberal capitalism. Rise of fascism in Germany (Hitler, 1933) and militarism in Japan. Authoritarian 'strongman' governments gained appeal. New Deal in the US expanded government's economic role.",
+            "interactions": "Protectionist trade policies (Smoot-Hawley Tariff) worsened the crisis by collapsing international trade. Economic nationalism replaced free trade. Colonial economies devastated as commodity prices collapsed.",
+            "cultural": "Crisis of confidence in capitalism and liberal democracy. Art and literature reflected despair and social criticism (Grapes of Wrath, Dorothea Lange's photography). Radio became a powerful tool for political communication.",
+            "economic": "Global GDP fell dramatically. Bank failures wiped out savings. Deflation made debts unpayable. Keynesian economics emerged as an alternative to laissez-faire. Government intervention in the economy became the norm.",
+            "technology": "Paradoxically, technological innovation continued (aviation, radio, early television). But investment in new technology slowed. Military technology development accelerated as nations prepared for war."
+          },
+          "keyTerms": ["Stock Market Crash", "Smoot-Hawley Tariff", "New Deal", "Keynesian economics", "Fascism", "Dust Bowl", "Protectionism", "Bank failures"],
+          "quiz": [
+            {
+              "id": "q-depression-1",
+              "type": "mcq",
+              "question": "The Great Depression's most significant long-term political consequence was:",
+              "choices": [
+                "The immediate establishment of global free trade agreements",
+                "The discrediting of liberal democracy in some nations, contributing to the rise of fascist and militarist regimes that caused World War II",
+                "The complete elimination of poverty worldwide",
+                "The strengthening of laissez-faire economic policies everywhere"
+              ],
+              "correct": 1,
+              "explanation": "The Depression undermined faith in liberal capitalism and democratic governance. In Germany, economic devastation helped Hitler's Nazi Party gain power by 1933. In Japan, economic pressures strengthened militarists who pursued imperial expansion. In Italy, Mussolini consolidated fascist control. The AP exam draws a direct causal line from the Depression through the rise of fascism to World War II, making this economic crisis a pivotal political turning point.",
+              "theme": "political"
+            }
+          ]
+        },
+        {
+          "id": "evt-genocide-holocaust",
+          "title": "Genocides of the 20th Century",
+          "startYear": 1915,
+          "endYear": 1994,
+          "color": "#2C3E50",
+          "summary": "The 20th century witnessed systematic mass killings on an unprecedented scale. From the Armenian Genocide (1915) to the Holocaust (1941-1945) to the Rwandan Genocide (1994), states used modern bureaucracy and technology to attempt the destruction of entire ethnic, religious, or racial groups. These events led to international human rights frameworks and the concept of 'crimes against humanity.'",
+          "spiceT": {
+            "social": "Targeted groups dehumanized through propaganda before physical destruction. Survivors faced lasting trauma. Diaspora communities formed. Memory and commemoration became important political acts.",
+            "political": "State power weaponized against its own citizens. International community's failures to intervene prompted creation of UN Convention on Genocide (1948). International Criminal Court established. 'Never Again' became a political imperative — though repeatedly violated.",
+            "interactions": "Genocides often occurred during wars or political upheaval. International community debated intervention vs. sovereignty. Refugees and diaspora communities spread globally. Holocaust shaped the creation of Israel and Middle Eastern geopolitics.",
+            "cultural": "Holocaust memorials, museums, and education became widespread. Genocide denial emerged as a political tool. Literature and film preserved survivor testimony (Elie Wiesel, Primo Levi). 'Never forget' became a cultural imperative.",
+            "economic": "Victims' property confiscated. Forced labor exploited before extermination. Post-war reparations debates. Economic marginalization often preceded physical persecution.",
+            "technology": "Industrial methods applied to mass killing (gas chambers, railroads for deportation). Modern bureaucracy enabled systematic identification and tracking of victims. Radio and print propaganda facilitated dehumanization."
+          },
+          "keyTerms": ["Armenian Genocide", "Holocaust", "Rwandan Genocide", "Cambodian Genocide", "UN Genocide Convention", "Nuremberg Trials", "Crimes against humanity", "Ethnic cleansing"],
+          "quiz": [
+            {
+              "id": "q-genocide-1",
+              "type": "mcq",
+              "question": "The use of industrial technology and modern bureaucracy in the Holocaust demonstrates which broader historical pattern?",
+              "choices": [
+                "Technology is always used for beneficial purposes",
+                "Modern state capacity and technology can be directed toward systematic destruction as well as development",
+                "The Holocaust was a medieval-style event with no modern characteristics",
+                "Bureaucracy prevents human rights abuses"
+              ],
+              "correct": 1,
+              "explanation": "The Holocaust represents the darkest application of modernity — railroads transported victims to death camps, IBM-style punch cards tracked populations, industrial processes were adapted for mass killing, and bureaucratic chains of command diffused individual responsibility. The AP exam uses this to complicate the narrative of 'progress,' showing that the same forces driving modernization could also enable unprecedented destruction.",
+              "theme": "technology"
+            }
+          ]
+        },
+        {
+          "id": "evt-green-revolution",
+          "title": "The Green Revolution",
+          "startYear": 1940,
+          "endYear": 1970,
+          "color": "#27AE60",
+          "summary": "A series of agricultural innovations — including high-yield crop varieties, chemical fertilizers, pesticides, and irrigation techniques — that dramatically increased food production in developing nations, particularly in Asia and Latin America. While credited with preventing mass famine, the Green Revolution also created environmental problems and increased inequality between large and small farmers.",
+          "spiceT": {
+            "social": "Prevented predicted mass famines in India and other nations. But benefits were unevenly distributed — wealthy farmers gained most. Rural inequality increased. Small farmers displaced. Rural-to-urban migration accelerated.",
+            "political": "Cold War context: US promoted Green Revolution partly to prevent communist revolutions in hungry nations. National governments invested heavily in agricultural modernization. Food security became a strategic priority.",
+            "interactions": "Technologies developed in Mexico and the Philippines spread to India, Pakistan, and beyond. International organizations (Rockefeller Foundation, Ford Foundation, UN FAO) drove the effort. Global food trade patterns shifted.",
+            "cultural": "Traditional farming practices replaced by scientific agriculture. Dietary changes as new crops spread. Debate over 'modernization' vs. traditional knowledge. Norman Borlaug won Nobel Peace Prize (1970).",
+            "economic": "Dramatic yield increases: India went from famine-prone to food self-sufficient. But dependence on expensive inputs (seeds, fertilizers, pesticides) increased costs. Agribusiness grew at the expense of subsistence farming.",
+            "technology": "High-yield varieties (HYVs) of wheat and rice were the core innovation. Chemical fertilizers, pesticides, and mechanized irrigation essential. Later criticized for monoculture vulnerability, soil degradation, and water depletion."
+          },
+          "keyTerms": ["Norman Borlaug", "High-yield varieties", "Green Revolution", "Food security", "Monoculture", "Chemical fertilizers", "IR8 rice", "Rockefeller Foundation"],
+          "quiz": [
+            {
+              "id": "q-green-rev-1",
+              "type": "mcq",
+              "question": "The Green Revolution best illustrates which tension in modern global development?",
+              "choices": [
+                "Technological solutions to global problems can increase total production while also creating new inequalities and environmental challenges",
+                "Agricultural technology always benefits all farmers equally",
+                "Traditional farming methods are always superior to modern techniques",
+                "Food production has no connection to political stability"
+              ],
+              "correct": 0,
+              "explanation": "The Green Revolution is a classic AP exam example of technology's double-edged nature. While high-yield crops prevented predicted famines in India and elsewhere (saving perhaps a billion lives), they also increased rural inequality (favoring large farmers who could afford inputs), created environmental damage (pesticide pollution, water depletion), and made farming dependent on expensive commercial inputs. The AP exam uses this to explore themes of development, inequality, and environmental change.",
+              "theme": "technology"
+            }
+          ]
         }
       ]
     }
+  ],
+  "connections": [
+    { "from": "evt-mongol-empire", "to": "evt-black-death", "type": "cause-effect", "label": "Facilitated spread via Silk Road trade routes" },
+    { "from": "evt-mongol-empire", "to": "evt-indian-ocean-trade", "type": "cause-effect", "label": "Pax Mongolica secured overland routes" },
+    { "from": "evt-crusades", "to": "evt-indian-ocean-trade", "type": "cause-effect", "label": "Stimulated European demand for Eastern goods" },
+    { "from": "evt-columbian-exchange", "to": "evt-atlantic-slave-trade", "type": "cause-effect", "label": "Plantation labor demands in the Americas" },
+    { "from": "evt-atlantic-slave-trade", "to": "evt-haitian-revolution", "type": "cause-effect", "label": "Enslaved population resistance" },
+    { "from": "evt-industrial-revolution", "to": "evt-scramble-for-africa", "type": "cause-effect", "label": "Demand for raw materials and markets" },
+    { "from": "evt-industrial-revolution", "to": "evt-opium-wars", "type": "cause-effect", "label": "British trade imbalance with China" },
+    { "from": "evt-french-revolution", "to": "evt-haitian-revolution", "type": "cause-effect", "label": "Enlightenment ideals of liberty" },
+    { "from": "evt-french-revolution", "to": "evt-latin-american-independence", "type": "cause-effect", "label": "Inspired independence movements" },
+    { "from": "evt-world-war-1", "to": "evt-world-war-2", "type": "cause-effect", "label": "Unresolved tensions and Treaty of Versailles" },
+    { "from": "evt-world-war-2", "to": "evt-cold-war", "type": "cause-effect", "label": "US-Soviet superpower rivalry" },
+    { "from": "evt-world-war-2", "to": "evt-decolonization", "type": "cause-effect", "label": "Weakened European empires" },
+    { "from": "evt-cold-war", "to": "evt-chinese-revolution", "type": "cause-effect", "label": "Ideological communist expansion" },
+    { "from": "evt-cold-war", "to": "evt-globalization", "type": "cause-effect", "label": "Post-Cold War economic integration" },
+    { "from": "evt-song-dynasty", "to": "evt-industrial-revolution", "type": "thematic", "theme": "technology", "label": "Technological innovation parallels" },
+    { "from": "evt-mali-empire", "to": "evt-atlantic-slave-trade", "type": "thematic", "theme": "economic", "label": "West African trade networks" },
+    { "from": "evt-ottoman-empire", "to": "evt-mughal-empire", "type": "thematic", "theme": "political", "label": "Gunpowder empire parallels" },
+    { "from": "evt-protestant-reformation", "to": "evt-french-revolution", "type": "thematic", "theme": "cultural", "label": "Challenges to established authority" },
+    { "from": "evt-meiji-restoration", "to": "evt-qing-dynasty", "type": "thematic", "theme": "political", "label": "Contrasting responses to Western pressure" },
+    { "from": "evt-atlantic-slave-trade", "to": "evt-abolition-movements", "type": "cause-effect", "label": "Resistance and moral opposition" },
+    { "from": "evt-french-revolution", "to": "evt-nationalism-europe", "type": "cause-effect", "label": "Spread of nationalist ideals" },
+    { "from": "evt-tanzimat-reforms", "to": "evt-meiji-restoration", "type": "thematic", "theme": "political", "label": "Defensive modernization attempts" },
+    { "from": "evt-sepoy-mutiny", "to": "evt-decolonization", "type": "cause-effect", "label": "Seeds of Indian nationalism" },
+    { "from": "evt-russian-revolution", "to": "evt-chinese-revolution", "type": "cause-effect", "label": "Communist ideology spread" },
+    { "from": "evt-great-depression", "to": "evt-world-war-2", "type": "cause-effect", "label": "Economic crisis fueled fascism" },
+    { "from": "evt-world-war-2", "to": "evt-genocide-holocaust", "type": "cause-effect", "label": "War enabled industrial genocide" },
+    { "from": "evt-green-revolution", "to": "evt-globalization", "type": "thematic", "theme": "technology", "label": "Agricultural modernization" }
   ]
 }

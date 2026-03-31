@@ -23,6 +23,8 @@
   --error: #E74C3C;
   --warning: #F39C12;
 
+  /* Default is dark mode */
+  color-scheme: dark;
   font-family: 'Inter', 'Segoe UI', system-ui, -apple-system, sans-serif;
   line-height: 1.6;
   color: var(--text-primary);
@@ -34,6 +36,22 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+/* Light theme overrides */
+[data-theme="light"] {
+  --bg-primary: #f5f7fa;
+  --bg-secondary: #ffffff;
+  --bg-card: #f0f2f5;
+  --bg-card-hover: #e8ebf0;
+  --text-primary: #1a202c;
+  --text-secondary: #4a5568;
+  --text-muted: #718096;
+  --border: #e2e8f0;
+  --border-light: #cbd5e0;
+  --accent: #3B7DD8;
+  --accent-glow: rgba(59, 125, 216, 0.12);
+  color-scheme: light;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -43,6 +61,11 @@
 body {
   min-height: 100vh;
   overflow-x: hidden;
+  touch-action: pan-y; /* allow vertical scroll, prevent browser zoom */
+}
+
+.timeline-canvas {
+  touch-action: none; /* we handle all touch in JS */
 }
 
 #root {
