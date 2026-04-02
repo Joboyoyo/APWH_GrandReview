@@ -1,0 +1,244 @@
+.landing {
+  flex: 1;
+  overflow-y: auto;
+  background: var(--bg-primary);
+}
+
+/* Hero */
+.landing-hero {
+  text-align: center;
+  padding: 80px 40px 48px;
+  max-width: 680px;
+  margin: 0 auto;
+}
+
+.landing-badge {
+  display: inline-block;
+  padding: 4px 14px;
+  border-radius: 20px;
+  background: var(--accent-glow);
+  border: 1px solid var(--accent);
+  color: var(--accent);
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  margin-bottom: 16px;
+}
+
+.landing-title {
+  font-size: 3rem;
+  font-weight: 800;
+  color: var(--text-primary);
+  margin: 0 0 16px;
+  letter-spacing: -0.03em;
+  line-height: 1.1;
+}
+
+.landing-title span {
+  color: var(--accent);
+}
+
+.landing-subtitle {
+  font-size: 1.05rem;
+  color: var(--text-secondary);
+  line-height: 1.7;
+  margin: 0 0 32px;
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.landing-cta-row {
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.landing-cta {
+  padding: 14px 32px;
+  border-radius: 10px;
+  border: none;
+  background: var(--accent);
+  color: white;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  font-family: inherit;
+  transition: opacity 0.2s, transform 0.2s;
+}
+
+.landing-cta:hover {
+  opacity: 0.9;
+  transform: translateY(-1px);
+}
+
+.landing-cta-secondary {
+  padding: 14px 32px;
+  border-radius: 10px;
+  border: 1px solid var(--border);
+  background: var(--bg-secondary);
+  color: var(--text-primary);
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  font-family: inherit;
+  transition: all 0.2s;
+}
+
+.landing-cta-secondary:hover {
+  border-color: var(--accent);
+  color: var(--accent);
+}
+
+/* Era overview */
+.landing-eras {
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+  padding: 0 40px 48px;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.landing-era {
+  flex: 1;
+  text-align: center;
+  padding: 16px 12px;
+  background: var(--bg-secondary);
+  border: 1px solid var(--border);
+  border-top: 3px solid;
+  border-radius: 10px;
+}
+
+.landing-era-label {
+  font-size: 0.65rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  margin-bottom: 4px;
+}
+
+.landing-era-title {
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
+.landing-era-count {
+  font-size: 0.72rem;
+  color: var(--text-muted);
+  margin-top: 2px;
+}
+
+/* Features */
+.landing-features {
+  padding: 48px 40px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.landing-section-title {
+  text-align: center;
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin: 0 0 32px;
+}
+
+.landing-feature-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+}
+
+.landing-feature {
+  background: var(--bg-secondary);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 24px;
+  transition: border-color 0.2s;
+}
+
+.landing-feature:hover {
+  border-color: var(--accent);
+}
+
+.landing-feature-icon {
+  font-size: 1.6rem;
+  margin-bottom: 10px;
+}
+
+.landing-feature-title {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--text-primary);
+  margin: 0 0 6px;
+}
+
+.landing-feature-desc {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* Bottom CTA */
+.landing-bottom {
+  text-align: center;
+  padding: 48px 40px 64px;
+}
+
+.landing-bottom-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin: 0 0 20px;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .landing-hero {
+    padding: 48px 20px 32px;
+  }
+
+  .landing-title {
+    font-size: 2rem;
+  }
+
+  .landing-subtitle {
+    font-size: 0.9rem;
+  }
+
+  .landing-eras {
+    flex-wrap: wrap;
+    padding: 0 20px 32px;
+  }
+
+  .landing-era {
+    flex: 1 1 40%;
+  }
+
+  .landing-features {
+    padding: 32px 20px;
+  }
+
+  .landing-feature-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 480px) {
+  .landing-feature-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .landing-title {
+    font-size: 1.7rem;
+  }
+
+  .landing-cta, .landing-cta-secondary {
+    width: 100%;
+  }
+}

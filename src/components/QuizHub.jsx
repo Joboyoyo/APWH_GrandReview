@@ -63,7 +63,7 @@ export default function QuizHub({ data }) {
 
   const handleCloseQuiz = () => {
     setActiveQuiz(null);
-    setScores(getScores()); // refresh scores
+    setScores(getScores());
   };
 
   if (activeQuiz) {

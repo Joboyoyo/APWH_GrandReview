@@ -62,15 +62,10 @@ export default function Quiz({ questions, title, eventId, onClose, fullPage = fa
       setShowFeedback(false);
     } else {
       setFinished(true);
-      // Save score
-      if (eventId) {
-        const finalScore = score + (selectedAnswer === question.correct ? 0 : 0);
-        saveScore(eventId, score, questions.length);
-      }
     }
   };
 
-  // Fix: save score correctly — score state is already updated by handleSelect
+  // Save score when finished
   useEffect(() => {
     if (finished && eventId) {
       saveScore(eventId, score, questions.length);

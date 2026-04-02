@@ -46,7 +46,17 @@
       "Bash(curl -sI -A \"Mozilla/5.0 \\(Windows NT 10.0; Win64; x64\\)\" \"https://upload.wikimedia.org/wikipedia/commons/thumb/3/35/YuanEmperorAlbumGenghisPortrait.jpg/300px-YuanEmperorAlbumGenghisPortrait.jpg\")",
       "Bash(curl -s \"https://en.wikipedia.org/api/rest_v1/page/summary/Mongol_Empire\")",
       "Bash(python3 -c \"import sys,json; d=json.load\\(sys.stdin\\); print\\(d.get\\(''''thumbnail'''',{}\\).get\\(''''source'''',''''no image''''\\)\\)\")",
-      "Bash(node -e \"let d='''''''';process.stdin.on\\(''''data'''',c=>d+=c\\);process.stdin.on\\(''''end'''',\\(\\)=>{const j=JSON.parse\\(d\\);console.log\\(j.thumbnail?.source||''''no image''''\\)}\\)\")"
+      "Bash(node -e \"let d='''''''';process.stdin.on\\(''''data'''',c=>d+=c\\);process.stdin.on\\(''''end'''',\\(\\)=>{const j=JSON.parse\\(d\\);console.log\\(j.thumbnail?.source||''''no image''''\\)}\\)\")",
+      "Bash(node -e \":*)",
+      "Bash(node add_sources.js)",
+      "Bash(mv \"C:\\\\Users\\\\cytsa\\\\OneDrive\\\\Documents\\\\ClaudeAPWH\\\\add_sources.js\" \"C:\\\\Users\\\\cytsa\\\\OneDrive\\\\Documents\\\\ClaudeAPWH\\\\add_sources.cjs\")",
+      "Bash(node add_sources.cjs)",
+      "Bash(node index.js)",
+      "Bash(node add-quiz-questions.js)",
+      "Bash(mv add-quiz-questions.js add-quiz-questions.cjs)",
+      "Bash(node add-quiz-questions.cjs)",
+      "Bash(rm add-quiz-questions.cjs)",
+      "Bash(node -e \"JSON.parse\\(require\\(''fs''\\).readFileSync\\(''C:/Users/cytsa/OneDrive/Documents/ClaudeAPWH/src/data/timelineData.json'',''utf8''\\)\\); console.log\\(''JSON valid''\\)\")"
     ]
   }
 }

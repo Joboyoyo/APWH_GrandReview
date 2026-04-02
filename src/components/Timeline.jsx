@@ -36,9 +36,12 @@ const BLOB_LAYOUT = [
   { key: 'cultural', label: 'Cultural', color: '#9B59B6', icon: '🎭', row: 2, col: 0 },
   { key: 'economic', label: 'Economic', color: '#F39C12', icon: '💰', row: 2, col: 1 },
   { key: 'technology', label: 'Technology', color: '#1ABC9C', icon: '⚙', row: 2, col: 2 },
-  { key: 'keyterms', label: 'Key Terms', color: '#95A5A6', icon: '🔑', row: 3, col: 0, colSpan: 2 },
-  { key: 'quiz', label: 'Review Quiz', color: '#E67E22', icon: '✏', row: 3, col: 2 },
+  { key: 'primarysources', label: 'Primary Sources', color: '#D4AC0D', icon: '📜', row: 3, col: 0, colSpan: 3 },
+  { key: 'keyterms', label: 'Key Terms', color: '#95A5A6', icon: '🔑', row: 4, col: 0, colSpan: 2 },
+  { key: 'quiz', label: 'Review Quiz', color: '#E67E22', icon: '✏', row: 4, col: 2 },
 ];
+
+const MIN_NODE_WIDTH = 100;
 
 function assignLanes(allEvents, yearToX) {
   const sorted = [...allEvents].sort((a, b) => {
@@ -50,8 +53,10 @@ function assignLanes(allEvents, yearToX) {
   const assignments = {};
   for (const event of sorted) {
     const evLeft = yearToX(event.startYear);
-    const evRight = yearToX(event.endYear);
-    const padding = 10;
+    const evNaturalRight = yearToX(event.endYear);
+    // Use the same minimum width as the rendered node
+    const evRight = evLeft + Math.max(MIN_NODE_WIDTH, evNaturalRight - evLeft);
+    const padding = 12;
     let placed = false;
     for (const [side, lanes] of [['above', lanesAbove], ['below', lanesBelow]]) {
       for (let i = 0; i < lanes.length; i++) {
@@ -87,6 +92,38 @@ export default function Timeline({ data, onStartQuiz }) {
   const [hoveredEvent, setHoveredEvent] = useState(null); // track which event node the mouse is on
   const [hoverPos, setHoverPos] = useState({ x: 0, y: 0 }); // mouse position for image tooltip
   const [connectionMode, setConnectionMode] = useState('cause'); // 'off' | 'cause' | 'all'
+  const [searchQuery, setSearchQuery] = useState('');
+  const [activeThemeFilter, setActiveThemeFilter] = useState(null); // null or SPICE-T key
+  const [searchSelectedIdx, setSearchSelectedIdx] = useState(0); // which dropdown item is highlighted
+  const [keyboardSelectedIdx, setKeyboardSelectedIdx] = useState(-1); // arrow key navigation of events
+
+  // Smooth spring animation for zoom/pan transitions
+  const animRef = useRef(null);
+  const animateTo = useCallback((targetZoom, targetPanX, duration = 400) => {
+    if (animRef.current) cancelAnimationFrame(animRef.current);
+    const startZoom = zoom;
+    const startPanX = panX;
+    const startTime = performance.now();
+    const animate = (now) => {
+      const elapsed = now - startTime;
+      const t = Math.min(1, elapsed / duration);
+      // Ease out cubic for smooth deceleration
+      const ease = 1 - Math.pow(1 - t, 3);
+      const currentZoom = startZoom + (targetZoom - startZoom) * ease;
+      const currentPanX = startPanX + (targetPanX - startPanX) * ease;
+      setZoom(currentZoom);
+      setPanX(currentPanX);
+      if (t < 1) {
+        animRef.current = requestAnimationFrame(animate);
+      } else {
+        animRef.current = null;
+      }
+    };
+    animRef.current = requestAnimationFrame(animate);
+  }, [zoom, panX]);
+
+  // Clean up animation on unmount
+  useEffect(() => () => { if (animRef.current) cancelAnimationFrame(animRef.current); }, []);
 
   const totalWidth = (YEAR_END - YEAR_START) * PX_PER_YEAR * zoom;
 
@@ -129,7 +166,9 @@ export default function Timeline({ data, onStartQuiz }) {
     return events;
   }, [data]);
 
-  const laneAssignments = useMemo(() => assignLanes(allEvents, yearToX), [allEvents, yearToX]);
+  // Compute lanes at a fixed reference zoom so nodes don't shift when zooming
+  const fixedYearToX = useCallback((year) => (year - YEAR_START) * PX_PER_YEAR, []);
+  const laneAssignments = useMemo(() => assignLanes(allEvents, fixedYearToX), [allEvents, fixedYearToX]);
 
   // Compute max lanes above/below for dynamic height
   const { maxAbove, maxBelow } = useMemo(() => {
@@ -176,11 +215,17 @@ export default function Timeline({ data, onStartQuiz }) {
     return closest;
   }, [allEvents, panX, zoom, mouseX]);
 
-  // Lock the event when entering focus mode — prefer hovered event
+  // Lock the event when entering focus mode — prefer locked (keyboard) > hovered > nearest
+  const prevInFocusRef = useRef(false);
   useEffect(() => {
-    if (!inFocusMode) {
+    const wasInFocus = prevInFocusRef.current;
+    prevInFocusRef.current = inFocusMode;
+
+    if (!inFocusMode && wasInFocus) {
+      // Only clear locked event when zooming OUT of focus mode (not during animation in)
       setLockedEvent(null);
-    } else if (!lockedEvent) {
+    } else if (inFocusMode && !lockedEvent) {
+      // Entering focus mode without a locked event — pick hovered or nearest
       setLockedEvent(hoveredEvent || nearestEvent);
     }
   }, [inFocusMode, nearestEvent, lockedEvent, hoveredEvent]);
@@ -208,6 +253,19 @@ export default function Timeline({ data, onStartQuiz }) {
     const el = containerRef.current;
     if (!el) return;
     const handleWheel = (e) => {
+      // In focus mode (blob grid visible), let the page scroll naturally
+      // Only capture wheel for zooming when on the timeline or in blob detail
+      const focusPage = el.querySelector('.focus-page');
+      if (focusPage && focusPage.scrollHeight > focusPage.clientHeight) {
+        // Check if we're scrolling within the focus page and it can still scroll
+        const atTop = focusPage.scrollTop <= 0 && e.deltaY < 0;
+        const atBottom = focusPage.scrollTop + focusPage.clientHeight >= focusPage.scrollHeight - 1 && e.deltaY > 0;
+        if (!atTop && !atBottom) {
+          // Let the focus page scroll naturally
+          return;
+        }
+      }
+
       e.preventDefault();
       const rect = el.getBoundingClientRect();
       const cursorX = e.clientX - rect.left;
@@ -358,28 +416,196 @@ export default function Timeline({ data, onStartQuiz }) {
     const cx = el.clientWidth / 2;
     const worldX = (cx - panX) / zoom;
     const nz = Math.min(MAX_ZOOM, Math.max(getMinZoom(), zoom * factor));
-    setPanX(clampPanX(cx - worldX * nz, nz)); setZoom(nz);
-  }, [zoom, panX]);
+    animateTo(nz, clampPanX(cx - worldX * nz, nz), 250);
+  }, [zoom, panX, animateTo]);
 
   // Zoom to center on a year range at a target zoom level
-  const zoomToRange = useCallback((startYear, endYear, targetZoom) => {
+  const zoomToRange = useCallback((startYear, endYear, targetZoom, instant = false) => {
     const el = containerRef.current;
     if (!el) return;
     const cw = el.clientWidth;
     const midYearWorld = ((startYear + endYear) / 2 - YEAR_START) * PX_PER_YEAR;
-    const newPanX = cw / 2 - midYearWorld * targetZoom;
-    setZoom(targetZoom);
-    setPanX(clampPanX(newPanX, targetZoom));
-  }, []);
+    const newPanX = clampPanX(cw / 2 - midYearWorld * targetZoom, targetZoom);
+    if (instant) {
+      setZoom(targetZoom);
+      setPanX(newPanX);
+    } else {
+      animateTo(targetZoom, newPanX, 500);
+    }
+  }, [animateTo]);
 
   const zoomLabel = inBlobDetail ? 'Reading' : inFocusMode ? 'Focus' : eventBlend < 0.3 ? 'Eras' : 'Events';
 
+  // Search & filter matching
+  const hasFilter = searchQuery.trim() !== '' || activeThemeFilter !== null;
+  const eventMatchesFilter = (event) => {
+    if (!hasFilter) return true;
+    const q = searchQuery.trim().toLowerCase();
+    const matchesSearch = !q || [
+      event.title, event.summary, ...(event.keyTerms || []),
+      event.spiceT?.social, event.spiceT?.political, event.spiceT?.interactions,
+      event.spiceT?.cultural, event.spiceT?.economic, event.spiceT?.technology,
+    ].some(s => s && s.toLowerCase().includes(q));
+    const matchesTheme = !activeThemeFilter || (
+      event.spiceT?.[activeThemeFilter] && event.spiceT[activeThemeFilter].length > 0
+    ) || (event.quiz?.some(q => q.theme === activeThemeFilter));
+    return matchesSearch && matchesTheme;
+  };
+
+  const matchingEvents = useMemo(() => {
+    if (!hasFilter) return null;
+    return allEvents.filter(e => eventMatchesFilter(e));
+  }, [searchQuery, activeThemeFilter, allEvents]);
+
+  const matchingEventIds = useMemo(() => {
+    if (!matchingEvents) return null;
+    return new Set(matchingEvents.map(e => e.id));
+  }, [matchingEvents]);
+
+  // Reset selected index when results change
+  useEffect(() => { setSearchSelectedIdx(0); }, [searchQuery, activeThemeFilter]);
+
+  // Navigate to selected matching event
+  const navigateToEvent = useCallback((event) => {
+    if (!event) return;
+    const el = containerRef.current;
+    if (!el) return;
+    const cw = el.clientWidth;
+    const padding = 30;
+    const yearRange = (event.endYear + padding) - (event.startYear - padding);
+    // Zoom to events scale (past EVENTS_APPEAR threshold so nodes are fully visible)
+    const targetZoom = Math.max(EVENTS_APPEAR + 0.3, Math.min(2.0, cw / (yearRange * PX_PER_YEAR)));
+    const midYearWorld = ((event.startYear + event.endYear) / 2 - YEAR_START) * PX_PER_YEAR;
+    const newPanX = clampPanX(cw / 2 - midYearWorld * targetZoom, targetZoom);
+    animateTo(targetZoom, newPanX, 350);
+  }, [animateTo]);
+
+  // Auto-navigate to the selected matching event when search changes
+  const prevFilterRef = useRef(null);
+  useEffect(() => {
+    if (!matchingEvents || matchingEvents.length === 0) {
+      prevFilterRef.current = null;
+      return;
+    }
+    const filterKey = searchQuery + '|' + (activeThemeFilter || '');
+    if (filterKey === prevFilterRef.current) return;
+    prevFilterRef.current = filterKey;
+
+    // Jump to the first matching event
+    navigateToEvent(matchingEvents[0]);
+  }, [matchingEvents]);
+
   // Get blob content for focused event
+  // Sorted events for keyboard navigation (memoized)
+  const sortedEvents = useMemo(() => [...allEvents].sort((a, b) => a.startYear - b.startYear), [allEvents]);
+
+  // Keyboard shortcuts — use refs to avoid stale closures
+  const zoomRef = useRef(zoom);
+  const panXRef = useRef(panX);
+  const kbIdxRef = useRef(keyboardSelectedIdx);
+  useEffect(() => { zoomRef.current = zoom; }, [zoom]);
+  useEffect(() => { panXRef.current = panX; }, [panX]);
+  useEffect(() => { kbIdxRef.current = keyboardSelectedIdx; }, [keyboardSelectedIdx]);
+
+  useEffect(() => {
+    const handleKeyDown = (e) => {
+      // Don't handle if typing in an input
+      if (e.target.tagName === 'INPUT' || e.target.tagName === 'TEXTAREA') return;
+
+      if (e.key === 'Escape') {
+        e.preventDefault();
+        const el = containerRef.current;
+        if (!el) return;
+        const cw = el.clientWidth;
+        const totalRange = (YEAR_END - YEAR_START) * PX_PER_YEAR;
+        const minZ = cw / ((ERA_RIGHT_YEAR - ERA_LEFT_YEAR) * PX_PER_YEAR);
+        const fitZoom = Math.max(minZ, Math.min(1.5, (cw - 80) / totalRange));
+        const midX = ((ERA_LEFT_YEAR + ERA_RIGHT_YEAR) / 2 - YEAR_START) * PX_PER_YEAR * fitZoom;
+        // Animate from current values
+        const startZ = zoomRef.current;
+        const startP = panXRef.current;
+        const targetP = cw / 2 - midX;
+        const clampedP = Math.max(cw - (ERA_RIGHT_YEAR - YEAR_START) * PX_PER_YEAR * fitZoom - 20, Math.min(-((ERA_LEFT_YEAR - YEAR_START) * PX_PER_YEAR * fitZoom) + 20, targetP));
+        const duration = 500;
+        const start = performance.now();
+        const step = (now) => {
+          const t = Math.min(1, (now - start) / duration);
+          const ease = 1 - Math.pow(1 - t, 3);
+          setZoom(startZ + (fitZoom - startZ) * ease);
+          setPanX(startP + (clampedP - startP) * ease);
+          if (t < 1) requestAnimationFrame(step);
+        };
+        requestAnimationFrame(step);
+        setKeyboardSelectedIdx(-1);
+        setLockedEvent(null);
+      } else if (e.key === 'ArrowRight' || e.key === 'ArrowLeft') {
+        e.preventDefault();
+        const dir = e.key === 'ArrowRight' ? 1 : -1;
+        const curIdx = kbIdxRef.current;
+        const newIdx = Math.max(0, Math.min(sortedEvents.length - 1, curIdx + dir));
+        setKeyboardSelectedIdx(newIdx);
+        const event = sortedEvents[newIdx];
+        if (event) {
+          // Zoom to events scale and center on this event
+          const el = containerRef.current;
+          if (!el) return;
+          const cw = el.clientWidth;
+          const targetZoom = Math.max(EVENTS_APPEAR + 0.3, 1.0); // ensure events are fully visible
+          const midYearWorld = ((event.startYear + event.endYear) / 2 - YEAR_START) * PX_PER_YEAR;
+          const targetPanX = cw / 2 - midYearWorld * targetZoom;
+          const clampedPanX = clampPanX(targetPanX, targetZoom);
+          // Animate
+          const startZ = zoomRef.current;
+          const startP = panXRef.current;
+          const duration = 300;
+          const start = performance.now();
+          const step = (now) => {
+            const t = Math.min(1, (now - start) / duration);
+            const ease = 1 - Math.pow(1 - t, 3);
+            setZoom(startZ + (targetZoom - startZ) * ease);
+            setPanX(startP + (clampedPanX - startP) * ease);
+            if (t < 1) requestAnimationFrame(step);
+          };
+          requestAnimationFrame(step);
+        }
+      } else if (e.key === 'Enter' && kbIdxRef.current >= 0) {
+        e.preventDefault();
+        const event = sortedEvents[kbIdxRef.current];
+        if (event) {
+          setLockedEvent(event);
+          // Zoom to focus level
+          const el = containerRef.current;
+          if (!el) return;
+          const cw = el.clientWidth;
+          const targetZoom = 4.5;
+          const midYearWorld = ((event.startYear + event.endYear) / 2 - YEAR_START) * PX_PER_YEAR;
+          const targetPanX = clampPanX(cw / 2 - midYearWorld * targetZoom, targetZoom);
+          const startZ = zoomRef.current;
+          const startP = panXRef.current;
+          const duration = 500;
+          const start = performance.now();
+          const step = (now) => {
+            const t = Math.min(1, (now - start) / duration);
+            const ease = 1 - Math.pow(1 - t, 3);
+            setZoom(startZ + (targetZoom - startZ) * ease);
+            setPanX(startP + (targetPanX - startP) * ease);
+            if (t < 1) requestAnimationFrame(step);
+          };
+          requestAnimationFrame(step);
+        }
+      }
+    };
+
+    window.addEventListener('keydown', handleKeyDown);
+    return () => window.removeEventListener('keydown', handleKeyDown);
+  }, [sortedEvents]);
+
   const getBlobContent = (blobKey, event) => {
     if (!event) return null;
     if (blobKey === 'overview') return event.summary;
     if (blobKey === 'keyterms') return event.keyTerms;
     if (blobKey === 'quiz') return event.quiz;
+    if (blobKey === 'primarysources') return event.primarySources;
     return event.spiceT?.[blobKey] || null;
   };
 
@@ -395,6 +621,91 @@ export default function Timeline({ data, onStartQuiz }) {
           </span>
         </div>
         <div className="toolbar-right">
+          <div className="search-filter-group">
+            <div className="search-box-wrapper">
+              <div className="search-box">
+                <span className="search-icon">&#x1F50D;</span>
+                <input
+                  type="text"
+                  className="search-input"
+                  placeholder="Search events..."
+                  value={searchQuery}
+                  onChange={(e) => setSearchQuery(e.target.value)}
+                  onKeyDown={(e) => {
+                    e.stopPropagation();
+                    if (!matchingEvents || matchingEvents.length === 0) return;
+                    if (e.key === 'ArrowDown') {
+                      e.preventDefault();
+                      const next = Math.min(searchSelectedIdx + 1, matchingEvents.length - 1);
+                      setSearchSelectedIdx(next);
+                      navigateToEvent(matchingEvents[next]);
+                    } else if (e.key === 'ArrowUp') {
+                      e.preventDefault();
+                      const prev = Math.max(searchSelectedIdx - 1, 0);
+                      setSearchSelectedIdx(prev);
+                      navigateToEvent(matchingEvents[prev]);
+                    } else if (e.key === 'Enter') {
+                      e.preventDefault();
+                      const event = matchingEvents[searchSelectedIdx];
+                      if (event) {
+                        setSearchQuery('');
+                        setLockedEvent(event);
+                        zoomToRange(event.startYear, event.endYear, 4.5);
+                      }
+                    } else if (e.key === 'Escape') {
+                      setSearchQuery('');
+                      e.target.blur();
+                    }
+                  }}
+                />
+                {searchQuery && (
+                  <button className="search-clear" onClick={() => setSearchQuery('')}>&times;</button>
+                )}
+              </div>
+              {searchQuery.trim() && matchingEvents && matchingEvents.length > 0 && matchingEvents.length <= 20 && (
+                <div className="search-dropdown">
+                  {matchingEvents.map((event, idx) => (
+                    <button
+                      key={event.id}
+                      className={`search-result ${idx === searchSelectedIdx ? 'selected' : ''}`}
+                      onClick={() => {
+                        setSearchQuery('');
+                        setLockedEvent(event);
+                        zoomToRange(event.startYear, event.endYear, 4.5);
+                      }}
+                      onMouseEnter={() => {
+                        setSearchSelectedIdx(idx);
+                        navigateToEvent(event);
+                      }}
+                      ref={idx === searchSelectedIdx ? (el) => el?.scrollIntoView({ block: 'nearest' }) : undefined}
+                    >
+                      <span className="search-result-color" style={{ background: event.color }} />
+                      <span className="search-result-title">{event.title}</span>
+                      <span className="search-result-dates">{event.startYear}–{event.endYear}</span>
+                    </button>
+                  ))}
+                </div>
+              )}
+            </div>
+            <div className="theme-filter-chips">
+              {Object.entries(SPICET_META).map(([key, meta]) => (
+                <button
+                  key={key}
+                  className={`theme-chip ${activeThemeFilter === key ? 'active' : ''}`}
+                  style={activeThemeFilter === key ? { borderColor: meta.color, color: meta.color, background: meta.color + '20' } : {}}
+                  onClick={() => setActiveThemeFilter(activeThemeFilter === key ? null : key)}
+                  title={meta.label}
+                >
+                  {meta.icon}
+                </button>
+              ))}
+              {hasFilter && (
+                <button className="theme-chip clear-filter" onClick={() => { setSearchQuery(''); setActiveThemeFilter(null); }}>
+                  Clear
+                </button>
+              )}
+            </div>
+          </div>
           <span className="zoom-level-label">{zoomLabel}</span>
           <button className="zoom-btn" onClick={() => zoomAtCenter(0.7)}>−</button>
           <span className="zoom-display">{Math.round(zoom * 100)}%</span>
@@ -419,7 +730,7 @@ export default function Timeline({ data, onStartQuiz }) {
             const minZ = getMinZoom();
             const fitZoom = Math.max(minZ, Math.min(1.5, (cw - 80) / totalRange));
             const midX = ((ERA_LEFT_YEAR + ERA_RIGHT_YEAR) / 2 - YEAR_START) * PX_PER_YEAR * fitZoom;
-            setZoom(fitZoom); setPanX(clampPanX(cw / 2 - midX, fitZoom));
+            animateTo(fitZoom, clampPanX(cw / 2 - midX, fitZoom), 500);
           }}>Reset</button>
         </div>
       </div>
@@ -479,12 +790,12 @@ export default function Timeline({ data, onStartQuiz }) {
                   </div>
                 )}
                 {eventBlend > 0.3 && (
-                  <div className="era-bg-label" style={{ left: left + width / 2, opacity: eventBlend * 0.12, color: era.color }}>{era.title}</div>
+                  <div className="era-bg-label" style={{ left: left + width / 2, opacity: eventBlend * 0.12, color: era.color, transform: `translateX(${panX * 0.03}px)` }}>{era.title}</div>
                 )}
                 <AnimatePresence>
                   {eventBlend > 0.1 && era.events.map((event) => {
                     const evLeft = yearToX(event.startYear);
-                    const evWidth = Math.max(100, yearToX(event.endYear) - evLeft);
+                    const evWidth = Math.max(MIN_NODE_WIDTH, yearToX(event.endYear) - evLeft);
                     const assignment = laneAssignments[event.id] || { lane: 0, side: 'above' };
                     const laneOffset = assignment.lane * (NODE_HEIGHT + NODE_GAP);
                     const isFocused = focusedEvent?.id === event.id && inFocusMode;
@@ -497,18 +808,24 @@ export default function Timeline({ data, onStartQuiz }) {
                     return (
                       <motion.div
                         key={event.id}
-                        className={`event-node-h ${assignment.side === 'above' ? 'above' : 'below'}`}
-                        style={{
-                          left: evLeft, width: evWidth, borderColor: event.color,
-                          '--lane-offset': `${laneOffset}px`,
-                          opacity: isFocused ? Math.max(0, 1 - focusBlend) : Math.min(1, eventBlend * 1.5),
-                          cursor: 'pointer',
-                        }}
+                        className={`event-node-h ${assignment.side === 'above' ? 'above' : 'below'}${matchingEventIds?.has(event.id) ? ' search-match' : ''}${keyboardSelectedIdx >= 0 && sortedEvents[keyboardSelectedIdx]?.id === event.id ? ' kbd-selected' : ''}`}
                         onMouseEnter={(e) => { setHoveredEvent(event); setHoverPos({ x: e.clientX, y: e.clientY }); }}
                         onMouseMove={(e) => { if (hoveredEvent?.id === event.id) setHoverPos({ x: e.clientX, y: e.clientY }); }}
                         onMouseLeave={() => setHoveredEvent(null)}
                         onDoubleClick={(e) => { e.stopPropagation(); setLockedEvent(event); zoomToRange(event.startYear, event.endYear, 4.5); }}
-                        initial={{ scale: 0.95 }} animate={{ scale: 1 }} exit={{ scale: 0.95 }}
+                        style={{
+                          ...{
+                            left: evLeft, width: evWidth, borderColor: event.color,
+                            '--lane-offset': `${laneOffset}px`,
+                            cursor: 'pointer',
+                          },
+                          opacity: isFocused ? Math.max(0, 1 - focusBlend)
+                            : matchingEventIds && !matchingEventIds.has(event.id)
+                              ? Math.min(0.15, eventBlend * 0.3)
+                              : Math.min(1, eventBlend * 1.5),
+                        }}
+                        initial={false}
+                        exit={{ opacity: 0 }}
                         transition={{ duration: 0.15 }}
                       >
                         <div className="event-color-bar" style={{ background: event.color }} />
@@ -672,15 +989,16 @@ export default function Timeline({ data, onStartQuiz }) {
               <div className="blob-container" style={{ opacity: 1 - blobDetailBlend }}>
                 <div className="blob-grid">
                   {BLOB_LAYOUT.map((blob) => {
-                    // Skip quiz blob if no quiz
+                    // Skip blobs with no data
                     if (blob.key === 'quiz' && (!focusedEvent.quiz || focusedEvent.quiz.length === 0)) return null;
                     if (blob.key === 'keyterms' && !focusedEvent.keyTerms) return null;
+                    if (blob.key === 'primarysources' && (!focusedEvent.primarySources || focusedEvent.primarySources.length === 0)) return null;
 
                     const content = getBlobContent(blob.key, focusedEvent);
                     const isHovered = hoveredBlob === blob.key;
 
                     return (
-                      <div
+                      <motion.div
                         key={blob.key}
                         className={`blob ${isHovered ? 'hovered' : ''}`}
                         style={{
@@ -690,9 +1008,12 @@ export default function Timeline({ data, onStartQuiz }) {
                           '--blob-color': blob.color,
                           cursor: 'pointer',
                         }}
+                        initial={{ scale: 0.8, opacity: 0 }}
+                        animate={{ scale: 1, opacity: 1 }}
+                        transition={{ type: 'spring', stiffness: 400, damping: 30, delay: blob.row * 0.06 + blob.col * 0.03 }}
                         onMouseEnter={() => setHoveredBlob(blob.key)}
                         onMouseLeave={() => setHoveredBlob(null)}
-                        onClick={() => { setLockedBlob(blob.key); setZoom(14); }}
+                        onClick={() => { setLockedBlob(blob.key); animateTo(14, panX, 400); }}
                       >
                         <div className="blob-icon">{blob.icon}</div>
                         <div className="blob-label" style={{ color: blob.color }}>{blob.label}</div>
@@ -705,7 +1026,10 @@ export default function Timeline({ data, onStartQuiz }) {
                         {blob.key === 'keyterms' && content && (
                           <div className="blob-preview">{content.length} terms</div>
                         )}
-                      </div>
+                        {blob.key === 'primarysources' && Array.isArray(content) && (
+                          <div className="blob-preview">{content.length} source{content.length !== 1 ? 's' : ''}</div>
+                        )}
+                      </motion.div>
                     );
                   })}
                 </div>
@@ -719,7 +1043,7 @@ export default function Timeline({ data, onStartQuiz }) {
                     const minZ = getMinZoom();
                     const fitZoom = Math.max(minZ, Math.min(1.5, (cw - 80) / totalRange));
                     const midX = ((ERA_LEFT_YEAR + ERA_RIGHT_YEAR) / 2 - YEAR_START) * PX_PER_YEAR * fitZoom;
-                    setZoom(fitZoom); setPanX(clampPanX(cw / 2 - midX, fitZoom));
+                    animateTo(fitZoom, clampPanX(cw / 2 - midX, fitZoom), 500);
                   }}>Back to timeline</button>
                 </div>
               </div>
@@ -766,12 +1090,30 @@ export default function Timeline({ data, onStartQuiz }) {
                               </div>
                             )}
 
+                            {focusedBlob === 'primarysources' && Array.isArray(content) && (
+                              <div className="blob-detail-sources">
+                                {content.map((src, idx) => (
+                                  <div key={idx} className="primary-source-card">
+                                    <div className="source-header">
+                                      <div className="source-title">{src.title}</div>
+                                      <div className="source-meta">
+                                        {src.author && <span className="source-author">{src.author}</span>}
+                                        {src.date && <span className="source-date">{src.date}</span>}
+                                      </div>
+                                    </div>
+                                    <blockquote className="source-quote">{src.excerpt}</blockquote>
+                                    {src.context && <div className="source-context">{src.context}</div>}
+                                  </div>
+                                ))}
+                              </div>
+                            )}
+
                             {/* SPICE-T theme content */}
                             {SPICET_META[focusedBlob] && typeof content === 'string' && (
                               <p className="blob-detail-text">{content}</p>
                             )}
 
-                            <button className="blob-back-btn" onClick={() => setZoom(BLOB_ZOOM + 1)}>
+                            <button className="blob-back-btn" onClick={() => animateTo(BLOB_ZOOM + 1, panX, 350)}>
                               ← Back to sections
                             </button>
                           </>
@@ -834,7 +1176,8 @@ export default function Timeline({ data, onStartQuiz }) {
       <div className="timeline-status">
         <div className="status-dot" />
         <span>
-          {inBlobDetail ? `Reading: ${BLOB_LAYOUT.find(b => b.key === focusedBlob)?.label || '...'}`
+          {matchingEventIds ? `${matchingEventIds.size} of ${allEvents.length} events match`
+            : inBlobDetail ? `Reading: ${BLOB_LAYOUT.find(b => b.key === focusedBlob)?.label || '...'}`
             : inFocusMode ? `Focused: ${focusedEvent?.title || '...'}`
             : eventBlend > 0.3 ? 'Zoom into an event to focus'
             : 'Zoom in to explore events'}

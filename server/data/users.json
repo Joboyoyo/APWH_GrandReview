@@ -1,0 +1,11 @@
+{
+  "users": {
+    "testuser": {
+      "displayName": "testuser",
+      "passwordHash": "$2a$10$oMjQ7dosRqoA8dc/mF82aOgg3AJzFghJuaX07XVBsgAlyMULt3pj.",
+      "token": "4a46cfaea991c498fb0a5ecff7c7ac3321395e05e795cbc3f7a0d09232ad2193",
+      "scores": {},
+      "createdAt": 1775113295413
+    }
+  }
+}
