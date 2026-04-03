@@ -56,7 +56,8 @@
       "Bash(mv add-quiz-questions.js add-quiz-questions.cjs)",
       "Bash(node add-quiz-questions.cjs)",
       "Bash(rm add-quiz-questions.cjs)",
-      "Bash(node -e \"JSON.parse\\(require\\(''fs''\\).readFileSync\\(''C:/Users/cytsa/OneDrive/Documents/ClaudeAPWH/src/data/timelineData.json'',''utf8''\\)\\); console.log\\(''JSON valid''\\)\")"
+      "Bash(node -e \"JSON.parse\\(require\\(''fs''\\).readFileSync\\(''C:/Users/cytsa/OneDrive/Documents/ClaudeAPWH/src/data/timelineData.json'',''utf8''\\)\\); console.log\\(''JSON valid''\\)\")",
+      "Bash(wc -l /c/Users/cytsa/OneDrive/Documents/ClaudeAPWH/src/components/*.jsx)"
     ]
   }
 }

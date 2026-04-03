@@ -6,6 +6,12 @@
       "runtimeExecutable": "npm",
       "runtimeArgs": ["run", "dev"],
       "port": 5173
+    },
+    {
+      "name": "trimps",
+      "runtimeExecutable": "npx",
+      "runtimeArgs": ["serve", "-p", "5174", "../trimps-clone"],
+      "port": 5174
     }
   ]
 }

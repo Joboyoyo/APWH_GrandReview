@@ -35,7 +35,7 @@ export default function LandingPage() {
             39 events. 156 questions. Every SPICE-T theme.
           </p>
           <div className="landing-cta-row">
-            <button className="landing-cta" onClick={() => navigate('/')}>
+            <button className="landing-cta" onClick={() => navigate('/timeline')}>
               Explore the Timeline →
             </button>
             <button className="landing-cta-secondary" onClick={() => navigate('/quizzes')}>
@@ -87,7 +87,7 @@ export default function LandingPage() {
       <section className="landing-bottom">
         <h2 className="landing-bottom-title">Ready to Study?</h2>
         <div className="landing-cta-row">
-          <button className="landing-cta" onClick={() => navigate('/')}>
+          <button className="landing-cta" onClick={() => navigate('/timeline')}>
             Open the Timeline
           </button>
           <button className="landing-cta-secondary" onClick={() => navigate('/compare')}>
