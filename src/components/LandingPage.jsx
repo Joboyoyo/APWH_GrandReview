@@ -1,3 +1,4 @@
+import { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import './LandingPage.css';
@@ -20,6 +21,15 @@ const ERAS = [
 
 export default function LandingPage() {
   const navigate = useNavigate();
+  const [visitors, setVisitors] = useState(null);
+
+  useEffect(() => {
+    // Free visitor counter — no signup needed
+    fetch('https://api.counterapi.dev/v1/apwhprep-cytsai/visits/up')
+      .then(r => r.json())
+      .then(data => setVisitors(data.count))
+      .catch(() => {}); // silently fail if API is down
+  }, []);
 
   return (
     <div className="landing">
@@ -94,6 +104,11 @@ export default function LandingPage() {
             Compare Events
           </button>
         </div>
+        {visitors && (
+          <div className="landing-visitors">
+            {visitors.toLocaleString()} visits
+          </div>
+        )}
       </section>
     </div>
   );
