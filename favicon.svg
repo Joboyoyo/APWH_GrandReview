@@ -1,15 +1,11 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
   <circle cx="32" cy="32" r="30" fill="#0f172a" stroke="#4A90D9" stroke-width="2.5"/>
-  <ellipse cx="32" cy="32" rx="20" ry="20" fill="none" stroke="#4A90D9" stroke-width="1.2" opacity="0.3"/>
-  <ellipse cx="32" cy="32" rx="10" ry="20" fill="none" stroke="#4A90D9" stroke-width="1" opacity="0.25"/>
-  <line x1="12" y1="32" x2="52" y2="32" stroke="#4A90D9" stroke-width="1" opacity="0.2"/>
-  <line x1="32" y1="12" x2="32" y2="52" stroke="#4A90D9" stroke-width="1" opacity="0.2"/>
-  <path d="M12 25 Q22 22, 32 25 Q42 28, 52 25" fill="none" stroke="#4A90D9" stroke-width="0.8" opacity="0.2"/>
-  <path d="M12 39 Q22 42, 32 39 Q42 36, 52 39" fill="none" stroke="#4A90D9" stroke-width="0.8" opacity="0.2"/>
-  <line x1="10" y1="32" x2="50" y2="32" stroke="#E67E22" stroke-width="2.5" stroke-linecap="round"/>
-  <polygon points="51,32 45,28.5 45,35.5" fill="#E67E22"/>
-  <circle cx="18" cy="32" r="3" fill="#E74C3C"/>
-  <circle cx="28" cy="32" r="3" fill="#2ECC71"/>
-  <circle cx="38" cy="32" r="3" fill="#9B59B6"/>
-  <text x="32" y="51" text-anchor="middle" font-family="Arial,sans-serif" font-size="9" font-weight="800" fill="#f0f4f8" letter-spacing="0.5">APWH</text>
+  <ellipse cx="32" cy="32" rx="20" ry="20" fill="none" stroke="#4A90D9" stroke-width="1" opacity="0.2"/>
+  <ellipse cx="32" cy="32" rx="10" ry="20" fill="none" stroke="#4A90D9" stroke-width="0.8" opacity="0.15"/>
+  <line x1="10" y1="28" x2="50" y2="28" stroke="#E67E22" stroke-width="2" stroke-linecap="round"/>
+  <polygon points="51,28 46,25 46,31" fill="#E67E22"/>
+  <circle cx="18" cy="28" r="2.5" fill="#E74C3C"/>
+  <circle cx="30" cy="28" r="2.5" fill="#2ECC71"/>
+  <circle cx="42" cy="28" r="2.5" fill="#9B59B6"/>
+  <text x="32" y="49" text-anchor="middle" font-family="Arial,sans-serif" font-size="16" font-weight="900" fill="#f0f4f8" letter-spacing="0.5">APWH</text>
 </svg>
