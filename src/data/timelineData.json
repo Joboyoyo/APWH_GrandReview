@@ -68,6 +68,32 @@
               "context": "Marco Polo's descriptions of Yuan China's wealth, paper money, and administrative sophistication introduced Europeans to East Asian civilization and illustrate the cross-cultural exchange facilitated by the Pax Mongolica."
             }
           ],
+          "essayPrompts": {
+            "saq": [
+              {
+                "prompt": "Answer parts a, b, and c about the Mongol Empire's impact on Afro-Eurasian networks.",
+                "parts": [
+                  "a) Identify ONE way the Mongol Empire facilitated trade across Eurasia.",
+                  "b) Explain ONE political effect of Mongol conquest on a specific region.",
+                  "c) Explain ONE way the Pax Mongolica contributed to both positive exchange AND the spread of disease."
+                ],
+                "guidance": "A strong answer for (a) should reference specific policies like protecting merchants, the yam postal system, or standardized trade practices. For (b), discuss how a specific khanate (Yuan, Ilkhanate, Golden Horde) restructured local governance. For (c), connect the same trade facilitation that spread goods and ideas to the transmission of the Black Death along Silk Road routes."
+              }
+            ],
+            "leq": [
+              {
+                "prompt": "Evaluate the extent to which the Mongol Empire transformed Afro-Eurasian trade networks in the period 1200-1400.",
+                "thesis_hint": "A strong thesis should acknowledge that while the Mongols dramatically expanded and secured existing trade routes, many of these networks (Silk Roads, Indian Ocean) predated Mongol rule. Take a clear position on the DEGREE of transformation.",
+                "evidence_suggestions": [
+                  "The Pax Mongolica and protection of merchants along the Silk Roads",
+                  "Spread of technologies (gunpowder, printing) and ideas across Eurasia",
+                  "The unintended consequence of facilitating the Black Death's spread",
+                  "Comparison with pre-Mongol trade volumes and routes"
+                ],
+                "rubric_tips": "The AP rubric rewards nuance. Don't just argue the Mongols changed everything - acknowledge continuities in trade patterns while arguing for the significance of changes. Use specific evidence from multiple regions."
+              }
+            ]
+          },
           "quiz": [
             {
               "id": "q-mongol-1",
@@ -167,6 +193,32 @@
               "context": "Ibn Battuta's firsthand account provides one of the few external descriptions of Mali's society, documenting its blend of Islamic law and local African traditions — a key example of cultural syncretism in AP World History."
             }
           ],
+          "essayPrompts": {
+            "saq": [
+              {
+                "prompt": "Answer parts a, b, and c about the Mali Empire's role in Trans-Saharan trade and the spread of Islam in West Africa.",
+                "parts": [
+                  "a) Identify ONE way the Mali Empire facilitated Trans-Saharan trade.",
+                  "b) Explain how Mansa Musa's pilgrimage to Mecca demonstrated Mali's wealth and connection to the Islamic world.",
+                  "c) Explain ONE way Islam was adapted or blended with local traditions in West Africa under Mali's influence."
+                ],
+                "guidance": "For (a), reference Mali's control of gold and salt trade routes or the safety of trade routes under Mansa Musa. For (b), discuss the lavish spending in Cairo that disrupted gold prices and placed Mali on European maps. For (c), discuss syncretism - how West Africans blended Islamic practices with indigenous beliefs and social customs."
+              }
+            ],
+            "leq": [
+              {
+                "prompt": "Compare the Mali Empire's use of Islam as a tool of statecraft with the Delhi Sultanate's use of Islam in the period 1200-1450.",
+                "thesis_hint": "A strong thesis should identify a key similarity (both used Islam to legitimize rule and connect to broader trade networks) AND a key difference (Mali's more syncretic approach versus the Delhi Sultanate's more formal imposition in some periods).",
+                "evidence_suggestions": [
+                  "Mansa Musa's hajj and its diplomatic and economic significance",
+                  "Mali's blend of Islamic and traditional West African governance practices",
+                  "Delhi Sultanate's use of Islamic law and administration over a Hindu-majority population",
+                  "Both empires' roles in connecting to the broader Dar al-Islam trading world"
+                ],
+                "rubric_tips": "Comparison essays must have direct comparisons, not just parallel descriptions. For each point about Mali, explicitly connect it to a similar or contrasting point about the Delhi Sultanate. The AP rubric rewards analysis of WHY differences existed."
+              }
+            ]
+          },
           "quiz": [
             {
               "id": "q-mali-1",
@@ -267,6 +319,32 @@
               "context": "Shen Kuo's encyclopedic work documents key Chinese technological innovations that would later transform global navigation and communication — central to AP themes of technology transfer across civilizations."
             }
           ],
+          "essayPrompts": {
+            "saq": [
+              {
+                "prompt": "Answer parts a, b, and c about the Song Dynasty's economic and technological innovations.",
+                "parts": [
+                  "a) Identify ONE technological innovation of the Song Dynasty and explain its economic impact.",
+                  "b) Explain how the commercialization of the Song economy changed Chinese social structures.",
+                  "c) Explain ONE way Song China's innovations influenced other regions of Afro-Eurasia."
+                ],
+                "guidance": "For (a), discuss innovations like paper money, the magnetic compass, or movable type and link each to economic effects. For (b), discuss the growth of a merchant class that challenged traditional Confucian social hierarchies. For (c), trace how technologies like gunpowder or the compass spread through trade networks to other civilizations."
+              }
+            ],
+            "leq": [
+              {
+                "prompt": "Evaluate the extent to which Song China (960-1279) was the most commercially advanced society of the medieval period.",
+                "thesis_hint": "A strong thesis should take a clear position while acknowledging counterexamples. Consider arguing that Song China's combination of innovations (paper money, urbanization, proto-industrialization) was unmatched, while noting that other societies like the Islamic world also had sophisticated commercial systems.",
+                "evidence_suggestions": [
+                  "Development and use of paper money and letters of credit",
+                  "Urbanization and the growth of cities like Hangzhou with populations over one million",
+                  "Innovations in rice cultivation (champa rice) that supported population growth",
+                  "Comparison with contemporary Islamic commercial practices (banking, trade networks)"
+                ],
+                "rubric_tips": "For 'evaluate the extent' questions, avoid all-or-nothing arguments. The strongest essays acknowledge the strongest counterargument and explain why their position is still more persuasive. Use specific, concrete evidence rather than vague generalizations."
+              }
+            ]
+          },
           "quiz": [
             {
               "id": "q-song-1",
@@ -366,6 +444,32 @@
               "context": "Ibn al-Wardi's account provides a non-European perspective on the Black Death, demonstrating that the pandemic devastated societies across Afro-Eurasia, not just Europe — essential for understanding the global scope of the crisis."
             }
           ],
+          "essayPrompts": {
+            "saq": [
+              {
+                "prompt": "Answer parts a, b, and c about the causes, spread, and social consequences of the Black Death.",
+                "parts": [
+                  "a) Identify ONE factor that facilitated the spread of the Black Death across Eurasia.",
+                  "b) Explain ONE way the Black Death disrupted European social or economic structures.",
+                  "c) Explain ONE way responses to the Black Death differed between two regions or religious communities."
+                ],
+                "guidance": "For (a), connect the plague's spread to Mongol trade routes or urbanization. For (b), discuss labor shortages leading to peasant demands for higher wages, or the decline of feudal obligations. For (c), compare Christian responses (flagellants, scapegoating of Jews) with Islamic responses (acceptance as divine will, maintenance of social order)."
+              }
+            ],
+            "leq": [
+              {
+                "prompt": "Evaluate the extent to which the Black Death transformed European social and economic structures in the period 1347-1500.",
+                "thesis_hint": "A strong thesis should argue that the Black Death was a catalyst for significant change (labor shortages, weakening of feudalism) while acknowledging that some structures proved resilient or that changes were already underway before the plague.",
+                "evidence_suggestions": [
+                  "Labor shortages leading to higher wages and greater bargaining power for peasants",
+                  "Peasant revolts (English Peasants' Revolt of 1381) challenging feudal obligations",
+                  "Decline of the Catholic Church's moral authority due to inability to explain or stop the plague",
+                  "Continuities in political structures and the persistence of social hierarchies despite demographic collapse"
+                ],
+                "rubric_tips": "The AP rubric rewards essays that address continuity AND change. Don't just list ways the Black Death changed Europe - also discuss what stayed the same and why. This demonstrates the kind of complex understanding that earns top scores."
+              }
+            ]
+          },
           "quiz": [
             {
               "id": "q-plague-1",
@@ -458,6 +562,32 @@
               "context": "Ibn Battuta's account of Delhi provides external verification of the sultanate's power and its place within the broader dar al-Islam network, illustrating how Islamic civilization connected societies from West Africa to South Asia."
             }
           ],
+          "essayPrompts": {
+            "saq": [
+              {
+                "prompt": "Answer parts a, b, and c about the Delhi Sultanate's administration of a religiously diverse population.",
+                "parts": [
+                  "a) Identify ONE method the Delhi Sultanate used to govern its Hindu-majority population.",
+                  "b) Explain ONE way the interaction between Islamic and Hindu cultures produced cultural synthesis during this period.",
+                  "c) Explain ONE challenge the Delhi Sultanate faced in maintaining authority over the Indian subcontinent."
+                ],
+                "guidance": "For (a), discuss the jizya tax, use of local Hindu administrators, or accommodation of Hindu practices in some periods. For (b), reference developments like Urdu language, Indo-Islamic architecture, or Sufi-Bhakti interactions. For (c), discuss regional resistance, the difficulty of controlling a vast territory, or internal succession conflicts."
+              }
+            ],
+            "leq": [
+              {
+                "prompt": "Compare the Delhi Sultanate's and the Mongol Empire's approaches to governing conquered peoples in the period 1200-1400.",
+                "thesis_hint": "A strong thesis should identify that both empires practiced forms of accommodation but differed in their use of religion - the Delhi Sultanate imposed Islamic law more formally while the Mongols practiced broader religious tolerance as a governing strategy.",
+                "evidence_suggestions": [
+                  "Delhi Sultanate's use of Islamic law and the jizya tax on non-Muslims",
+                  "Mongol religious tolerance and pragmatic adoption of local customs",
+                  "Both empires' reliance on local administrators to govern conquered populations",
+                  "Different approaches to cultural assimilation versus accommodation"
+                ],
+                "rubric_tips": "Strong comparison essays make direct, explicit comparisons rather than describing each empire separately. Use comparative language: 'While the Delhi Sultanate... the Mongols in contrast...' Also analyze the REASONS for different approaches."
+              }
+            ]
+          },
           "quiz": [
             {
               "id": "q-delhi-1",
@@ -557,6 +687,32 @@
               "context": "This rare Muslim perspective on the Crusaders provides evidence of how each side perceived the other, illustrating the complexity of cross-cultural interactions during the Crusades beyond simple military conflict."
             }
           ],
+          "essayPrompts": {
+            "saq": [
+              {
+                "prompt": "Answer parts a, b, and c about the cultural exchange resulting from the Crusades.",
+                "parts": [
+                  "a) Identify ONE example of knowledge or technology transferred from the Islamic world to Europe as a result of the Crusades.",
+                  "b) Explain ONE way the Crusades affected European economic development.",
+                  "c) Explain ONE way the Crusades affected Muslim perceptions of European civilizations."
+                ],
+                "guidance": "For (a), reference specific transfers like Arabic numerals, medical knowledge, or agricultural techniques. For (b), discuss the growth of Italian merchant cities (Venice, Genoa) and increased demand for Eastern goods. For (c), discuss how Muslim chroniclers initially viewed Crusaders as barbarians and how sustained contact created more nuanced (though often hostile) views."
+              }
+            ],
+            "leq": [
+              {
+                "prompt": "Evaluate the extent to which the Crusades increased cross-cultural interactions between Europe and the Islamic world in the period 1095-1291.",
+                "thesis_hint": "A strong thesis should acknowledge that while the Crusades did facilitate cultural exchange, much of this exchange was already occurring through trade and scholarship in places like Spain and Sicily. Argue for the degree to which the Crusades accelerated or redirected existing patterns.",
+                "evidence_suggestions": [
+                  "Transfer of Islamic scientific and mathematical knowledge to Europe",
+                  "Growth of Mediterranean trade networks connecting Europe to the East",
+                  "Establishment of Crusader states that created zones of cultural contact",
+                  "Pre-existing channels of exchange (Islamic Spain, Norman Sicily) that functioned without military conflict"
+                ],
+                "rubric_tips": "The AP rubric values complexity. Acknowledge that the Crusades involved both conflict AND exchange simultaneously. The best essays recognize that military confrontation and cultural transfer are not mutually exclusive."
+              }
+            ]
+          },
           "quiz": [
             {
               "id": "q-crusades-1",
@@ -652,6 +808,32 @@
               "context": "Ibn Battuta's account of Indian Ocean port cities documents the cosmopolitan commercial culture that connected East Africa, Arabia, India, and Southeast Asia — key evidence for AP themes of maritime trade networks."
             }
           ],
+          "essayPrompts": {
+            "saq": [
+              {
+                "prompt": "Answer parts a, b, and c about the factors that facilitated Indian Ocean trade.",
+                "parts": [
+                  "a) Identify ONE environmental factor that shaped Indian Ocean trade patterns.",
+                  "b) Explain ONE way the spread of Islam facilitated Indian Ocean commercial networks.",
+                  "c) Explain ONE social or cultural effect of Indian Ocean trade on a specific coastal community."
+                ],
+                "guidance": "For (a), discuss monsoon winds and how their seasonal patterns determined trade routes and timing. For (b), explain how shared Islamic commercial law, trust networks, and lingua franca facilitated transactions across diverse regions. For (c), discuss the development of cosmopolitan port cities like Kilwa, Malacca, or Calicut, or the spread of Swahili culture."
+              }
+            ],
+            "leq": [
+              {
+                "prompt": "Compare the Indian Ocean trade network with the Silk Road trade network in the period 1200-1450.",
+                "thesis_hint": "A strong thesis should identify key structural differences (maritime vs. overland, bulk goods vs. luxury goods) while acknowledging similarities (both facilitated cultural exchange, spread of religions, and transfer of technologies).",
+                "evidence_suggestions": [
+                  "Monsoon winds as the engine of Indian Ocean trade versus overland caravans on the Silk Roads",
+                  "Volume and types of goods traded (bulk commodities like textiles and spices vs. luxury goods like silk)",
+                  "Role of diasporic communities (Chinese, Arab, Indian merchants) in both networks",
+                  "The role of the Mongol Empire in securing Silk Road trade versus the decentralized nature of Indian Ocean trade"
+                ],
+                "rubric_tips": "Comparison essays earn the highest marks when they analyze causes of similarities and differences, not just identify them. Explain WHY these networks developed differently (geography, political structures, available technology)."
+              }
+            ]
+          },
           "quiz": [
             {
               "id": "q-iot-1",
@@ -745,6 +927,32 @@
               "context": "Diaz's description of Tenochtitlan reveals the sophistication of Aztec civilization through the eyes of a European conqueror, providing evidence of the advanced urban planning, markets, and engineering that characterized Mesoamerican societies."
             }
           ],
+          "essayPrompts": {
+            "saq": [
+              {
+                "prompt": "Answer parts a, b, and c about the Aztec Empire's political organization and tribute system.",
+                "parts": [
+                  "a) Identify ONE feature of the Aztec tribute system and explain how it maintained imperial power.",
+                  "b) Explain ONE way Aztec religious practices were connected to their political authority.",
+                  "c) Explain ONE reason why some subject peoples resented Aztec rule, and how this affected the empire's fate."
+                ],
+                "guidance": "For (a), discuss how conquered peoples were required to pay tribute in goods and labor, which funded the Aztec state and military. For (b), connect human sacrifice and the Flower Wars to the legitimation of Aztec political authority and military expansion. For (c), explain how resentment of tribute demands and sacrifice led subject peoples to ally with Spanish conquistadors."
+              }
+            ],
+            "leq": [
+              {
+                "prompt": "Compare the methods used by the Aztec and Inca Empires to administer their respective territories in the period 1300-1500.",
+                "thesis_hint": "A strong thesis should argue that while both empires developed sophisticated systems of control, they differed fundamentally: the Aztecs relied on a decentralized tribute system that left local rulers in place, while the Inca created a more centralized bureaucratic state with direct administrative control.",
+                "evidence_suggestions": [
+                  "Aztec tribute system versus Inca mit'a labor system",
+                  "Aztec allowance of local autonomy versus Inca imposition of Quechua language and state religion",
+                  "Aztec use of Flower Wars and human sacrifice versus Inca use of road networks and quipu record-keeping",
+                  "Both empires' vulnerabilities to Spanish conquest due to internal tensions"
+                ],
+                "rubric_tips": "The AP rubric rewards specific, accurate evidence. Name specific institutions, practices, or policies rather than making vague claims. Each body paragraph should contain at least two pieces of specific evidence."
+              }
+            ]
+          },
           "quiz": [
             {
               "id": "q-aztec-1",
@@ -838,6 +1046,32 @@
               "context": "Cieza de Leon's account documents the Inca Empire's remarkable administrative infrastructure, demonstrating how a complex civilization could function without a written language — challenging European assumptions about what defines \"civilization.\""
             }
           ],
+          "essayPrompts": {
+            "saq": [
+              {
+                "prompt": "Answer parts a, b, and c about the Inca Empire's methods of unifying a diverse empire without a written language.",
+                "parts": [
+                  "a) Identify ONE method the Inca used to integrate conquered peoples into their empire.",
+                  "b) Explain how the Inca maintained records and administered their empire without a writing system.",
+                  "c) Explain ONE way the Inca road system contributed to imperial unity and control."
+                ],
+                "guidance": "For (a), discuss the mit'a labor system, imposition of Quechua language, or the practice of relocating populations. For (b), explain the quipu system of knotted strings for recording data and how oral traditions supplemented record-keeping. For (c), discuss how roads facilitated military movement, communication via relay runners (chasquis), and economic integration."
+              }
+            ],
+            "leq": [
+              {
+                "prompt": "Evaluate the extent to which the Inca Empire was a centralized state in the period 1400-1533.",
+                "thesis_hint": "A strong thesis should argue that the Inca Empire achieved a remarkable degree of centralization through its road network, labor system, and cultural policies, while acknowledging that geographic challenges and the incorporation of diverse ethnic groups created limits to central control.",
+                "evidence_suggestions": [
+                  "The mit'a labor system as a tool of state economic planning",
+                  "The extensive road network spanning over 25,000 miles of Andean terrain",
+                  "Imposition of Quechua and the cult of Inti (sun worship) across the empire",
+                  "Challenges of governing diverse ethnic groups across extreme geographic terrain"
+                ],
+                "rubric_tips": "For 'evaluate the extent' questions, the best essays establish clear criteria for what would constitute centralization, then systematically evaluate the evidence against those criteria. This analytical framework demonstrates sophisticated historical thinking."
+              }
+            ]
+          },
           "quiz": [
             {
               "id": "q-inca-1",
@@ -932,6 +1166,32 @@
               "context": "The Magna Carta represents an early challenge to absolute monarchy in Europe, establishing precedents for limited government and rule of law that would influence later democratic movements worldwide."
             }
           ],
+          "essayPrompts": {
+            "saq": [
+              {
+                "prompt": "Answer parts a, b, and c about the feudal social hierarchy and the role of the Catholic Church in medieval Europe.",
+                "parts": [
+                  "a) Identify ONE key feature of the feudal system and explain how it organized political power in medieval Europe.",
+                  "b) Explain ONE way the Catholic Church influenced social and political life in medieval Europe.",
+                  "c) Explain ONE way the feudal system began to decline by the end of the medieval period."
+                ],
+                "guidance": "For (a), discuss the lord-vassal relationship, the exchange of land (fiefs) for military service, and the decentralization of political authority. For (b), discuss the Church's role in legitimizing rulers, providing education, or its own political power through canon law and papal authority. For (c), reference the Black Death's labor disruption, growth of centralized monarchies, or the rise of a money economy."
+              }
+            ],
+            "leq": [
+              {
+                "prompt": "Compare European feudalism with Japanese feudalism in the period 1200-1450.",
+                "thesis_hint": "A strong thesis should identify structural similarities (warrior aristocracies, lord-vassal relationships, decentralized power) while explaining key differences (the role of religion, the nature of the warrior code, and the degree of centralization).",
+                "evidence_suggestions": [
+                  "European knights and the code of chivalry versus Japanese samurai and bushido",
+                  "The role of the Catholic Church in Europe versus Buddhism and Shinto in Japan",
+                  "European manorialism versus Japanese daimyo-peasant relationships",
+                  "Both systems' emphasis on loyalty, military service, and hereditary status"
+                ],
+                "rubric_tips": "Cross-cultural comparisons require you to demonstrate understanding of BOTH societies, not just the one you know better. Avoid superficial comparisons ('both had warriors') and instead analyze the deeper structural and cultural differences."
+              }
+            ]
+          },
           "quiz": [
             {
               "id": "q-feudal-1",
@@ -1025,6 +1285,32 @@
               "context": "Procopius's description of Justinian's building program illustrates how Byzantine emperors used monumental architecture to project imperial and religious authority — a key AP concept of how states legitimize power through cultural patronage."
             }
           ],
+          "essayPrompts": {
+            "saq": [
+              {
+                "prompt": "Answer parts a, b, and c about how the Byzantine Empire preserved and transmitted classical knowledge.",
+                "parts": [
+                  "a) Identify ONE way the Byzantine Empire preserved Greek and Roman intellectual traditions.",
+                  "b) Explain ONE way Byzantine culture influenced neighboring civilizations, particularly in Eastern Europe.",
+                  "c) Explain ONE significant difference between the Byzantine Empire's political system and that of Western Europe during the medieval period."
+                ],
+                "guidance": "For (a), discuss the preservation of Greek philosophical and scientific texts, Justinian's Code of law, or the continuation of Roman administrative practices. For (b), discuss the spread of Orthodox Christianity, the Cyrillic alphabet, and Byzantine architectural styles to Russia and the Balkans. For (c), contrast the centralized caesaropapism of Byzantium with the decentralized feudalism and Church-state tensions of Western Europe."
+              }
+            ],
+            "leq": [
+              {
+                "prompt": "Evaluate the extent to which the Byzantine Empire was a continuation of the Roman Empire in the period 330-1453.",
+                "thesis_hint": "A strong thesis should acknowledge significant continuities (legal system, imperial administration, claim to Roman identity) while also identifying important transformations (Greek language replacing Latin, Orthodox Christianity, Eastern cultural orientation) that made Byzantium a distinct civilization.",
+                "evidence_suggestions": [
+                  "Justinian's Code as a continuation and codification of Roman law",
+                  "The shift from Latin to Greek as the language of government and culture",
+                  "The development of Eastern Orthodox Christianity distinct from Roman Catholicism",
+                  "Continuity of Roman administrative structures but adaptation to Eastern Mediterranean realities"
+                ],
+                "rubric_tips": "This is a classic continuity and change over time question. The best essays avoid the trap of arguing entirely for continuity or entirely for change. Instead, they identify which aspects continued and which changed, and explain WHY certain elements persisted while others transformed."
+              }
+            ]
+          },
           "quiz": [
             {
               "id": "q-byzantine-1",
@@ -1152,6 +1438,32 @@
               "context": "The Florentine Codex provides an indigenous perspective on the Columbian Exchange's biological dimension, documenting how epidemic disease transformed the Americas — a central AP theme of unintended consequences of global contact."
             }
           ],
+          "essayPrompts": {
+            "saq": [
+              {
+                "prompt": "Answer parts a, b, and c about the biological and environmental consequences of the Columbian Exchange.",
+                "parts": [
+                  "a) Identify ONE biological exchange from the Americas to the Old World and explain its demographic impact.",
+                  "b) Explain ONE way the introduction of Old World diseases affected indigenous populations in the Americas.",
+                  "c) Explain ONE environmental consequence of the Columbian Exchange in either the Americas or the Old World."
+                ],
+                "guidance": "For (a), discuss crops like potatoes or maize and their role in population growth in Europe, Africa, or Asia. For (b), explain the catastrophic mortality (up to 90% in some areas) from smallpox, measles, and other diseases to which indigenous peoples had no immunity. For (c), discuss deforestation for plantation agriculture, introduction of new animal species altering ecosystems, or soil depletion."
+              }
+            ],
+            "leq": [
+              {
+                "prompt": "Evaluate the extent to which the Columbian Exchange transformed global demographics in the period 1492-1750.",
+                "thesis_hint": "A strong thesis should argue that the Columbian Exchange fundamentally reshaped global population patterns through disease, new food crops, and forced migration (slave trade), while specifying which demographic changes were most significant.",
+                "evidence_suggestions": [
+                  "Catastrophic decline of indigenous American populations due to Old World diseases",
+                  "Population growth in Europe, Asia, and Africa due to New World crops (potatoes, maize)",
+                  "The forced migration of millions of Africans through the Atlantic slave trade",
+                  "The creation of new mixed-race populations (mestizo, mulatto) in the Americas"
+                ],
+                "rubric_tips": "The AP rubric rewards essays that connect evidence to a broader argument. Don't just list demographic changes - explain how they transformed societies, economies, and power relationships on a global scale."
+              }
+            ]
+          },
           "quiz": [
             {
               "id": "q-columbian-1",
@@ -1252,6 +1564,32 @@
               "context": "Bosman's account provides a European trader's perspective on the mechanics of the slave trade in West Africa, documenting the commercial networks and African-European interactions that sustained the Atlantic system."
             }
           ],
+          "essayPrompts": {
+            "saq": [
+              {
+                "prompt": "Answer parts a, b, and c about the economic motivations and human costs of the Atlantic slave trade.",
+                "parts": [
+                  "a) Identify ONE economic factor that drove the expansion of the Atlantic slave trade.",
+                  "b) Explain ONE way the slave trade affected African societies and political structures.",
+                  "c) Explain ONE way enslaved Africans maintained cultural traditions or resisted their enslavement in the Americas."
+                ],
+                "guidance": "For (a), discuss the demand for labor on sugar, tobacco, or cotton plantations and the profitability of the triangular trade. For (b), discuss the destabilization of African states through warfare for captives, the demographic impact of losing millions of people, or the rise of states like Dahomey that profited from the trade. For (c), discuss preservation of religious practices, music, language, or forms of resistance (revolts, maroonage, work slowdowns)."
+              }
+            ],
+            "leq": [
+              {
+                "prompt": "Evaluate the extent to which the Atlantic slave trade was driven by economic factors versus racial ideology in the period 1500-1800.",
+                "thesis_hint": "A strong thesis should argue that economic demand for plantation labor was the primary driver, but that racial ideologies developed alongside and reinforced the system, making the two factors inseparable over time.",
+                "evidence_suggestions": [
+                  "The demand for labor on sugar plantations in Brazil and the Caribbean as the initial economic driver",
+                  "The development of racial hierarchies and pseudoscientific racism to justify enslavement",
+                  "The triangular trade system and its profitability for European merchants and colonial economies",
+                  "The fact that slavery existed in Africa before European contact but was fundamentally transformed by Atlantic demand"
+                ],
+                "rubric_tips": "The AP rubric rewards nuanced arguments that avoid false dichotomies. The best essays show how economic and racial factors were interconnected rather than treating them as entirely separate causes."
+              }
+            ]
+          },
           "quiz": [
             {
               "id": "q-slave-1",
@@ -1345,6 +1683,32 @@
               "context": "Busbecq's letters offer a European outsider's admiring view of Ottoman governance under Suleiman, documenting the devshirme system and merit-based advancement that distinguished the Ottoman Empire from hereditary European systems."
             }
           ],
+          "essayPrompts": {
+            "saq": [
+              {
+                "prompt": "Answer parts a, b, and c about the Ottoman Empire's methods of governing a multi-ethnic empire.",
+                "parts": [
+                  "a) Identify ONE administrative practice the Ottomans used to manage religious diversity within their empire.",
+                  "b) Explain how the devshirme system served both military and administrative functions.",
+                  "c) Explain ONE way the Ottoman Empire's geographic position influenced its economic and political power."
+                ],
+                "guidance": "For (a), discuss the millet system, which allowed religious communities (Christians, Jews) to govern their own internal affairs under their own leaders. For (b), explain how Christian boys were recruited, converted to Islam, and trained as Janissaries (elite soldiers) or administrators, creating a loyal class with no hereditary power base. For (c), discuss Ottoman control of trade routes between Europe and Asia, especially after the fall of Constantinople."
+              }
+            ],
+            "leq": [
+              {
+                "prompt": "Compare the Ottoman Empire's and the Mughal Empire's approaches to religious diversity in the period 1450-1750.",
+                "thesis_hint": "A strong thesis should identify that both empires developed sophisticated systems for managing religious diversity but through different mechanisms - the Ottomans through the millet system of communal autonomy, the Mughals through Akbar's more integrative approach of Din-i-Ilahi and abolition of the jizya.",
+                "evidence_suggestions": [
+                  "The Ottoman millet system granting religious communities self-governance",
+                  "Akbar's policy of sulh-i-kul (universal peace) and abolition of the jizya tax",
+                  "The devshirme system as an Ottoman tool for incorporating non-Muslims",
+                  "Aurangzeb's reversal of Akbar's tolerance policies and its consequences for Mughal stability"
+                ],
+                "rubric_tips": "The AP rubric rewards analysis of change over time within the comparison. Note that both empires' religious policies changed over time (Aurangzeb reversed Akbar's policies), and explain the consequences of these changes."
+              }
+            ]
+          },
           "quiz": [
             {
               "id": "q-ottoman-1",
@@ -1438,6 +1802,32 @@
               "context": "This comprehensive record of Mughal administration under Akbar provides evidence of how the empire managed religious diversity through policies of tolerance — a key AP example of how gunpowder empires maintained control over diverse populations."
             }
           ],
+          "essayPrompts": {
+            "saq": [
+              {
+                "prompt": "Answer parts a, b, and c about the contrasting religious policies of Mughal emperors Akbar and Aurangzeb.",
+                "parts": [
+                  "a) Identify ONE specific policy Akbar implemented to promote religious tolerance in the Mughal Empire.",
+                  "b) Explain how Aurangzeb's religious policies differed from Akbar's approach.",
+                  "c) Explain ONE consequence of the shift in religious policy for the stability of the Mughal Empire."
+                ],
+                "guidance": "For (a), discuss Akbar's abolition of the jizya, his policy of sulh-i-kul, the Din-i-Ilahi, or his patronage of Hindu art and culture. For (b), explain Aurangzeb's reimposition of the jizya, destruction of Hindu temples, and enforcement of Islamic orthodoxy. For (c), discuss how Aurangzeb's policies alienated Hindus, Sikhs, and Rajputs, contributing to rebellions and the empire's eventual decline."
+              }
+            ],
+            "leq": [
+              {
+                "prompt": "Evaluate the extent to which religious policy determined the success or failure of Gunpowder Empires in the period 1450-1750.",
+                "thesis_hint": "A strong thesis should argue that religious tolerance correlated with political stability (Akbar's Mughal Empire, Ottoman millet system) while intolerance contributed to decline (Aurangzeb, Safavid enforcement of Shi'ism), but also acknowledge other factors (military, economic) that determined imperial success.",
+                "evidence_suggestions": [
+                  "Akbar's tolerant policies and the Mughal golden age versus Aurangzeb's intolerance and imperial decline",
+                  "Ottoman millet system and the empire's long stability",
+                  "Safavid enforcement of Shi'a Islam and its effects on regional relations",
+                  "Military technology and economic factors that also determined imperial success"
+                ],
+                "rubric_tips": "The AP rubric rewards essays that consider multiple causation. While the question focuses on religious policy, the strongest essays will acknowledge that religious policy alone did not determine success or failure, showing awareness of the complexity of historical causation."
+              }
+            ]
+          },
           "quiz": [
             {
               "id": "q-mughal-1",
@@ -1532,6 +1922,32 @@
               "context": "Luther's theses sparked the Protestant Reformation, fragmenting Western Christianity and reshaping European politics. The printing press's role in spreading his ideas illustrates how technology can amplify dissent — a key AP concept."
             }
           ],
+          "essayPrompts": {
+            "saq": [
+              {
+                "prompt": "Answer parts a, b, and c about the role of the printing press in the spread of the Protestant Reformation.",
+                "parts": [
+                  "a) Identify ONE way the printing press facilitated the spread of Martin Luther's ideas.",
+                  "b) Explain ONE political consequence of the Protestant Reformation in Europe.",
+                  "c) Explain ONE way the Catholic Church responded to the Protestant challenge."
+                ],
+                "guidance": "For (a), discuss how the printing press allowed rapid reproduction and dissemination of the 95 Theses and other Protestant writings in vernacular languages. For (b), discuss the Wars of Religion, the Peace of Augsburg, or how Protestant movements allowed rulers to break from papal authority. For (c), discuss the Council of Trent, the Jesuit order, or the Inquisition as elements of the Counter-Reformation."
+              }
+            ],
+            "leq": [
+              {
+                "prompt": "Evaluate the extent to which the Protestant Reformation was driven by religious motivations versus political motivations in the period 1517-1648.",
+                "thesis_hint": "A strong thesis should argue that while genuine religious grievances sparked the Reformation, political leaders quickly co-opted religious reform for their own purposes, making religious and political motivations inseparable.",
+                "evidence_suggestions": [
+                  "Luther's theological objections to indulgences and papal authority",
+                  "German princes using Protestantism to assert independence from the Holy Roman Emperor and seize Church lands",
+                  "Henry VIII's break with Rome driven by personal and political rather than theological concerns",
+                  "The Peace of Westphalia (1648) establishing the principle of state sovereignty over religious matters"
+                ],
+                "rubric_tips": "The AP rubric rewards essays that avoid oversimplification. Show how religious and political motivations were intertwined rather than treating them as separate categories. Use specific examples from different regions to support your argument."
+              }
+            ]
+          },
           "quiz": [
             {
               "id": "q-reformation-1",
@@ -1625,6 +2041,32 @@
               "context": "This account documents the brutal labor conditions in the world's largest silver mine, illustrating how the global silver trade depended on coerced indigenous labor — connecting AP themes of global trade, colonialism, and labor systems."
             }
           ],
+          "essayPrompts": {
+            "saq": [
+              {
+                "prompt": "Answer parts a, b, and c about how silver connected the global economy in the early modern period.",
+                "parts": [
+                  "a) Identify ONE major source of silver in the early modern period and explain how it entered global trade networks.",
+                  "b) Explain ONE effect of the global silver trade on the Chinese economy.",
+                  "c) Explain ONE social or environmental consequence of silver mining in the Americas."
+                ],
+                "guidance": "For (a), discuss Potosi (Bolivia) or Japanese silver mines and how silver flowed through Manila galleons or Atlantic trade routes. For (b), discuss how China's demand for silver (to pay taxes) drove global trade patterns, or how silver influx eventually contributed to inflation. For (c), discuss the brutal conditions of the mit'a labor system at Potosi, environmental devastation from mercury amalgamation, or the demographic impact on indigenous laborers."
+              }
+            ],
+            "leq": [
+              {
+                "prompt": "Evaluate the extent to which the global silver trade created the first truly global economy in the period 1500-1750.",
+                "thesis_hint": "A strong thesis should argue that silver was the critical commodity linking the Americas, Europe, Africa, and Asia into an interconnected economic system, while acknowledging that earlier trade networks (Silk Roads, Indian Ocean) had already created regional integration.",
+                "evidence_suggestions": [
+                  "The Manila galleon trade connecting American silver to Chinese markets via the Pacific",
+                  "Silver's role in financing European purchases of Asian luxury goods",
+                  "The transformation of the Spanish economy through American silver (and the price revolution)",
+                  "China's single-whip tax reform requiring silver payment, which drove global demand"
+                ],
+                "rubric_tips": "The AP rubric rewards essays that demonstrate understanding of global connections. Trace silver's path across multiple continents and show how events in one region (Chinese tax policy) created effects in distant regions (intensified mining in Peru)."
+              }
+            ]
+          },
           "quiz": [
             {
               "id": "q-silver-1",
@@ -1718,6 +2160,32 @@
               "context": "Qianlong's letter epitomizes the Qing worldview of Chinese centrality and self-sufficiency, while also foreshadowing the coming clash between Chinese and European commercial systems that would lead to the Opium Wars."
             }
           ],
+          "essayPrompts": {
+            "saq": [
+              {
+                "prompt": "Answer parts a, b, and c about the Qing Dynasty's methods of maintaining authority over a vast multi-ethnic empire.",
+                "parts": [
+                  "a) Identify ONE method the Qing used to govern non-Han Chinese populations such as Mongols, Tibetans, or Uyghurs.",
+                  "b) Explain how the Qing balanced maintaining Manchu identity with adopting Chinese governance traditions.",
+                  "c) Explain ONE way the Qing Dynasty interacted with European powers in the early modern period."
+                ],
+                "guidance": "For (a), discuss the Lifan Yuan (Court of Colonial Affairs), the use of different administrative systems for different regions, or the patronage of Tibetan Buddhism. For (b), discuss the queue hairstyle mandate alongside adoption of the Confucian examination system and Chinese bureaucratic traditions. For (c), discuss the Canton system of restricted trade, the Macartney Mission, or Qing resistance to European diplomatic norms."
+              }
+            ],
+            "leq": [
+              {
+                "prompt": "Compare the Qing Dynasty's and the Ottoman Empire's approaches to managing ethnic diversity in the period 1600-1800.",
+                "thesis_hint": "A strong thesis should identify that both empires developed sophisticated systems for governing diverse populations but used different mechanisms - the Qing through cultural adaptation and separate administrative systems, the Ottomans through the millet system of religious community autonomy.",
+                "evidence_suggestions": [
+                  "Qing use of separate administrative structures for Manchuria, Mongolia, Tibet, and Chinese provinces",
+                  "Ottoman millet system organizing subjects by religious community",
+                  "Both empires' use of local elites as intermediaries",
+                  "Qing emphasis on ethnic/cultural categories versus Ottoman emphasis on religious categories"
+                ],
+                "rubric_tips": "The AP rubric rewards essays that explain the reasons for different approaches. Consider how each empire's origins, geographic challenges, and the nature of their diverse populations shaped their governing strategies."
+              }
+            ]
+          },
           "quiz": [
             {
               "id": "q-qing-1",
@@ -1846,6 +2314,32 @@
               "context": "Ure's pro-industrialization perspective contrasts with critics like Engels, illustrating the contemporary debate over whether industrialization was progress or exploitation — a key historiographical tension in AP World History."
             }
           ],
+          "essayPrompts": {
+            "saq": [
+              {
+                "prompt": "Answer parts a, b, and c about the social consequences of industrialization for working-class families.",
+                "parts": [
+                  "a) Identify ONE way industrialization changed the nature of work for ordinary people.",
+                  "b) Explain ONE effect of urbanization on living conditions during the Industrial Revolution.",
+                  "c) Explain ONE way workers organized to respond to the conditions created by industrialization."
+                ],
+                "guidance": "For (a), discuss the shift from artisanal/agricultural work to factory labor, including loss of autonomy, clock-based discipline, and child labor. For (b), discuss overcrowding, disease, pollution, or the lack of sanitation in rapidly growing industrial cities. For (c), discuss trade unions, Luddite movements, Chartism, or early socialist and Marxist organizations."
+              }
+            ],
+            "leq": [
+              {
+                "prompt": "Evaluate the extent to which the Industrial Revolution improved standards of living in the period 1750-1900.",
+                "thesis_hint": "A strong thesis should acknowledge that while industrialization eventually raised material standards of living (cheaper goods, higher wages over time), the short-term effects on workers were devastating, and the benefits were unequally distributed by class, gender, and region.",
+                "evidence_suggestions": [
+                  "Declining real wages and harsh working conditions in the early industrial period",
+                  "Eventual rise in living standards, access to consumer goods, and public health improvements by the late 19th century",
+                  "The divergent experiences of factory owners versus factory workers",
+                  "Global inequality as industrialized nations gained economic advantages over non-industrialized regions"
+                ],
+                "rubric_tips": "The AP rubric rewards periodization and attention to change over time. Note that the effects of industrialization changed dramatically between the early period (1750-1850) and the later period (1850-1900). Show awareness of this chronological nuance."
+              }
+            ]
+          },
           "quiz": [
             {
               "id": "q-industrial-1",
@@ -1946,6 +2440,32 @@
               "context": "De Gouges's declaration exposed the contradiction between universal rights rhetoric and women's exclusion, illustrating how revolutionary ideals could inspire marginalized groups to demand inclusion — a key AP concept of revolution's expanding scope."
             }
           ],
+          "essayPrompts": {
+            "saq": [
+              {
+                "prompt": "Answer parts a, b, and c about how Enlightenment ideas influenced the French Revolution.",
+                "parts": [
+                  "a) Identify ONE Enlightenment idea that directly influenced the goals of the French Revolution.",
+                  "b) Explain ONE way the French Revolution went beyond Enlightenment ideals into radical territory.",
+                  "c) Explain ONE way the French Revolution influenced political movements outside of France."
+                ],
+                "guidance": "For (a), discuss Rousseau's social contract, Voltaire's critique of the Church, or Montesquieu's separation of powers and their connection to revolutionary demands. For (b), discuss the Reign of Terror, dechristianization campaigns, or the radical egalitarianism of the sans-culottes. For (c), discuss the Haitian Revolution, Latin American independence movements, or the spread of nationalism across Europe."
+              }
+            ],
+            "leq": [
+              {
+                "prompt": "Compare the outcomes of the French Revolution and the Haitian Revolution in the period 1789-1830.",
+                "thesis_hint": "A strong thesis should argue that while both revolutions were inspired by Enlightenment ideals, the Haitian Revolution more fully realized the promise of universal liberty by abolishing slavery and racial hierarchy, whereas the French Revolution produced more ambiguous outcomes for equality despite its broader global ideological impact.",
+                "evidence_suggestions": [
+                  "The French Declaration of the Rights of Man versus the Haitian achievement of abolishing slavery",
+                  "Napoleon's reversal of revolutionary ideals versus Haiti's maintenance of emancipation despite isolation",
+                  "The global impact of French revolutionary ideology on nationalism and liberalism",
+                  "The international community's very different responses to each revolution"
+                ],
+                "rubric_tips": "Comparison essays should not just describe each revolution separately. Make direct, explicit comparisons and analyze WHY the outcomes differed. Consider how factors like race, colonial status, and international context shaped different results."
+              }
+            ]
+          },
           "quiz": [
             {
               "id": "q-french-1",
@@ -2038,6 +2558,32 @@
               "context": "Louverture's letter demonstrates how Enlightenment ideals of liberty were adopted and transformed by enslaved peoples to justify their own liberation — showing how revolutionary ideas crossed racial and colonial boundaries in the Atlantic world."
             }
           ],
+          "essayPrompts": {
+            "saq": [
+              {
+                "prompt": "Answer parts a, b, and c about how the Haitian Revolution challenged Enlightenment ideals about race and freedom.",
+                "parts": [
+                  "a) Identify ONE way the Haitian Revolution was inspired by Enlightenment and French Revolutionary ideals.",
+                  "b) Explain ONE way the Haitian Revolution exposed the contradictions within Enlightenment thinking about universal rights.",
+                  "c) Explain ONE consequence of the Haitian Revolution for the Atlantic world."
+                ],
+                "guidance": "For (a), discuss how enslaved people and free people of color used the language of natural rights and the Declaration of the Rights of Man to demand freedom. For (b), explain how French revolutionaries advocated liberty while maintaining slavery, revealing that 'universal' rights were not applied universally. For (c), discuss the impact on slave resistance movements, Napoleon's decision to sell Louisiana, or the fear the revolution inspired among slaveholding societies."
+              }
+            ],
+            "leq": [
+              {
+                "prompt": "Evaluate the extent to which the Haitian Revolution was the most radical revolution of the Age of Revolutions (1775-1830).",
+                "thesis_hint": "A strong thesis should argue that the Haitian Revolution was uniquely radical because it was the only revolution to achieve abolition of slavery and overthrow racial hierarchy, achievements that the American and French Revolutions failed to accomplish, while acknowledging the economic and diplomatic costs Haiti paid for this radicalism.",
+                "evidence_suggestions": [
+                  "The Haitian Revolution's achievement of abolishing slavery, which no other contemporary revolution accomplished",
+                  "The establishment of the first Black republic, challenging global racial hierarchies",
+                  "The American Revolution's preservation of slavery and limited suffrage",
+                  "The French Revolution's initial abolition and Napoleon's subsequent reimposition of slavery"
+                ],
+                "rubric_tips": "For 'evaluate the extent' questions, define what 'radical' means in historical context. The AP rubric rewards essays that establish clear analytical categories and then evaluate evidence against those categories."
+              }
+            ]
+          },
           "quiz": [
             {
               "id": "q-haiti-1",
@@ -2131,6 +2677,32 @@
               "context": "The Jamaica Letter articulates Bolivar's vision for Latin American liberation and unity, demonstrating how Enlightenment ideals were adapted to colonial contexts — a key AP example of how revolutionary ideas spread across the Atlantic world."
             }
           ],
+          "essayPrompts": {
+            "saq": [
+              {
+                "prompt": "Answer parts a, b, and c about the role of Creole elites in Latin American independence movements.",
+                "parts": [
+                  "a) Identify ONE factor that motivated Creole elites to seek independence from Spain.",
+                  "b) Explain ONE way the social hierarchy of colonial Latin America shaped the independence movements.",
+                  "c) Explain ONE way Latin American independence movements failed to achieve full social transformation."
+                ],
+                "guidance": "For (a), discuss Creole resentment of peninsulare privilege, Enlightenment ideas, or the example of the American and French Revolutions. For (b), discuss how Creoles led movements but often excluded indigenous peoples, enslaved Africans, and mixed-race populations from full citizenship. For (c), discuss the persistence of racial hierarchies, economic inequality, caudillo rule, or the continuation of plantation economies."
+              }
+            ],
+            "leq": [
+              {
+                "prompt": "Compare Latin American independence movements with the American Revolution in the period 1775-1830.",
+                "thesis_hint": "A strong thesis should identify similarities (Enlightenment inspiration, elite leadership, colonial grievances) while explaining key differences (the role of race and social hierarchy, the level of social transformation achieved, and post-independence political stability).",
+                "evidence_suggestions": [
+                  "Both movements' use of Enlightenment rhetoric about natural rights and self-governance",
+                  "The role of Creole/colonial elites in leading both movements",
+                  "Latin America's more complex racial hierarchy versus the American colonies' settler society",
+                  "Post-independence political instability in Latin America (caudillos) versus relative stability in the United States"
+                ],
+                "rubric_tips": "The AP rubric rewards essays that explain the significance of differences, not just identify them. Analyze how the different social contexts of Latin America and North America produced different revolutionary outcomes."
+              }
+            ]
+          },
           "quiz": [
             {
               "id": "q-latam-1",
@@ -2224,6 +2796,32 @@
               "context": "The Charter Oath set the ideological foundation for Japan's rapid modernization, committing to selective borrowing from the West while maintaining Japanese identity — a key AP example of defensive modernization in response to Western imperialism."
             }
           ],
+          "essayPrompts": {
+            "saq": [
+              {
+                "prompt": "Answer parts a, b, and c about Japan's selective adoption of Western practices during the Meiji era.",
+                "parts": [
+                  "a) Identify ONE Western institution or practice Japan adopted during the Meiji Restoration and explain its purpose.",
+                  "b) Explain ONE way Japan maintained its cultural identity while modernizing.",
+                  "c) Explain ONE consequence of Meiji modernization for Japan's role in international affairs."
+                ],
+                "guidance": "For (a), discuss the adoption of a constitution (modeled on Prussia), a modern military (conscription, Western weapons), industrial infrastructure, or a public education system. For (b), discuss the preservation of the emperor system, Shinto, or the concept of kokutai (national essence). For (c), discuss Japan's victory in the Sino-Japanese War (1895) or Russo-Japanese War (1905), demonstrating it could compete with Western powers."
+              }
+            ],
+            "leq": [
+              {
+                "prompt": "Compare the Meiji Restoration in Japan with the Ottoman Tanzimat reforms in terms of their approaches to modernization and their outcomes in the period 1839-1912.",
+                "thesis_hint": "A strong thesis should argue that while both represented responses to Western imperial pressure, Japan's more comprehensive and centralized modernization effort succeeded in creating an industrial power, while the Ottoman reforms were undermined by internal resistance, ethnic nationalism, and continued European interference.",
+                "evidence_suggestions": [
+                  "Japan's centralized Meiji government versus the Ottoman Empire's internal opposition from conservatives and religious leaders",
+                  "Japan's rapid industrialization versus the Ottoman Empire's limited economic modernization",
+                  "Japan's military victories (Sino-Japanese, Russo-Japanese Wars) versus Ottoman military defeats",
+                  "Both programs' selective adoption of Western institutions while attempting to preserve cultural identity"
+                ],
+                "rubric_tips": "The AP rubric rewards analysis of causation. Don't just describe what happened - explain WHY Japan's modernization was more successful. Consider structural factors like Japan's geographic isolation, social cohesion, and the nature of the threats each faced."
+              }
+            ]
+          },
           "quiz": [
             {
               "id": "q-meiji-1",
@@ -2317,6 +2915,32 @@
               "context": "Leopold's public justifications for colonizing the Congo exemplify how European imperialists used civilizing mission rhetoric to mask economic exploitation — a key AP concept for understanding the ideology behind the Scramble for Africa."
             }
           ],
+          "essayPrompts": {
+            "saq": [
+              {
+                "prompt": "Answer parts a, b, and c about the economic and technological factors that enabled European colonization of Africa.",
+                "parts": [
+                  "a) Identify ONE technological advantage that enabled European powers to colonize the African interior.",
+                  "b) Explain ONE economic motivation behind European imperialism in Africa.",
+                  "c) Explain ONE form of African resistance to European colonization."
+                ],
+                "guidance": "For (a), discuss the Maxim gun, quinine (malaria prevention), steamships, or telegraph communications. For (b), discuss the demand for raw materials, new markets for manufactured goods, or strategic competition between European powers. For (c), discuss the Ethiopian victory at Adwa, the Zulu resistance, the Herero uprising, or other organized military or political resistance movements."
+              }
+            ],
+            "leq": [
+              {
+                "prompt": "Evaluate the extent to which European imperialism in Africa was driven by economic factors versus strategic and political motivations in the period 1870-1914.",
+                "thesis_hint": "A strong thesis should argue that while economic motivations (raw materials, markets) provided the underlying drive, strategic competition between European powers and nationalist prestige often determined the specific timing and targets of colonization.",
+                "evidence_suggestions": [
+                  "The Berlin Conference (1884-85) and its rules for claiming African territory",
+                  "The economic exploitation of resources like rubber in the Congo, diamonds in South Africa, and palm oil in West Africa",
+                  "Strategic motivations like British control of the Suez Canal and the Cape-to-Cairo railway vision",
+                  "The role of nationalism and 'civilizing mission' ideology in justifying imperialism"
+                ],
+                "rubric_tips": "The AP rubric rewards essays that consider multiple perspectives and avoid monocausal explanations. Show how economic, strategic, political, and ideological motivations intersected and reinforced each other."
+              }
+            ]
+          },
           "quiz": [
             {
               "id": "q-scramble-1",
@@ -2410,6 +3034,32 @@
               "context": "Lin's letter represents China's attempt to use moral persuasion to end the opium trade, illustrating the clash between Chinese sovereignty and British commercial interests that led to war and unequal treaties."
             }
           ],
+          "essayPrompts": {
+            "saq": [
+              {
+                "prompt": "Answer parts a, b, and c about how the Opium Wars reversed China's traditional trade advantages.",
+                "parts": [
+                  "a) Identify ONE way China held a favorable trade position before the Opium Wars.",
+                  "b) Explain how British opium sales disrupted the existing trade balance between Britain and China.",
+                  "c) Explain ONE consequence of the Treaty of Nanjing for Chinese sovereignty."
+                ],
+                "guidance": "For (a), discuss China's export of tea, silk, and porcelain that Europeans demanded, while China had little interest in European goods, creating a trade surplus. For (b), explain how Britain's illegal opium sales from India reversed the silver flow, caused widespread addiction, and destabilized Chinese society. For (c), discuss the forced opening of treaty ports, extraterritoriality, cession of Hong Kong, or fixed tariffs that undermined Chinese economic sovereignty."
+              }
+            ],
+            "leq": [
+              {
+                "prompt": "Evaluate the extent to which the Opium Wars marked the beginning of a new global order dominated by Western imperial powers in the period 1839-1900.",
+                "thesis_hint": "A strong thesis should argue that the Opium Wars were a pivotal moment in shifting global power toward Western industrial nations, as they demonstrated that military-industrial superiority could force even the largest traditional empires to submit, while acknowledging that this shift had been developing since the Industrial Revolution.",
+                "evidence_suggestions": [
+                  "The unequal treaty system imposed on China after the Opium Wars",
+                  "The broader pattern of Western imperialism in Asia (India, Southeast Asia) during the same period",
+                  "China's century of humiliation and its impact on Chinese self-perception and modernization efforts",
+                  "The Industrial Revolution's role in creating the military and economic disparity that made the Opium Wars possible"
+                ],
+                "rubric_tips": "The AP rubric rewards essays that contextualize specific events within broader historical patterns. Show how the Opium Wars fit into the larger story of 19th-century imperialism and the global shift in power from East to West."
+              }
+            ]
+          },
           "quiz": [
             {
               "id": "q-opium-1",
@@ -2503,6 +3153,32 @@
               "context": "Douglass's speech exposes the contradiction between American ideals of freedom and the reality of slavery, exemplifying how marginalized peoples used Enlightenment rhetoric to challenge their oppression — a recurring AP theme."
             }
           ],
+          "essayPrompts": {
+            "saq": [
+              {
+                "prompt": "Answer parts a, b, and c about the different motivations behind abolition movements.",
+                "parts": [
+                  "a) Identify ONE moral or religious argument used by abolitionists against slavery.",
+                  "b) Explain ONE economic argument that was used either for or against abolition.",
+                  "c) Explain ONE way enslaved people themselves contributed to the abolition of slavery."
+                ],
+                "guidance": "For (a), discuss Quaker moral arguments, evangelical Christian movements, or Enlightenment natural rights philosophy. For (b), discuss arguments that free labor was more productive than slave labor, or that slavery distorted markets - or counterarguments that plantation economies depended on slave labor. For (c), discuss slave rebellions (Haiti, Nat Turner), the role of escaped slaves in abolitionist movements (Frederick Douglass, Harriet Tubman), or day-to-day resistance that made slavery increasingly costly."
+              }
+            ],
+            "leq": [
+              {
+                "prompt": "Evaluate the extent to which abolition actually changed the lives of formerly enslaved people in the period 1800-1900.",
+                "thesis_hint": "A strong thesis should argue that while abolition ended legal ownership of human beings, the lived reality of formerly enslaved people changed far less than the legal change suggested, as racial hierarchies, economic exploitation, and social discrimination persisted in new forms.",
+                "evidence_suggestions": [
+                  "Legal emancipation in the British Empire (1833), French colonies (1848), United States (1865), and Brazil (1888)",
+                  "The persistence of coercive labor systems (sharecropping, apprenticeship systems, debt peonage)",
+                  "Continued racial discrimination and legal restrictions on formerly enslaved people",
+                  "Some genuine improvements in family autonomy, religious freedom, and community building"
+                ],
+                "rubric_tips": "The AP rubric rewards essays that address both continuity AND change. Don't argue that nothing changed - acknowledge genuine improvements while demonstrating the limits of legal abolition in transforming deeply entrenched social and economic systems."
+              }
+            ]
+          },
           "quiz": [
             {
               "id": "q-abolition-1",
@@ -2596,6 +3272,32 @@
               "context": "Mazzini's writings represent the idealistic strand of 19th-century nationalism that linked national self-determination with liberal democracy, contrasting with the realpolitik approach of figures like Bismarck."
             }
           ],
+          "essayPrompts": {
+            "saq": [
+              {
+                "prompt": "Answer parts a, b, and c about how nationalism both unified and destabilized European politics in the 19th century.",
+                "parts": [
+                  "a) Identify ONE way nationalism served as a unifying force in 19th-century Europe.",
+                  "b) Explain ONE way nationalism served as a destabilizing or divisive force in 19th-century Europe.",
+                  "c) Explain ONE way nationalism spread beyond Europe to influence political movements in other regions."
+                ],
+                "guidance": "For (a), discuss the unification of Germany or Italy as examples of nationalism bringing together previously fragmented political entities. For (b), discuss the disintegration of multi-ethnic empires (Ottoman, Austro-Hungarian) as subject nationalities demanded independence. For (c), discuss how nationalist ideas influenced independence movements in Latin America, the Indian National Congress, or Pan-Slavism."
+              }
+            ],
+            "leq": [
+              {
+                "prompt": "Compare the processes of German and Italian unification in the period 1848-1871.",
+                "thesis_hint": "A strong thesis should identify key similarities (both involved strong leadership, military force, and the marginalization of democratic movements) while explaining differences (Bismarck's top-down Realpolitik versus the more complex interplay of popular movements and elite maneuvering in Italy).",
+                "evidence_suggestions": [
+                  "Bismarck's 'blood and iron' approach and the three wars of German unification",
+                  "Cavour's diplomacy, Garibaldi's popular campaigns, and Mazzini's republican idealism in Italy",
+                  "The failure of the 1848 revolutions to achieve unification through democratic means in both cases",
+                  "The role of foreign powers (France, Austria) in shaping the unification process"
+                ],
+                "rubric_tips": "The AP rubric rewards essays that analyze the process of change, not just the outcomes. Show how unification was achieved step by step, and explain why certain strategies succeeded while others (like the 1848 democratic movements) failed."
+              }
+            ]
+          },
           "quiz": [
             {
               "id": "q-nationalism-1",
@@ -2689,6 +3391,32 @@
               "context": "The Hatt-i Sharif launched the Tanzimat reform era, representing the Ottoman Empire's attempt to modernize its institutions in response to European pressure — a key AP example of defensive modernization in a declining empire."
             }
           ],
+          "essayPrompts": {
+            "saq": [
+              {
+                "prompt": "Answer parts a, b, and c about why the Tanzimat reforms ultimately failed to save the Ottoman Empire from decline.",
+                "parts": [
+                  "a) Identify ONE specific Tanzimat reform and explain its intended purpose.",
+                  "b) Explain ONE source of internal opposition to the Tanzimat reforms.",
+                  "c) Explain ONE external factor that undermined the effectiveness of the Tanzimat reforms."
+                ],
+                "guidance": "For (a), discuss legal reforms (equal citizenship regardless of religion), military modernization, or educational reforms modeled on European systems. For (b), discuss resistance from religious conservatives (ulama), Janissaries, or ethnic minorities who saw reforms as centralization threats. For (c), discuss European imperial interference, the rise of ethnic nationalism among subject peoples, or military defeats that undermined reform credibility."
+              }
+            ],
+            "leq": [
+              {
+                "prompt": "Compare the outcomes of the Ottoman Tanzimat reforms and the Japanese Meiji Restoration as modernization programs in the period 1839-1912.",
+                "thesis_hint": "A strong thesis should argue that Japan's Meiji Restoration succeeded where the Tanzimat failed primarily because of Japan's greater social cohesion, geographic insulation, and the Meiji government's ability to implement reforms without the internal ethnic and religious divisions that plagued the Ottoman Empire.",
+                "evidence_suggestions": [
+                  "Japan's rapid industrialization and military victories versus the Ottoman Empire's continued military defeats",
+                  "Japan's relative ethnic homogeneity versus the Ottoman Empire's multi-ethnic composition",
+                  "The Meiji government's centralized authority versus Ottoman internal opposition from conservatives and nationalists",
+                  "Both programs' attempts to adopt Western institutions while preserving cultural identity"
+                ],
+                "rubric_tips": "The AP rubric rewards causal analysis. Don't just list outcomes - explain WHY the same basic strategy (selective Westernization) produced such different results in Japan and the Ottoman Empire. Consider structural, cultural, and geopolitical factors."
+              }
+            ]
+          },
           "quiz": [
             {
               "id": "q-tanzimat-1",
@@ -2782,6 +3510,32 @@
               "context": "This proclamation reveals early anti-colonial resistance that transcended religious divisions, foreshadowing later Indian nationalist movements while also illustrating how traditional rulers attempted to lead resistance against European imperialism."
             }
           ],
+          "essayPrompts": {
+            "saq": [
+              {
+                "prompt": "Answer parts a, b, and c about the causes and consequences of the Indian Rebellion of 1857.",
+                "parts": [
+                  "a) Identify ONE immediate cause and ONE underlying cause of the Indian Rebellion of 1857.",
+                  "b) Explain ONE way the rebellion revealed the weaknesses of British East India Company rule.",
+                  "c) Explain ONE way British colonial policy changed as a result of the rebellion."
+                ],
+                "guidance": "For (a), the immediate cause was the greased cartridges controversy; underlying causes include resentment of company policies (Doctrine of Lapse, social reforms threatening caste and religious traditions). For (b), discuss the company's inability to understand Indian cultural and religious sensitivities or its over-reliance on Indian soldiers. For (c), discuss the shift from Company to Crown rule, more cautious approach to social reform, increased racial segregation, or the expansion of the Indian Civil Service."
+              }
+            ],
+            "leq": [
+              {
+                "prompt": "Evaluate the extent to which the Indian Rebellion of 1857 changed British colonial policy in India in the period 1857-1914.",
+                "thesis_hint": "A strong thesis should argue that while the rebellion led to significant administrative changes (Company to Crown, more cautious social policy), the fundamental nature of colonial exploitation continued, and some changes (like increased racial segregation) actually made colonial rule more oppressive.",
+                "evidence_suggestions": [
+                  "The dissolution of the East India Company and establishment of direct Crown rule (British Raj)",
+                  "More cautious approach to religious and social reform to avoid provoking Indian resistance",
+                  "Increased racial segregation and the formalization of racial hierarchies",
+                  "The beginning of Indian nationalist consciousness that would eventually lead to independence"
+                ],
+                "rubric_tips": "The AP rubric rewards essays that distinguish between surface changes and deeper continuities. Show how administrative restructuring masked the continuation of fundamentally exploitative colonial relationships."
+              }
+            ]
+          },
           "quiz": [
             {
               "id": "q-sepoy-1",
@@ -2910,6 +3664,32 @@
               "context": "Wilson's Fourteen Points introduced the principle of national self-determination to international diplomacy, inspiring colonial peoples worldwide while creating tensions at Versailles — a key AP source for understanding the war's global political impact."
             }
           ],
+          "essayPrompts": {
+            "saq": [
+              {
+                "prompt": "Answer parts a, b, and c about how World War I destroyed the old European political order.",
+                "parts": [
+                  "a) Identify ONE empire that collapsed as a result of World War I and explain one consequence of its collapse.",
+                  "b) Explain ONE way the Treaty of Versailles reshaped the political map of Europe and the Middle East.",
+                  "c) Explain ONE way World War I changed the social or political expectations of ordinary people."
+                ],
+                "guidance": "For (a), discuss the collapse of the Ottoman, Austro-Hungarian, Russian, or German empires and their consequences (new nation-states, power vacuums, revolutionary movements). For (b), discuss the mandate system in the Middle East, creation of new nation-states in Eastern Europe, or the punitive terms imposed on Germany. For (c), discuss women's suffrage movements, demands for self-determination in colonies, or the disillusionment that fueled radical political movements."
+              }
+            ],
+            "leq": [
+              {
+                "prompt": "Evaluate the extent to which World War I was a turning point in global history.",
+                "thesis_hint": "A strong thesis should argue that WWI fundamentally transformed the global political order by destroying empires, accelerating nationalist and revolutionary movements, and creating the conditions for future conflicts, while acknowledging that some of these trends (imperialism, nationalism, industrialized warfare) predated the war.",
+                "evidence_suggestions": [
+                  "The collapse of four major empires and the creation of new nation-states",
+                  "The Russian Revolution and the emergence of communism as a global political force",
+                  "The mandate system and its impact on the Middle East",
+                  "The Treaty of Versailles and the seeds of World War II"
+                ],
+                "rubric_tips": "For 'turning point' questions, the AP rubric rewards essays that clearly define what changed and what continued. Show how WWI accelerated existing trends while also creating genuinely new historical developments."
+              }
+            ]
+          },
           "quiz": [
             {
               "id": "q-ww1-1",
@@ -3010,6 +3790,32 @@
               "context": "These testimonies document the unprecedented destructive power of atomic weapons, raising moral and strategic questions about modern warfare that defined the nuclear age and Cold War tensions."
             }
           ],
+          "essayPrompts": {
+            "saq": [
+              {
+                "prompt": "Answer parts a, b, and c about how World War II accelerated the process of decolonization.",
+                "parts": [
+                  "a) Identify ONE way World War II weakened European colonial powers.",
+                  "b) Explain ONE way the war empowered colonized peoples to demand independence.",
+                  "c) Explain ONE way the post-war international order facilitated decolonization."
+                ],
+                "guidance": "For (a), discuss the physical and economic devastation of European powers, or Japan's conquests in Southeast Asia that destroyed the myth of European invincibility. For (b), discuss colonial soldiers' wartime experiences, the Atlantic Charter's promise of self-determination, or the hypocrisy of fighting fascism while maintaining empires. For (c), discuss the United Nations, Cold War competition for Third World allies, or anti-colonial pressures from the US and USSR."
+              }
+            ],
+            "leq": [
+              {
+                "prompt": "Compare the causes of World War I and World War II.",
+                "thesis_hint": "A strong thesis should argue that while both wars arose from failures of the international system and aggressive nationalism, WWI resulted more from alliance systems and miscalculation while WWII was driven more directly by ideological extremism (fascism) and the failures of the post-WWI settlement.",
+                "evidence_suggestions": [
+                  "The alliance systems and arms race before WWI versus the appeasement of fascist aggression before WWII",
+                  "The role of nationalism in both wars, but the more extreme ideological dimension (fascism, Nazism) in WWII",
+                  "The Treaty of Versailles as a bridge connecting the two conflicts",
+                  "The failure of the League of Nations to prevent aggression in the 1930s"
+                ],
+                "rubric_tips": "Comparison essays should not just describe each war separately. Make direct comparative statements and analyze the significance of similarities and differences. The AP rubric rewards analysis of causation - explain WHY different factors led to war in each case."
+              }
+            ]
+          },
           "quiz": [
             {
               "id": "q-ww2-1",
@@ -3112,6 +3918,32 @@
               "context": "Khrushchev's speech marked a turning point in the Cold War by revealing internal critiques of the Soviet system, inspiring reform movements in Eastern Europe and complicating the communist world's unity."
             }
           ],
+          "essayPrompts": {
+            "saq": [
+              {
+                "prompt": "Answer parts a, b, and c about how the Cold War shaped decolonization in the developing world.",
+                "parts": [
+                  "a) Identify ONE way the United States or the Soviet Union intervened in a newly independent nation during the Cold War.",
+                  "b) Explain ONE way Cold War competition affected the choices available to newly independent nations.",
+                  "c) Explain ONE way the Non-Aligned Movement represented an alternative to Cold War alignment."
+                ],
+                "guidance": "For (a), discuss specific interventions such as the Korean War, Vietnam War, CIA operations in Iran or Guatemala, or Soviet involvement in Afghanistan. For (b), discuss how new nations were pressured to align with one superpower, often receiving military or economic aid in exchange for ideological alignment. For (c), discuss how leaders like Nehru, Nasser, and Tito attempted to chart an independent course, leveraging Cold War competition for aid without full alignment."
+              }
+            ],
+            "leq": [
+              {
+                "prompt": "Evaluate the extent to which the Cold War was primarily an ideological conflict versus a geopolitical struggle for power in the period 1945-1991.",
+                "thesis_hint": "A strong thesis should argue that while ideological differences (capitalism vs. communism) provided the framework and justification for the conflict, the actual conduct of the Cold War was often driven by traditional geopolitical interests, as both superpowers supported ideologically incompatible allies when it served their strategic interests.",
+                "evidence_suggestions": [
+                  "The US supporting authoritarian regimes (South Korea, Chile, Iran) that opposed communism",
+                  "The Sino-Soviet split demonstrating that shared ideology did not prevent geopolitical rivalry",
+                  "Proxy wars in Korea, Vietnam, and Afghanistan driven by strategic considerations",
+                  "The ideological appeal of each system in attracting Third World allies"
+                ],
+                "rubric_tips": "The AP rubric rewards nuance. Show how ideology and geopolitics were intertwined rather than treating them as completely separate motivations. The best essays demonstrate that the Cold War cannot be fully explained by either factor alone."
+              }
+            ]
+          },
           "quiz": [
             {
               "id": "q-cold-1",
@@ -3212,6 +4044,32 @@
               "context": "Fanon's work became the intellectual manifesto of anti-colonial revolution, arguing that colonialism dehumanized both colonizer and colonized — essential reading for understanding the ideological dimensions of decolonization."
             }
           ],
+          "essayPrompts": {
+            "saq": [
+              {
+                "prompt": "Answer parts a, b, and c about the different paths to independence taken by colonized peoples.",
+                "parts": [
+                  "a) Identify ONE example of nonviolent resistance leading to independence and explain why this approach was chosen.",
+                  "b) Identify ONE example of violent struggle for independence and explain why armed resistance was deemed necessary.",
+                  "c) Explain ONE common challenge faced by newly independent nations regardless of how they achieved independence."
+                ],
+                "guidance": "For (a), discuss Gandhi's nonviolent movement in India, including satyagraha and its moral and strategic logic. For (b), discuss Algeria's war against France, Kenya's Mau Mau uprising, or Vietnam's war against France, explaining the conditions that made peaceful transition impossible. For (c), discuss neocolonial economic dependence, arbitrary borders dividing ethnic groups, lack of infrastructure, or the challenge of building national identity."
+              }
+            ],
+            "leq": [
+              {
+                "prompt": "Evaluate the extent to which decolonization in the period 1945-1975 achieved genuine independence for formerly colonized peoples.",
+                "thesis_hint": "A strong thesis should argue that while decolonization achieved political sovereignty, genuine independence was limited by neocolonial economic relationships, Cold War interference, and the persistence of colonial-era structures (borders, institutions, economic patterns) that constrained the choices of new nations.",
+                "evidence_suggestions": [
+                  "Achievement of political independence and self-governance across Africa and Asia",
+                  "Continued economic dependence on former colonial powers and multinational corporations",
+                  "Cold War superpower interference in the internal affairs of new nations",
+                  "The persistence of colonial-era borders, languages, and institutional structures"
+                ],
+                "rubric_tips": "The AP rubric rewards essays that define their terms carefully. What does 'genuine independence' mean? Political sovereignty? Economic autonomy? Cultural self-determination? Define your criteria and evaluate the evidence against them."
+              }
+            ]
+          },
           "quiz": [
             {
               "id": "q-decolonization-1",
@@ -3305,6 +4163,32 @@
               "context": "This report represents Mao's departure from orthodox Marxism by centering peasants rather than the urban proletariat as revolutionary agents — a key adaptation of European ideology to Chinese conditions that shaped 20th-century communism."
             }
           ],
+          "essayPrompts": {
+            "saq": [
+              {
+                "prompt": "Answer parts a, b, and c about how Mao Zedong adapted Marxist ideology for China's peasant society.",
+                "parts": [
+                  "a) Identify ONE way Mao's version of communism differed from classical Marxism.",
+                  "b) Explain ONE policy Mao implemented after 1949 that reflected his revolutionary ideology.",
+                  "c) Explain ONE consequence of Mao's policies for Chinese society."
+                ],
+                "guidance": "For (a), discuss Mao's focus on the peasantry rather than the urban proletariat as the revolutionary class. For (b), discuss the Great Leap Forward, collectivization of agriculture, the Cultural Revolution, or land reform. For (c), discuss the famine caused by the Great Leap Forward, the social upheaval of the Cultural Revolution, or the achievements in literacy and public health alongside the enormous human costs."
+              }
+            ],
+            "leq": [
+              {
+                "prompt": "Compare the Chinese Revolution (1949) with the Russian Revolution (1917) in terms of their causes, methods, and outcomes.",
+                "thesis_hint": "A strong thesis should argue that while both revolutions were Marxist-inspired responses to failing traditional governments and foreign humiliation, they differed significantly in their social bases (peasants vs. workers), revolutionary strategies (guerrilla warfare vs. urban insurrection), and post-revolutionary policies.",
+                "evidence_suggestions": [
+                  "Both revolutions' contexts of war, foreign intervention, and weak existing governments",
+                  "Mao's peasant-based revolution versus Lenin's urban worker and soldier-based revolution",
+                  "The Chinese Communist Party's Long March and guerrilla strategy versus the Bolsheviks' seizure of power in Petrograd",
+                  "Post-revolutionary policies: collectivization and industrialization in both, but different approaches to cultural revolution"
+                ],
+                "rubric_tips": "The AP rubric rewards essays that go beyond surface comparisons. Don't just note that 'both were communist revolutions.' Analyze the specific historical conditions that shaped each revolution and explain WHY they took different forms."
+              }
+            ]
+          },
           "quiz": [
             {
               "id": "q-china-1",
@@ -3399,6 +4283,32 @@
               "context": "Friedman's thesis captures the optimistic view of globalization as a democratizing force through technology, while also sparking debate about whether globalization truly benefits all nations equally — a central tension in contemporary AP World History."
             }
           ],
+          "essayPrompts": {
+            "saq": [
+              {
+                "prompt": "Answer parts a, b, and c about the uneven effects of globalization on developed and developing nations.",
+                "parts": [
+                  "a) Identify ONE way globalization has benefited developing nations.",
+                  "b) Explain ONE way globalization has created challenges or inequalities for developing nations.",
+                  "c) Explain ONE way people or groups have resisted or criticized globalization."
+                ],
+                "guidance": "For (a), discuss increased foreign investment, access to global markets, technology transfer, or poverty reduction in countries like China and India. For (b), discuss exploitation of cheap labor, environmental degradation, loss of traditional industries, or the power of multinational corporations over local governments. For (c), discuss anti-globalization movements, fair trade initiatives, environmental activism, or cultural preservation efforts."
+              }
+            ],
+            "leq": [
+              {
+                "prompt": "Evaluate the extent to which late 20th-century globalization was a continuation of earlier patterns of global integration versus a fundamentally new phenomenon.",
+                "thesis_hint": "A strong thesis should argue that while late 20th-century globalization built on centuries of increasing global connection (Silk Roads, Columbian Exchange, Industrial Revolution), the speed, scale, and nature of modern globalization (digital technology, financial integration) represent something qualitatively different.",
+                "evidence_suggestions": [
+                  "Historical precedents: Silk Roads, Indian Ocean trade, the Columbian Exchange, 19th-century imperialism",
+                  "New features: digital communication, containerized shipping, global financial markets",
+                  "The role of international institutions (WTO, IMF, World Bank) in shaping modern globalization",
+                  "The unprecedented speed of cultural exchange through mass media and the internet"
+                ],
+                "rubric_tips": "The AP rubric rewards essays that demonstrate understanding of continuity AND change over time. Show how modern globalization connects to earlier patterns while also identifying genuinely novel features. Use specific evidence from multiple time periods."
+              }
+            ]
+          },
           "quiz": [
             {
               "id": "q-global-1",
@@ -3493,6 +4403,32 @@
               "context": "The April Theses outlined Lenin's radical program that distinguished the Bolsheviks from other revolutionary factions, setting the stage for the October Revolution and the creation of the world's first communist state."
             }
           ],
+          "essayPrompts": {
+            "saq": [
+              {
+                "prompt": "Answer parts a, b, and c about how the Russian Revolution created a new model of state-directed economic development.",
+                "parts": [
+                  "a) Identify ONE cause of the Russian Revolution that reflected broader patterns of early 20th-century political upheaval.",
+                  "b) Explain ONE way the Soviet economic model differed from capitalist economic systems.",
+                  "c) Explain ONE way the Russian Revolution influenced political movements outside of Russia."
+                ],
+                "guidance": "For (a), discuss the strains of WWI, autocratic government failing to modernize, or class tensions from rapid but uneven industrialization. For (b), discuss central planning, collectivization of agriculture, state ownership of industry, or five-year plans. For (c), discuss the inspiration it provided to communist movements worldwide, the formation of the Comintern, or its influence on the Chinese, Cuban, or Vietnamese revolutions."
+              }
+            ],
+            "leq": [
+              {
+                "prompt": "Compare the Russian Revolution's impact on global politics with the French Revolution's impact on global politics.",
+                "thesis_hint": "A strong thesis should argue that both revolutions introduced transformative political ideologies (liberalism/nationalism vs. communism) that reshaped global politics for centuries, but they differed in the types of political systems they inspired and the geographic scope of their immediate influence.",
+                "evidence_suggestions": [
+                  "The French Revolution's spread of nationalism and liberal constitutionalism across Europe and Latin America",
+                  "The Russian Revolution's inspiration of communist movements in China, Cuba, Vietnam, and across the developing world",
+                  "Both revolutions' use of violence and terror as political tools (Reign of Terror vs. Red Terror)",
+                  "The Cold War as an extension of the ideological conflict sparked by the Russian Revolution"
+                ],
+                "rubric_tips": "The AP rubric rewards essays that demonstrate broad chronological and geographic scope. Trace the influence of each revolution across multiple regions and time periods to show the full extent of their global impact."
+              }
+            ]
+          },
           "quiz": [
             {
               "id": "q-russian-rev-1",
@@ -3586,6 +4522,32 @@
               "context": "Roosevelt's address marked a turning point in the role of government in economic life, introducing the concept of active state intervention that influenced economic policy worldwide and contrasted with the laissez-faire approach that preceded the crisis."
             }
           ],
+          "essayPrompts": {
+            "saq": [
+              {
+                "prompt": "Answer parts a, b, and c about how the Great Depression contributed to the rise of authoritarian regimes.",
+                "parts": [
+                  "a) Identify ONE way the Great Depression undermined faith in democratic governance and capitalism.",
+                  "b) Explain ONE way an authoritarian regime exploited economic crisis to gain or consolidate power.",
+                  "c) Explain ONE way the Great Depression affected colonial or semi-colonial regions outside of Europe and the United States."
+                ],
+                "guidance": "For (a), discuss mass unemployment, bank failures, and the inability of democratic governments to provide relief, which made extremist alternatives more appealing. For (b), discuss how the Nazis used economic discontent to win electoral support, or how Japan's militarists used economic crisis to justify expansion. For (c), discuss the collapse of commodity prices devastating export-dependent colonies, or how economic hardship fueled anti-colonial nationalism."
+              }
+            ],
+            "leq": [
+              {
+                "prompt": "Evaluate the extent to which the Great Depression was caused by failures of the international economic system versus domestic policy mistakes in the period 1919-1939.",
+                "thesis_hint": "A strong thesis should argue that the Depression resulted from a combination of structural weaknesses in the post-WWI international economic system (war debts, gold standard rigidity, unstable financial flows) AND domestic policy failures (speculative bubbles, tariff wars), with neither factor alone being sufficient to explain the crisis.",
+                "evidence_suggestions": [
+                  "The interconnected system of WWI war debts and reparations that created financial instability",
+                  "The gold standard's role in spreading deflation internationally and constraining policy responses",
+                  "US domestic factors: stock market speculation, agricultural overproduction, banking weaknesses",
+                  "The Smoot-Hawley Tariff and the collapse of international trade"
+                ],
+                "rubric_tips": "The AP rubric rewards essays that demonstrate understanding of multiple causation. Show how international and domestic factors interacted and reinforced each other rather than treating them as separate, independent causes."
+              }
+            ]
+          },
           "quiz": [
             {
               "id": "q-depression-1",
@@ -3679,6 +4641,32 @@
               "context": "Levi's memoir bears witness to the Holocaust's systematic dehumanization, providing essential testimony for understanding how genocide operates and why the international community established human rights frameworks in response."
             }
           ],
+          "essayPrompts": {
+            "saq": [
+              {
+                "prompt": "Answer parts a, b, and c about how modern state capacity enabled genocide on an unprecedented scale.",
+                "parts": [
+                  "a) Identify ONE way modern technology or bureaucracy facilitated the Holocaust.",
+                  "b) Explain ONE historical precedent or pattern that contributed to the conditions enabling genocide.",
+                  "c) Explain ONE way the international community responded to the Holocaust, and evaluate the effectiveness of that response."
+                ],
+                "guidance": "For (a), discuss the use of railroads for mass deportation, industrial killing methods, IBM punch cards for tracking victims, or the bureaucratic organization of mass murder. For (b), discuss the long history of European antisemitism, the precedent of the Armenian Genocide, or the Social Darwinist and eugenics movements. For (c), discuss the Nuremberg Trials, the Universal Declaration of Human Rights, or the creation of the 'Never Again' framework and its limitations in preventing subsequent genocides."
+              }
+            ],
+            "leq": [
+              {
+                "prompt": "Evaluate the extent to which genocides in the 20th and 21st centuries are preventable through international institutions and agreements.",
+                "thesis_hint": "A strong thesis should argue that while international institutions (UN, ICC) and agreements (Genocide Convention) have created legal frameworks for prevention and accountability, the political realities of state sovereignty and great power interests have repeatedly limited their effectiveness, as demonstrated by subsequent genocides in Cambodia, Rwanda, and Bosnia.",
+                "evidence_suggestions": [
+                  "The UN Genocide Convention (1948) and its definition and prevention mandates",
+                  "The failure to prevent genocide in Cambodia (1975-79), Rwanda (1994), and Bosnia (1995)",
+                  "The establishment of the International Criminal Court and its limited jurisdiction",
+                  "The tension between state sovereignty and humanitarian intervention (R2P doctrine)"
+                ],
+                "rubric_tips": "The AP rubric rewards essays that use specific historical evidence to evaluate broad claims. Don't just argue that institutions have failed - also identify cases where international pressure or intervention has made a difference, and analyze why some efforts succeeded while others failed."
+              }
+            ]
+          },
           "quiz": [
             {
               "id": "q-genocide-1",
@@ -3772,6 +4760,32 @@
               "context": "Borlaug's lecture captures both the promise and limitations of the Green Revolution, acknowledging that technological solutions to hunger must be accompanied by social and political change — reflecting ongoing AP themes of development and inequality."
             }
           ],
+          "essayPrompts": {
+            "saq": [
+              {
+                "prompt": "Answer parts a, b, and c about the trade-offs between increased food production and the environmental and social costs of the Green Revolution.",
+                "parts": [
+                  "a) Identify ONE technological innovation of the Green Revolution and explain how it increased food production.",
+                  "b) Explain ONE environmental consequence of Green Revolution agricultural practices.",
+                  "c) Explain ONE way the Green Revolution affected social or economic inequality in developing nations."
+                ],
+                "guidance": "For (a), discuss high-yield variety (HYV) seeds, synthetic fertilizers, pesticides, or irrigation technology and their role in dramatically increasing crop yields. For (b), discuss soil degradation, water depletion, chemical runoff and water pollution, or loss of biodiversity from monoculture farming. For (c), discuss how wealthier farmers who could afford inputs benefited disproportionately, leading to increased rural inequality, displacement of small farmers, or urban migration."
+              }
+            ],
+            "leq": [
+              {
+                "prompt": "Evaluate the extent to which the Green Revolution solved versus created problems in the developing world in the period 1945-2000.",
+                "thesis_hint": "A strong thesis should argue that while the Green Revolution succeeded in averting predicted famines and dramatically increasing food production, it created new problems of environmental degradation, economic inequality, and dependency on expensive agricultural inputs that disproportionately affected small farmers in the developing world.",
+                "evidence_suggestions": [
+                  "Dramatic increases in wheat and rice yields in India, Mexico, and Southeast Asia",
+                  "Norman Borlaug's work and the prevention of predicted famines in South Asia",
+                  "Environmental costs: soil depletion, water table depletion, chemical pollution",
+                  "Social costs: displacement of small farmers, increased rural inequality, dependency on multinational seed and chemical companies"
+                ],
+                "rubric_tips": "The AP rubric rewards essays that consider multiple perspectives. Consider the Green Revolution from the perspectives of governments, large farmers, small farmers, environmental scientists, and multinational corporations. This demonstrates the kind of multi-perspective analysis that earns top scores."
+              }
+            ]
+          },
           "quiz": [
             {
               "id": "q-green-rev-1",

@@ -1,0 +1,263 @@
+.essay-practice {
+  flex: 1;
+  overflow-y: auto;
+  padding: 32px 40px;
+  background: var(--bg-primary);
+  max-width: 900px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.ep-header {
+  margin-bottom: 24px;
+}
+
+.ep-title {
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin: 0 0 4px;
+}
+
+.ep-subtitle {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  margin: 0;
+}
+
+/* Filters */
+.ep-filters {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 16px;
+}
+
+.ep-type-filter, .ep-era-filter {
+  display: flex;
+  gap: 6px;
+  flex-wrap: wrap;
+}
+
+.ep-filter-btn {
+  padding: 6px 14px;
+  border-radius: 6px;
+  border: 1px solid var(--border);
+  background: var(--bg-secondary);
+  color: var(--text-muted);
+  font-size: 0.78rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.15s;
+  font-family: inherit;
+}
+
+.ep-filter-btn:hover {
+  border-color: var(--border-light);
+  color: var(--text-primary);
+}
+
+.ep-filter-btn.active {
+  border-color: var(--accent);
+  color: var(--accent);
+  background: var(--accent-glow);
+}
+
+.ep-count {
+  font-size: 0.75rem;
+  color: var(--text-muted);
+  margin-bottom: 16px;
+}
+
+/* Card list */
+.ep-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.ep-card {
+  background: var(--bg-secondary);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.ep-card.saq {
+  border-left: 3px solid #3498DB;
+}
+
+.ep-card.leq {
+  border-left: 3px solid #8E44AD;
+}
+
+.ep-card-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 14px 18px;
+  cursor: pointer;
+  transition: background 0.15s;
+}
+
+.ep-card-header:hover {
+  background: var(--bg-card-hover);
+}
+
+.ep-card-left {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.ep-badge {
+  padding: 3px 8px;
+  border-radius: 4px;
+  font-size: 0.65rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  flex-shrink: 0;
+}
+
+.ep-badge.saq {
+  background: rgba(52, 152, 219, 0.15);
+  color: #3498DB;
+}
+
+.ep-badge.leq {
+  background: rgba(142, 68, 173, 0.15);
+  color: #8E44AD;
+}
+
+.ep-card-event {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
+.ep-card-era {
+  font-size: 0.7rem;
+}
+
+.ep-chevron {
+  color: var(--text-muted);
+  font-size: 0.8rem;
+  transition: transform 0.25s;
+  flex-shrink: 0;
+}
+
+.ep-chevron.open {
+  transform: rotate(180deg);
+}
+
+.ep-card-prompt {
+  padding: 0 18px 14px;
+  font-size: 0.9rem;
+  color: var(--text-primary);
+  line-height: 1.7;
+  font-weight: 500;
+}
+
+/* Expanded details */
+.ep-card-details {
+  overflow: hidden;
+  border-top: 1px solid var(--border);
+  padding: 16px 18px;
+}
+
+.ep-detail-section {
+  margin-bottom: 14px;
+}
+
+.ep-detail-label {
+  font-size: 0.7rem;
+  font-weight: 600;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  margin-bottom: 6px;
+}
+
+.ep-parts {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.ep-part {
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+  line-height: 1.6;
+  padding: 8px 12px;
+  background: var(--bg-card);
+  border-radius: 6px;
+  border-left: 2px solid #3498DB;
+}
+
+.ep-thesis-hint {
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+  line-height: 1.7;
+  font-style: italic;
+  padding: 10px 14px;
+  background: var(--bg-card);
+  border-radius: 6px;
+  border-left: 2px solid #8E44AD;
+  margin: 0;
+}
+
+.ep-evidence-list {
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+  line-height: 1.7;
+  padding-left: 20px;
+  margin: 0;
+}
+
+.ep-evidence-list li {
+  margin-bottom: 4px;
+}
+
+.ep-reveal {
+  margin-top: 12px;
+  border-top: 1px solid var(--border);
+  padding-top: 10px;
+}
+
+.ep-reveal summary {
+  font-size: 0.78rem;
+  font-weight: 600;
+  color: var(--accent);
+  cursor: pointer;
+}
+
+.ep-reveal summary:hover {
+  color: var(--text-primary);
+}
+
+.ep-reveal p {
+  font-size: 0.82rem;
+  color: var(--text-muted);
+  line-height: 1.7;
+  margin: 8px 0 0;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .essay-practice {
+    padding: 20px 16px;
+  }
+
+  .ep-card-header {
+    padding: 10px 14px;
+  }
+
+  .ep-card-prompt {
+    padding: 0 14px 12px;
+    font-size: 0.82rem;
+  }
+
+  .ep-card-details {
+    padding: 12px 14px;
+  }
+}

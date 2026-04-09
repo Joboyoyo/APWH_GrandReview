@@ -7,6 +7,7 @@ import ComparisonTool from './components/ComparisonTool';
 import Quiz from './components/Quiz';
 import Tutorial from './components/Tutorial';
 import LandingPage from './components/LandingPage';
+import EssayPractice from './components/EssayPractice';
 import timelineData from './data/timelineData.json';
 import { eraImages, eventImages, eventHoverImages } from './data/images';
 import './App.css';
@@ -48,7 +49,7 @@ function App() {
   };
 
   return (
-    <BrowserRouter basename="/APWH_GrandReview/">
+    <BrowserRouter>
       <div className="app">
         <header className="app-header">
           <div>
@@ -70,6 +71,9 @@ function App() {
               </NavLink>
               <NavLink to="/compare" className={({ isActive }) => `nav-link ${isActive ? 'active' : ''}`}>
                 Compare
+              </NavLink>
+              <NavLink to="/essays" className={({ isActive }) => `nav-link ${isActive ? 'active' : ''}`}>
+                Essays
               </NavLink>
               <NavLink to="/progress" className={({ isActive }) => `nav-link ${isActive ? 'active' : ''}`}>
                 Progress
@@ -94,6 +98,9 @@ function App() {
             } />
             <Route path="/compare" element={
               <ComparisonTool data={enrichedData} />
+            } />
+            <Route path="/essays" element={
+              <EssayPractice data={enrichedData} />
             } />
             <Route path="/progress" element={
               <ProgressDashboard data={enrichedData} />

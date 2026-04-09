@@ -37,8 +37,9 @@ const BLOB_LAYOUT = [
   { key: 'economic', label: 'Economic', color: '#F39C12', icon: '💰', row: 2, col: 1 },
   { key: 'technology', label: 'Technology', color: '#1ABC9C', icon: '⚙', row: 2, col: 2 },
   { key: 'primarysources', label: 'Primary Sources', color: '#D4AC0D', icon: '📜', row: 3, col: 0, colSpan: 3 },
-  { key: 'keyterms', label: 'Key Terms', color: '#95A5A6', icon: '🔑', row: 4, col: 0, colSpan: 2 },
-  { key: 'quiz', label: 'Review Quiz', color: '#E67E22', icon: '✏', row: 4, col: 2 },
+  { key: 'essayprompts', label: 'SAQ / LEQ Practice', color: '#8E44AD', icon: '✍', row: 4, col: 0, colSpan: 3 },
+  { key: 'keyterms', label: 'Key Terms', color: '#95A5A6', icon: '🔑', row: 5, col: 0, colSpan: 2 },
+  { key: 'quiz', label: 'Review Quiz', color: '#E67E22', icon: '✏', row: 5, col: 2 },
 ];
 
 const MIN_NODE_WIDTH = 100;
@@ -606,6 +607,7 @@ export default function Timeline({ data, onStartQuiz }) {
     if (blobKey === 'keyterms') return event.keyTerms;
     if (blobKey === 'quiz') return event.quiz;
     if (blobKey === 'primarysources') return event.primarySources;
+    if (blobKey === 'essayprompts') return event.essayPrompts;
     return event.spiceT?.[blobKey] || null;
   };
 
@@ -993,6 +995,7 @@ export default function Timeline({ data, onStartQuiz }) {
                     if (blob.key === 'quiz' && (!focusedEvent.quiz || focusedEvent.quiz.length === 0)) return null;
                     if (blob.key === 'keyterms' && !focusedEvent.keyTerms) return null;
                     if (blob.key === 'primarysources' && (!focusedEvent.primarySources || focusedEvent.primarySources.length === 0)) return null;
+                    if (blob.key === 'essayprompts' && !focusedEvent.essayPrompts) return null;
 
                     const content = getBlobContent(blob.key, focusedEvent);
                     const isHovered = hoveredBlob === blob.key;
@@ -1028,6 +1031,9 @@ export default function Timeline({ data, onStartQuiz }) {
                         )}
                         {blob.key === 'primarysources' && Array.isArray(content) && (
                           <div className="blob-preview">{content.length} source{content.length !== 1 ? 's' : ''}</div>
+                        )}
+                        {blob.key === 'essayprompts' && content && (
+                          <div className="blob-preview">{(content.saq?.length || 0)} SAQ + {(content.leq?.length || 0)} LEQ</div>
                         )}
                       </motion.div>
                     );
@@ -1103,6 +1109,48 @@ export default function Timeline({ data, onStartQuiz }) {
                                     </div>
                                     <blockquote className="source-quote">{src.excerpt}</blockquote>
                                     {src.context && <div className="source-context">{src.context}</div>}
+                                  </div>
+                                ))}
+                              </div>
+                            )}
+
+                            {focusedBlob === 'essayprompts' && content && (
+                              <div className="blob-detail-essays">
+                                {content.saq?.map((saq, idx) => (
+                                  <div key={`saq-${idx}`} className="essay-card saq-card">
+                                    <div className="essay-type-badge saq-badge">SAQ</div>
+                                    <div className="essay-prompt">{saq.prompt}</div>
+                                    <div className="essay-parts">
+                                      {saq.parts.map((part, i) => (
+                                        <div key={i} className="essay-part">{part}</div>
+                                      ))}
+                                    </div>
+                                    <details className="essay-guidance">
+                                      <summary>Guidance</summary>
+                                      <p>{saq.guidance}</p>
+                                    </details>
+                                  </div>
+                                ))}
+                                {content.leq?.map((leq, idx) => (
+                                  <div key={`leq-${idx}`} className="essay-card leq-card">
+                                    <div className="essay-type-badge leq-badge">LEQ</div>
+                                    <div className="essay-prompt">{leq.prompt}</div>
+                                    <div className="essay-section">
+                                      <div className="essay-section-title">Thesis Hint</div>
+                                      <p className="essay-hint">{leq.thesis_hint}</p>
+                                    </div>
+                                    <div className="essay-section">
+                                      <div className="essay-section-title">Evidence to Consider</div>
+                                      <ul className="essay-evidence">
+                                        {leq.evidence_suggestions.map((ev, i) => (
+                                          <li key={i}>{ev}</li>
+                                        ))}
+                                      </ul>
+                                    </div>
+                                    <details className="essay-guidance">
+                                      <summary>Rubric Tips</summary>
+                                      <p>{leq.rubric_tips}</p>
+                                    </details>
                                   </div>
                                 ))}
                               </div>
